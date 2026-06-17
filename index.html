@@ -520,38 +520,63 @@
 <div class="overlay" id="overlaySync">
   <div class="panel">
     <div class="panel-header">
-      <span class="panel-titulo">⬆⬇ Sincronización de datos</span>
+      <span class="panel-titulo">⬆⬇ Sincronización GitHub</span>
       <button class="btn-cerrar" onclick="cerrarSync()">✕</button>
     </div>
-    <p style="color:var(--gris-texto); font-size:13px; margin-bottom:20px; line-height:1.5;">
-      Los datos se guardan localmente en el navegador. Usa estas opciones para hacer copia de seguridad o transferir datos entre dispositivos mediante un archivo JSON.
-    </p>
 
-    <div style="background:rgba(0,0,0,0.2); border-radius:10px; padding:16px; margin-bottom:16px;">
-      <div style="font-size:13px; font-weight:700; color:var(--naranja); margin-bottom:10px;">📥 EXPORTAR datos</div>
-      <p style="font-size:12px; color:var(--gris-texto); margin-bottom:12px;">Descarga un archivo JSON con todas las incidencias. Súbelo manualmente a tu repositorio GitHub.</p>
-      <button class="btn btn-primary" onclick="exportarDatos()" style="width:100%">⬇ Descargar regin-datos.json</button>
-    </div>
-
-    <div style="background:rgba(0,0,0,0.2); border-radius:10px; padding:16px; margin-bottom:16px;">
-      <div style="font-size:13px; font-weight:700; color:var(--verde); margin-bottom:10px;">📤 IMPORTAR datos</div>
-      <p style="font-size:12px; color:var(--gris-texto); margin-bottom:12px;">Carga un archivo JSON previamente exportado. <strong style="color:var(--amarillo);">Sustituirá los datos actuales.</strong></p>
-      <input type="file" id="inputImportar" accept=".json" style="display:none" onchange="importarDatos(event)">
-      <button class="btn btn-ghost" onclick="document.getElementById('inputImportar').click()" style="width:100%">📂 Seleccionar archivo JSON</button>
-    </div>
-
-    <div style="background:rgba(0,0,0,0.2); border-radius:10px; padding:14px;">
-      <div style="font-size:12px; color:var(--gris-texto); line-height:1.6;">
-        <strong style="color:var(--blanco);">💡 Flujo recomendado con GitHub:</strong><br>
-        1. Desde el móvil: registra incidencias → exporta JSON<br>
-        2. Sube el JSON a tu repositorio GitHub (reemplaza el archivo)<br>
-        3. Desde el PC: descarga el JSON del repo → importa en REGIN<br>
-        4. Trabaja el parte → marca incidencias como pasadas → exporta<br>
-        5. Sube el JSON actualizado a GitHub
+    <!-- Config GitHub -->
+    <div style="background:rgba(0,0,0,0.2); border-radius:10px; padding:14px; margin-bottom:14px;">
+      <div style="font-size:12px; font-weight:700; color:var(--amarillo); margin-bottom:10px;">⚙️ CONFIGURACIÓN (solo una vez)</div>
+      <div class="form-group" style="margin-bottom:10px;">
+        <label>Usuario GitHub</label>
+        <input type="text" id="gh-usuario" class="form-control" placeholder="Ej: djimenezab">
       </div>
+      <div class="form-group" style="margin-bottom:10px;">
+        <label>Repositorio</label>
+        <input type="text" id="gh-repo" class="form-control" placeholder="Ej: app-regin">
+      </div>
+      <div class="form-group" style="margin-bottom:10px;">
+        <label>Nombre del archivo de datos</label>
+        <input type="text" id="gh-archivo" class="form-control" placeholder="regin-datos.json">
+      </div>
+      <div class="form-group" style="margin-bottom:10px;">
+        <label>Token de acceso <span style="color:var(--gris-texto);font-weight:400;text-transform:none;letter-spacing:0;font-size:11px;">— se guarda solo en este dispositivo</span></label>
+        <input type="password" id="gh-token" class="form-control" placeholder="ghp_xxxxxxxxxxxx">
+      </div>
+      <button class="btn btn-ghost" style="width:100%" onclick="guardarConfigGH()">💾 Guardar configuración</button>
+      <div id="gh-config-estado" style="font-size:12px; margin-top:8px; text-align:center;"></div>
     </div>
 
-    <button class="btn btn-ghost" onclick="cerrarSync()" style="width:100%; margin-top:16px;">Cerrar</button>
+    <!-- Acciones sync -->
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-bottom:14px;">
+      <button class="btn btn-primary" onclick="subirAGitHub()" style="flex-direction:column; padding:14px 10px; gap:4px;">
+        <span style="font-size:20px;">☁️</span>
+        <span>Subir datos</span>
+        <span style="font-size:11px; opacity:0.8; font-weight:400;">Móvil → GitHub</span>
+      </button>
+      <button class="btn btn-ghost" onclick="descargarDeGitHub()" style="flex-direction:column; padding:14px 10px; gap:4px; border-color:var(--verde); color:var(--verde);">
+        <span style="font-size:20px;">📥</span>
+        <span>Descargar datos</span>
+        <span style="font-size:11px; opacity:0.8; font-weight:400;">GitHub → Este dispositivo</span>
+      </button>
+    </div>
+
+    <div id="sync-estado" style="font-size:13px; text-align:center; min-height:20px; color:var(--gris-texto); margin-bottom:12px;"></div>
+
+    <!-- Ayuda token -->
+    <details style="cursor:pointer;">
+      <summary style="font-size:12px; color:var(--gris-texto); padding:8px 0;">❓ ¿Cómo obtengo el token?</summary>
+      <div style="font-size:12px; color:var(--gris-texto); line-height:1.7; padding:10px 0;">
+        1. Ve a <strong style="color:var(--blanco);">github.com → Settings → Developer settings</strong><br>
+        2. Haz clic en <strong style="color:var(--blanco);">Personal access tokens → Tokens (classic)</strong><br>
+        3. Pulsa <strong style="color:var(--blanco);">Generate new token (classic)</strong><br>
+        4. Dale un nombre (ej: "REGIN") y marca solo el permiso <strong style="color:var(--naranja);">repo</strong><br>
+        5. Copia el token generado y pégalo aquí<br><br>
+        <strong style="color:var(--amarillo);">⚠️ El token solo se muestra una vez en GitHub.</strong>
+      </div>
+    </details>
+
+    <button class="btn btn-ghost" onclick="cerrarSync()" style="width:100%; margin-top:12px;">Cerrar</button>
   </div>
 </div>
 
@@ -806,48 +831,140 @@ function setFiltro(filtro, el) {
 }
 
 // ════════════════════════════════════════
-//  SYNC / IMPORTAR / EXPORTAR
+//  SYNC GITHUB
 // ════════════════════════════════════════
+const GH_KEY = 'regin_gh_config';
+
+function cargarConfigGH() {
+  try { return JSON.parse(localStorage.getItem(GH_KEY)) || {}; } catch(e) { return {}; }
+}
+
 function abrirSync() {
+  const cfg = cargarConfigGH();
+  document.getElementById('gh-usuario').value = cfg.usuario || '';
+  document.getElementById('gh-repo').value = cfg.repo || '';
+  document.getElementById('gh-archivo').value = cfg.archivo || 'regin-datos.json';
+  document.getElementById('gh-token').value = cfg.token || '';
+  document.getElementById('gh-config-estado').textContent = cfg.token ? '✅ Configuración guardada' : '';
+  document.getElementById('gh-config-estado').style.color = 'var(--verde)';
+  document.getElementById('sync-estado').textContent = '';
   document.getElementById('overlaySync').classList.add('visible');
 }
+
 function cerrarSync() {
   document.getElementById('overlaySync').classList.remove('visible');
 }
 
-function exportarDatos() {
-  const json = JSON.stringify({ version: '1.0', exportado: new Date().toISOString(), incidencias }, null, 2);
-  const blob = new Blob([json], { type: 'application/json' });
-  const url = URL.createObjectURL(blob);
-  const a = document.createElement('a');
-  a.href = url;
-  a.download = 'regin-datos.json';
-  a.click();
-  URL.revokeObjectURL(url);
-  toast('⬇ Exportación completada', 'ok');
+function guardarConfigGH() {
+  const cfg = {
+    usuario: document.getElementById('gh-usuario').value.trim(),
+    repo: document.getElementById('gh-repo').value.trim(),
+    archivo: document.getElementById('gh-archivo').value.trim() || 'regin-datos.json',
+    token: document.getElementById('gh-token').value.trim()
+  };
+  if (!cfg.usuario || !cfg.repo || !cfg.token) {
+    document.getElementById('gh-config-estado').textContent = '⚠️ Rellena usuario, repositorio y token';
+    document.getElementById('gh-config-estado').style.color = 'var(--naranja)';
+    return;
+  }
+  localStorage.setItem(GH_KEY, JSON.stringify(cfg));
+  document.getElementById('gh-config-estado').textContent = '✅ Configuración guardada en este dispositivo';
+  document.getElementById('gh-config-estado').style.color = 'var(--verde)';
 }
 
-function importarDatos(event) {
-  const file = event.target.files[0];
-  if (!file) return;
-  const reader = new FileReader();
-  reader.onload = e => {
-    try {
-      const datos = JSON.parse(e.target.result);
-      if (!datos.incidencias || !Array.isArray(datos.incidencias)) {
-        toast('⚠️ Archivo no válido', 'err'); return;
-      }
-      incidencias = datos.incidencias;
-      guardarDatos();
-      renderLista();
-      cerrarSync();
-      toast(`✓ ${incidencias.length} incidencias importadas`, 'ok');
-    } catch(err) {
-      toast('❌ Error al leer el archivo', 'err');
+function setSyncEstado(msg, color = 'var(--gris-texto)') {
+  const el = document.getElementById('sync-estado');
+  el.textContent = msg;
+  el.style.color = color;
+}
+
+async function subirAGitHub() {
+  const cfg = cargarConfigGH();
+  if (!cfg.token || !cfg.usuario || !cfg.repo) {
+    setSyncEstado('⚠️ Configura primero usuario, repositorio y token', 'var(--naranja)'); return;
+  }
+
+  setSyncEstado('⏳ Subiendo datos a GitHub...', 'var(--amarillo)');
+
+  const contenido = JSON.stringify({ version: '1.0', exportado: new Date().toISOString(), incidencias }, null, 2);
+  const base64 = btoa(unescape(encodeURIComponent(contenido)));
+  const apiUrl = `https://api.github.com/repos/${cfg.usuario}/${cfg.repo}/contents/${cfg.archivo}`;
+
+  try {
+    // Obtener SHA actual del archivo (necesario para actualizarlo)
+    let sha = null;
+    const getRes = await fetch(apiUrl, {
+      headers: { 'Authorization': `token ${cfg.token}`, 'Accept': 'application/vnd.github.v3+json' }
+    });
+    if (getRes.ok) {
+      const getData = await getRes.json();
+      sha = getData.sha;
     }
-  };
-  reader.readAsText(file);
-  event.target.value = '';
+
+    const body = {
+      message: `REGIN sync ${new Date().toLocaleString('es-ES')}`,
+      content: base64,
+      ...(sha ? { sha } : {})
+    };
+
+    const putRes = await fetch(apiUrl, {
+      method: 'PUT',
+      headers: {
+        'Authorization': `token ${cfg.token}`,
+        'Accept': 'application/vnd.github.v3+json',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(body)
+    });
+
+    if (putRes.ok) {
+      setSyncEstado(`✅ Datos subidos correctamente (${incidencias.length} incidencias)`, 'var(--verde)');
+      toast('☁️ Datos subidos a GitHub', 'ok');
+    } else {
+      const err = await putRes.json();
+      setSyncEstado('❌ Error: ' + (err.message || putRes.status), 'var(--rojo)');
+    }
+  } catch(e) {
+    setSyncEstado('❌ Error de red: ' + e.message, 'var(--rojo)');
+  }
+}
+
+async function descargarDeGitHub() {
+  const cfg = cargarConfigGH();
+  if (!cfg.token || !cfg.usuario || !cfg.repo) {
+    setSyncEstado('⚠️ Configura primero usuario, repositorio y token', 'var(--naranja)'); return;
+  }
+
+  setSyncEstado('⏳ Descargando datos de GitHub...', 'var(--amarillo)');
+
+  const apiUrl = `https://api.github.com/repos/${cfg.usuario}/${cfg.repo}/contents/${cfg.archivo}`;
+
+  try {
+    const res = await fetch(apiUrl, {
+      headers: { 'Authorization': `token ${cfg.token}`, 'Accept': 'application/vnd.github.v3+json' }
+    });
+
+    if (!res.ok) {
+      const err = await res.json();
+      setSyncEstado('❌ Error: ' + (err.message || res.status), 'var(--rojo)'); return;
+    }
+
+    const data = await res.json();
+    const texto = decodeURIComponent(escape(atob(data.content.replace(/\n/g, ''))));
+    const parsed = JSON.parse(texto);
+
+    if (!parsed.incidencias || !Array.isArray(parsed.incidencias)) {
+      setSyncEstado('❌ El archivo no tiene el formato correcto', 'var(--rojo)'); return;
+    }
+
+    incidencias = parsed.incidencias;
+    guardarDatos();
+    renderLista();
+    setSyncEstado(`✅ ${incidencias.length} incidencias descargadas`, 'var(--verde)');
+    toast('📥 Datos descargados de GitHub', 'ok');
+  } catch(e) {
+    setSyncEstado('❌ Error: ' + e.message, 'var(--rojo)');
+  }
 }
 
 // ════════════════════════════════════════
