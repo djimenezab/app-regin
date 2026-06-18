@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>REGIN v1.2 — Registro de Incidencias</title>
+<title>REGIN v1.3 — Registro de Incidencias</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 <style>
@@ -170,7 +170,7 @@
     <div class="logo-icon">🚨</div>
     <div class="logo-text">
       <h1>REGIN</h1>
-      <span>v1.2 — Registro de Incidencias</span>
+      <span>v1.3 — Registro de Incidencias</span>
     </div>
   </div>
   <div class="header-actions">
@@ -322,6 +322,39 @@
             <div id="turno-sur-tel" style="font-family:'JetBrains Mono',monospace; font-size:12px; color:var(--verde); margin-top:6px; min-height:18px;"></div>
           </div>
         </div>
+      </div>
+
+      <!-- CAMBIOS DE TURNO -->
+      <div style="background:rgba(0,0,0,0.2); border-radius:10px; padding:14px; margin-bottom:14px;">
+        <div style="font-size:12px; font-weight:700; color:var(--amarillo); margin-bottom:10px;">🔄 CAMBIOS DE TURNO</div>
+        <p style="font-size:12px; color:var(--gris-texto); margin-bottom:12px; line-height:1.5;">Si un coordinador cubre a otro en un periodo concreto, regístralo aquí. REGIN usará este sustituto automáticamente si la incidencia coincide con ese periodo.</p>
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-bottom:8px;">
+          <div class="form-group" style="margin:0;">
+            <label>Zona</label>
+            <select id="cambio-zona" class="form-control">
+              <option value="Norte">🔵 Zona Norte</option>
+              <option value="Sur">🟣 Zona Sur</option>
+            </select>
+          </div>
+          <div class="form-group" style="margin:0;">
+            <label>Coordinador sustituto</label>
+            <select id="cambio-coord" class="form-control">
+              <option value="">— Seleccionar —</option>
+            </select>
+          </div>
+        </div>
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-bottom:10px;">
+          <div class="form-group" style="margin:0;">
+            <label>Desde</label>
+            <input type="datetime-local" id="cambio-desde" class="form-control">
+          </div>
+          <div class="form-group" style="margin:0;">
+            <label>Hasta</label>
+            <input type="datetime-local" id="cambio-hasta" class="form-control">
+          </div>
+        </div>
+        <button class="btn btn-primary" style="width:100%; margin-bottom:12px;" onclick="agregarCambioTurno()">➕ Registrar cambio</button>
+        <div id="lista-cambios"></div>
       </div>
 
       <!-- AGENDA -->
@@ -610,14 +643,17 @@ function actualizarZona() {
 
   if (resultado) {
     const zona = resultado.zona.toLowerCase();
-    const coord = zona === 'norte' ? coordinadores.norte : coordinadores.sur;
+    const coord = getCoordActual(zona);
     const el = document.getElementById('zona-' + zona);
     el.style.display = 'block';
 
-    // Info coordinador
+    // Info coordinador (con aviso si es sustituto)
     const infoEl = document.getElementById('zona-' + zona + '-info');
-    if (coord.nombre || coord.tel) {
-      infoEl.innerHTML = `👤 <strong>${coord.nombre || 'Sin nombre'}</strong>` +
+    if (coord) {
+      const sustTag = coord.esSustituto
+        ? `<span style="font-size:11px;font-weight:700;color:var(--naranja);background:rgba(244,114,43,0.15);padding:2px 7px;border-radius:4px;margin-left:6px;">⚡ SUSTITUTO</span>`
+        : '';
+      infoEl.innerHTML = `👤 <strong>${coord.nombre}</strong>${sustTag}` +
         (coord.tel ? ` &nbsp;·&nbsp; <a href="tel:${coord.tel}">📞 ${coord.tel}</a>` : '');
     } else {
       infoEl.innerHTML = '<span style="color:var(--amarillo); font-size:12px;">⚠️ Coordinador no configurado — ve a ⚙️ Configuración</span>';
@@ -972,14 +1008,99 @@ let turno  = cargarLS(TURNO_KEY,  { norte: '', sur: '' });
   if (agenda.length) guardarLS(AGENDA_KEY, agenda);
 })();
 
-function getCoordActual(zona) {
+const CAMBIOS_KEY = 'regin_cambios_turno';
+let cambiosTurno = cargarLS(CAMBIOS_KEY, []);
+
+// Devuelve el coordinador efectivo en este momento para una zona
+// Prioridad: cambio activo > turno semanal
+function getCoordActual(zona, fechaTs) {
+  const ahora_ts = fechaTs || Date.now();
+  // Buscar cambio activo
+  const cambio = cambiosTurno.find(c =>
+    c.zona.toLowerCase() === zona.toLowerCase() &&
+    ahora_ts >= new Date(c.desde).getTime() &&
+    ahora_ts <= new Date(c.hasta).getTime()
+  );
+  if (cambio) {
+    const persona = agenda.find(p => p.id === cambio.coordId);
+    return persona ? { ...persona, esSustituto: true, cambio } : null;
+  }
+  // Turno normal
   const id = turno[zona];
-  return agenda.find(p => p.id === id) || null;
+  const persona = agenda.find(p => p.id === id);
+  return persona ? { ...persona, esSustituto: false } : null;
 }
+
+function poblarSelectCambio() {
+  const sel = document.getElementById('cambio-coord');
+  if (!sel) return;
+  sel.innerHTML = '<option value="">— Seleccionar —</option>' +
+    agenda.map(p => `<option value="${p.id}">${p.nombre}</option>`).join('');
+}
+
+function agregarCambioTurno() {
+  const zona   = document.getElementById('cambio-zona').value;
+  const coordId= document.getElementById('cambio-coord').value;
+  const desde  = document.getElementById('cambio-desde').value;
+  const hasta  = document.getElementById('cambio-hasta').value;
+  if (!coordId) { toast('⚠️ Selecciona el coordinador sustituto','err'); return; }
+  if (!desde || !hasta) { toast('⚠️ Indica fecha y hora de inicio y fin','err'); return; }
+  if (new Date(hasta) <= new Date(desde)) { toast('⚠️ La fecha fin debe ser posterior al inicio','err'); return; }
+  const persona = agenda.find(p => p.id === coordId);
+  cambiosTurno.push({ id: Date.now().toString(), zona, coordId, desde, hasta, nombreCoord: persona ? persona.nombre : '' });
+  guardarLS(CAMBIOS_KEY, cambiosTurno);
+  document.getElementById('cambio-coord').value = '';
+  document.getElementById('cambio-desde').value = '';
+  document.getElementById('cambio-hasta').value = '';
+  renderCambiosTurno();
+  toast('✓ Cambio de turno registrado','ok');
+}
+
+function eliminarCambio(id) {
+  cambiosTurno = cambiosTurno.filter(c => c.id !== id);
+  guardarLS(CAMBIOS_KEY, cambiosTurno);
+  renderCambiosTurno();
+  toast('🗑 Cambio eliminado');
+}
+
+function renderCambiosTurno() {
+  const el = document.getElementById('lista-cambios');
+  if (!el) return;
+  // Limpiar caducados (más de 7 días pasados) automáticamente
+  const hace7dias = Date.now() - 7*24*60*60*1000;
+  cambiosTurno = cambiosTurno.filter(c => new Date(c.hasta).getTime() > hace7dias);
+  guardarLS(CAMBIOS_KEY, cambiosTurno);
+
+  if (!cambiosTurno.length) {
+    el.innerHTML = '<p style="font-size:12px;color:var(--gris-texto);text-align:center;padding:10px 0;">No hay cambios registrados.</p>';
+    return;
+  }
+  const ahora_ts = Date.now();
+  const sorted = [...cambiosTurno].sort((a,b) => new Date(a.desde)-new Date(b.desde));
+  el.innerHTML = sorted.map(c => {
+    const activo = ahora_ts >= new Date(c.desde).getTime() && ahora_ts <= new Date(c.hasta).getTime();
+    const zc = c.zona === 'Norte' ? 'norte' : 'sur';
+    const fmtFecha = s => { const d = new Date(s); return d.toLocaleDateString('es-ES',{day:'2-digit',month:'2-digit'}) + ' ' + d.toLocaleTimeString('es-ES',{hour:'2-digit',minute:'2-digit'}); };
+    const persona = agenda.find(p => p.id === c.coordId);
+    return `<div style="background:${activo?'rgba(244,114,43,0.12)':'rgba(0,0,0,0.1)'}; border:1px solid ${activo?'var(--naranja)':'var(--borde)'}; border-radius:8px; padding:10px 12px; margin-bottom:8px;">
+      <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+        <span class="zona-chip ${zc}">${c.zona==='Norte'?'🔵':'🟣'} ${c.zona}</span>
+        ${activo ? '<span style="font-size:11px;font-weight:700;color:var(--naranja);background:rgba(244,114,43,0.15);padding:2px 8px;border-radius:4px;">⚡ ACTIVO AHORA</span>' : ''}
+        <button class="btn-del" style="margin-left:auto;" onclick="eliminarCambio('${c.id}')">🗑</button>
+      </div>
+      <div style="margin-top:6px; font-size:13px; color:var(--blanco); font-weight:600;">👤 ${c.nombreCoord}${persona && persona.tel ? ` <a href="tel:${persona.tel}" style="font-size:12px;color:var(--verde);font-weight:400;text-decoration:none;margin-left:6px;">📞 ${persona.tel}</a>` : ''}</div>
+      <div style="margin-top:4px; font-family:'JetBrains Mono',monospace; font-size:11px; color:var(--gris-texto);">📅 ${fmtFecha(c.desde)} → ${fmtFecha(c.hasta)}</div>
+    </div>`;
+  }).join('');
+}
+
+poblarSelectCambio;
 
 function cargarCoordinadoresForm() {
   renderAgenda();
   poblarSelectsTurno();
+  poblarSelectCambio();
+  renderCambiosTurno();
   document.getElementById('coord-estado').textContent = '';
 }
 
@@ -1120,16 +1241,18 @@ async function subirAGitHub() {
   const tramosActual       = cargarLS(TRAMOS_KEY, []);
   const docsActual         = cargarLS(DOCS_KEY, []);
 
+  const cambiosActual      = cargarLS(CAMBIOS_KEY, []);
   setSyncEstado(`⏳ Subiendo: ${incidencias.length} incidencias · ${tramosActual.length} tramos · ${agendaActual.length} coordinadores...`, 'var(--amarillo)');
 
   const payload = {
-    version: '1.2',
+    version: '1.3',
     exportado: new Date().toISOString(),
     incidencias,
     tramos:        tramosActual,
     coordinadores: coordinadoresActual,
     agenda:        agendaActual,
     turno:         turnoActual,
+    cambiosTurno:  cambiosActual,
     documentos:    docsActual
   };
   const base64 = btoa(unescape(encodeURIComponent(JSON.stringify(payload, null, 2))));
@@ -1164,6 +1287,7 @@ async function descargarDeGitHub() {
     if (parsed.coordinadores){ coordinadores=parsed.coordinadores; guardarLS(COORD_KEY, coordinadores); }
     if (parsed.agenda)       { agenda=parsed.agenda;             guardarLS(AGENDA_KEY, agenda); }
     if (parsed.turno)        { turno=parsed.turno;               guardarLS(TURNO_KEY,  turno); }
+    if (parsed.cambiosTurno) { cambiosTurno=parsed.cambiosTurno; guardarLS(CAMBIOS_KEY, cambiosTurno); }
     if (parsed.documentos)   { documentos=parsed.documentos;     guardarLS(DOCS_KEY,   documentos); }
     guardarDatos(); renderLista();
     setSyncEstado(`✅ ${incidencias.length} incidencias descargadas`,'var(--verde)');
