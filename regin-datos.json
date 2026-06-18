@@ -1,6 +1,6 @@
 {
   "version": "1.2",
-  "exportado": "2026-06-18T14:23:57.640Z",
+  "exportado": "2026-06-18T14:32:21.464Z",
   "incidencias": [],
   "tramos": [
     {
@@ -474,5 +474,15 @@
     "norte": "1781779351056",
     "sur": "1781779395115"
   },
-  "documentos": []
+  "documentos": [
+    {
+      "id": "1781793023350",
+      "nombre": "Plano ZONA 2",
+      "categoria": "Planos",
+      "desc": "Plano básico zona 2",
+      "archivo": "docs/Plano_ZONA_2_1781793021471.pdf",
+      "url": "https://raw.githubusercontent.com/djimenezab/app-regin/main/docs/Plano_ZONA_2_1781793021471.pdf",
+      "fecha": "18/6/2026"
+    }
+  ]
 }
