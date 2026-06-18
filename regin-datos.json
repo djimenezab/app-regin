@@ -1,1 +1,456 @@
-
+{
+  "version": "1.1",
+  "exportado": "2026-06-18T14:16:52.876Z",
+  "incidencias": [],
+  "tramos": [
+    {
+      "carretera": "CM-332",
+      "zona": "Norte",
+      "pkIni": "0+000",
+      "pkFin": "56+010",
+      "tramoDesc": "Albacete - L.P. Valencia",
+      "obs": ""
+    },
+    {
+      "carretera": "CM-220",
+      "zona": "Norte",
+      "pkIni": "17+575",
+      "pkFin": "40+238",
+      "tramoDesc": "La Gineta - L.P. Cuenca",
+      "obs": ""
+    },
+    {
+      "carretera": "CM-316",
+      "zona": "Norte",
+      "pkIni": "0+000",
+      "pkFin": "77+609",
+      "tramoDesc": "Munera - Mahora",
+      "obs": ""
+    },
+    {
+      "carretera": "CM-3106",
+      "zona": "Norte",
+      "pkIni": "0+000",
+      "pkFin": "77+609",
+      "obs": "EXTINGUIDA, AHORA ES CM-316"
+    },
+    {
+      "carretera": "CM-3114",
+      "zona": "Norte",
+      "pkIni": "0+000",
+      "pkFin": "15+910",
+      "tramoDesc": "La Roda - L.P. Cuenca",
+      "obs": ""
+    },
+    {
+      "carretera": "CM-3116",
+      "zona": "Norte",
+      "pkIni": "0+000",
+      "pkFin": "4+245",
+      "tramoDesc": "Tarazona de la Mancha - L.P. Cuenca",
+      "obs": ""
+    },
+    {
+      "carretera": "CM-3119",
+      "zona": "Norte",
+      "pkIni": "0+000",
+      "pkFin": "26+115",
+      "tramoDesc": "Villarrobledo - Munera",
+      "obs": ""
+    },
+    {
+      "carretera": "CM-3121",
+      "zona": "Norte",
+      "pkIni": "0+000",
+      "pkFin": "44+265",
+      "tramoDesc": "Villarrobledo - Barrax",
+      "obs": ""
+    },
+    {
+      "carretera": "CM-3123",
+      "zona": "Norte",
+      "pkIni": "0+000",
+      "pkFin": "22+400",
+      "tramoDesc": "Villarrobledo - CM-313",
+      "obs": ""
+    },
+    {
+      "carretera": "CM-3123",
+      "zona": "Sur",
+      "pkIni": "22+400",
+      "pkFin": "35+325",
+      "tramoDesc": "CM-313 - Ossa de Montiel",
+      "obs": ""
+    },
+    {
+      "carretera": "AB-507",
+      "zona": "Sur",
+      "pkIni": "0+000",
+      "pkFin": "10+700",
+      "tramoDesc": "",
+      "obs": "AHORA ES CM-3229"
+    },
+    {
+      "carretera": "CM-3229",
+      "zona": "Sur",
+      "pkIni": "0+000",
+      "pkFin": "11+700",
+      "tramoDesc": "Nerpio - L.P. Murcia",
+      "obs": "ANTES AB-507"
+    },
+    {
+      "carretera": "CM-3124",
+      "zona": "Norte",
+      "pkIni": "48+280",
+      "pkFin": "61+800",
+      "tramoDesc": "L.P. Cuenca - Villamalea",
+      "obs": ""
+    },
+    {
+      "carretera": "CM-313",
+      "zona": "Norte",
+      "pkIni": "13+565",
+      "pkFin": "82+500",
+      "tramoDesc": "L.P. Ciudad Real - N-322",
+      "obs": "ANTES CM-400"
+    },
+    {
+      "carretera": "CM-313",
+      "zona": "Sur",
+      "pkIni": "82+500",
+      "pkFin": "144+650",
+      "tramoDesc": "N-322 - Hellín",
+      "obs": ""
+    },
+    {
+      "carretera": "CM-3133",
+      "zona": "Sur",
+      "pkIni": "0+000",
+      "pkFin": "33+850",
+      "tramoDesc": "Munera - N-322",
+      "obs": ""
+    },
+    {
+      "carretera": "CM-3135",
+      "zona": "Norte",
+      "pkIni": "0+000",
+      "pkFin": "37+210",
+      "tramoDesc": "La Roda - Balazote",
+      "obs": ""
+    },
+    {
+      "carretera": "CM-3151",
+      "zona": "Norte",
+      "pkIni": "0+000",
+      "pkFin": "13+270",
+      "tramoDesc": "N-430 - CM-3119",
+      "obs": ""
+    },
+    {
+      "carretera": "CM-3152",
+      "zona": "Sur",
+      "pkIni": "0+000",
+      "pkFin": "19+675",
+      "tramoDesc": "El Bonillo - Lezuza",
+      "obs": "AHORA ES DE DIPUTACIÓN AB-614"
+    },
+    {
+      "carretera": "CM-320",
+      "zona": "Sur",
+      "pkIni": "5+370",
+      "pkFin": "24+480",
+      "tramoDesc": "L.P. Ciudad Real - N-322",
+      "obs": ""
+    },
+    {
+      "carretera": "CM-3168",
+      "zona": "Sur",
+      "pkIni": "0",
+      "pkFin": "10",
+      "tramoDesc": "Ossa de Montiel - CM-320",
+      "obs": "AHORA ES DE DIPUTACION"
+    },
+    {
+      "carretera": "CM-3169",
+      "zona": "Sur",
+      "pkIni": "0",
+      "pkFin": "10",
+      "tramoDesc": "Ossa de Montiel - CM-320",
+      "obs": "AHORA ES DE DIPUTACIÓN"
+    },
+    {
+      "carretera": "CM-3201",
+      "zona": "Norte",
+      "pkIni": "22+075",
+      "pkFin": "98+895",
+      "tramoDesc": "L.P. Cuenca - A-31",
+      "obs": ""
+    },
+    {
+      "carretera": "CM-3203",
+      "zona": "Norte",
+      "pkIni": "0+000",
+      "pkFin": "31+200",
+      "tramoDesc": "Albacete - CM-313",
+      "obs": ""
+    },
+    {
+      "carretera": "CM-3203",
+      "zona": "Sur",
+      "pkIni": "31+200",
+      "pkFin": "82+970",
+      "tramoDesc": "CM-313 - Elche de la Sierra",
+      "obs": ""
+    },
+    {
+      "carretera": "CM-3204",
+      "zona": "Sur",
+      "pkIni": "0+000",
+      "pkFin": "19+750",
+      "tramoDesc": "CM-412 - L.P. Jaén",
+      "obs": ""
+    },
+    {
+      "carretera": "CM-3205",
+      "zona": "Sur",
+      "pkIni": "0+000",
+      "pkFin": "24+360",
+      "tramoDesc": "N-322 - CM-3204",
+      "obs": ""
+    },
+    {
+      "carretera": "CM-3206",
+      "zona": "Sur",
+      "pkIni": "0+000",
+      "pkFin": "26+770",
+      "tramoDesc": "CM-412 - Int. AB-512",
+      "obs": ""
+    },
+    {
+      "carretera": "CM-3207",
+      "zona": "Norte",
+      "pkIni": "0+000",
+      "pkFin": "21+570",
+      "tramoDesc": "Alborea - L.P. Valencia",
+      "obs": ""
+    },
+    {
+      "carretera": "CM-3208",
+      "zona": "Sur",
+      "pkIni": "0+000",
+      "pkFin": "11+840",
+      "tramoDesc": "CM-412 - N-322",
+      "obs": ""
+    },
+    {
+      "carretera": "CM-3209",
+      "zona": "Norte",
+      "pkIni": "0+000",
+      "pkFin": "55+385",
+      "tramoDesc": "CM-332 - L.P. Murcia",
+      "obs": ""
+    },
+    {
+      "carretera": "CM-3210",
+      "zona": "Norte",
+      "pkIni": "0+000",
+      "pkFin": "18+640",
+      "tramoDesc": "Pozohondo - Pozocañada",
+      "obs": ""
+    },
+    {
+      "carretera": "CM-3211",
+      "zona": "Norte",
+      "pkIni": "0+000",
+      "pkFin": "41+450",
+      "tramoDesc": "A-31 - L.P. Murcia",
+      "obs": ""
+    },
+    {
+      "carretera": "CM-3212",
+      "zona": "Norte",
+      "pkIni": "0+000",
+      "pkFin": "10+135",
+      "tramoDesc": "A-30 - L.P. Murcia",
+      "obs": ""
+    },
+    {
+      "carretera": "CM-3213",
+      "zona": "Sur",
+      "pkIni": "0+000",
+      "pkFin": "30+235",
+      "tramoDesc": "CM-3203 - Hellín",
+      "obs": ""
+    },
+    {
+      "carretera": "CM-3214",
+      "zona": "Norte",
+      "pkIni": "0+000",
+      "pkFin": "17+445",
+      "tramoDesc": "CM-3211 - A-30",
+      "obs": ""
+    },
+    {
+      "carretera": "CM-3215",
+      "zona": "Norte",
+      "pkIni": "0+000",
+      "pkFin": "23+360",
+      "tramoDesc": "Tobarra - L.P. Murcia",
+      "obs": ""
+    },
+    {
+      "carretera": "CM-3216",
+      "zona": "Sur",
+      "pkIni": "0+000",
+      "pkFin": "63+035",
+      "tramoDesc": "N-322 - CM-3203",
+      "obs": ""
+    },
+    {
+      "carretera": "CM-3217",
+      "zona": "Sur",
+      "pkIni": "0+000",
+      "pkFin": "31+135",
+      "tramoDesc": "Elche de la Sierra - L.P. Murcia",
+      "obs": ""
+    },
+    {
+      "carretera": "CM-3218",
+      "zona": "Norte",
+      "pkIni": "0+000",
+      "pkFin": "48+538",
+      "tramoDesc": "CM-332 - Casas Ibañez",
+      "obs": "Trav. Valdeganga NO, y 46+959 a 47+813 N-322"
+    },
+    {
+      "carretera": "CM-3220",
+      "zona": "Norte",
+      "pkIni": "0+000",
+      "pkFin": "16+265",
+      "tramoDesc": "Almansa - L.P. Murcia",
+      "obs": ""
+    },
+    {
+      "carretera": "CM-3222",
+      "zona": "Norte",
+      "pkIni": "0+000",
+      "pkFin": "17+975",
+      "tramoDesc": "N-322 - L.P. Cuenca",
+      "obs": "Trav. Madrigueras NO"
+    },
+    {
+      "carretera": "CM-3225",
+      "zona": "Sur",
+      "pkIni": "0+000",
+      "pkFin": "60+650",
+      "tramoDesc": "Letur - Nerpio",
+      "obs": ""
+    },
+    {
+      "carretera": "CM-3226",
+      "zona": "Norte",
+      "pkIni": "0+000",
+      "pkFin": "22+190",
+      "tramoDesc": "Mahora - Villamalea",
+      "obs": ""
+    },
+    {
+      "carretera": "CM-3227",
+      "zona": "Norte",
+      "pkIni": "0+000",
+      "pkFin": "11+780",
+      "tramoDesc": "CM-332 - CM-3201",
+      "obs": ""
+    },
+    {
+      "carretera": "CM-3250",
+      "zona": "Norte",
+      "pkIni": "0+000",
+      "pkFin": "10+000",
+      "tramoDesc": "A-30 - L.P. Murcia",
+      "obs": ""
+    },
+    {
+      "carretera": "CM-3262",
+      "zona": "Sur",
+      "pkIni": "0+000",
+      "pkFin": "5+840",
+      "tramoDesc": "A-30 - Est. Agramón",
+      "obs": ""
+    },
+    {
+      "carretera": "CM-3251",
+      "zona": "Norte",
+      "pkIni": "0+000",
+      "pkFin": "14+050",
+      "tramoDesc": "Balazote - Tiriez",
+      "obs": ""
+    },
+    {
+      "carretera": "CM-3259",
+      "zona": "Norte",
+      "pkIni": "0+000",
+      "pkFin": "5+080",
+      "tramoDesc": "Albatana - L.P. Murcia",
+      "obs": ""
+    },
+    {
+      "carretera": "CM-3261",
+      "zona": "Norte",
+      "pkIni": "0+000",
+      "pkFin": "18+530",
+      "tramoDesc": "Pétrola - Bonete",
+      "obs": ""
+    },
+    {
+      "carretera": "CM-3263",
+      "zona": "Sur",
+      "pkIni": "0+000",
+      "pkFin": "23+420",
+      "tramoDesc": "Yeste - Parolix",
+      "obs": ""
+    },
+    {
+      "carretera": "CM-3264",
+      "zona": "Sur",
+      "pkIni": "0+000",
+      "pkFin": "7+375",
+      "tramoDesc": "CM-3206 - Fuente Higuera",
+      "obs": ""
+    },
+    {
+      "carretera": "CM-412",
+      "zona": "Sur",
+      "pkIni": "158+970",
+      "pkFin": "274+900",
+      "tramoDesc": "L.P. Ciudad Real - Hellín",
+      "obs": ""
+    },
+    {
+      "carretera": "CM-412",
+      "zona": "Norte",
+      "pkIni": "158+970",
+      "pkFin": "344+475",
+      "tramoDesc": "Hellín - Almansa",
+      "obs": ""
+    },
+    {
+      "carretera": "AB-5014",
+      "zona": "Sur",
+      "pkIni": "0+000",
+      "pkFin": "8+425",
+      "tramoDesc": "Nerpio - Pedro Andrés",
+      "obs": ""
+    }
+  ],
+  "coordinadores": {
+    "norte": {
+      "nombre": "Miguel A. Martínez",
+      "tel": "648586171"
+    },
+    "sur": {
+      "nombre": "Damian García",
+      "tel": "600480999"
+    }
+  }
+}
