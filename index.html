@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>REGIN v1.3 — Registro de Incidencias</title>
+<title>REGIN v1.5 — Registro de Incidencias</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 <style>
@@ -61,22 +61,22 @@
   /* TARJETA */
   .tarjeta { background: var(--azul-panel); border: 1px solid var(--borde); border-radius: 12px; margin-bottom: 12px; overflow: hidden; transition: box-shadow 0.2s; }
   .tarjeta:hover { box-shadow: 0 4px 20px rgba(0,0,0,0.3); }
-  .tarjeta.abierta { border-left: 3px solid var(--naranja); }
-  .tarjeta.cerrada { border-left: 3px solid var(--verde); }
+  .tarjeta.abierta { border-left: 3px solid var(--verde); }
+  .tarjeta.cerrada { border-left: 3px solid var(--rojo); }
   .tarjeta.pasada { border-left: 3px solid var(--azul-medio); opacity: 0.75; }
   .tarjeta-header { padding: 14px 16px; display: flex; align-items: flex-start; gap: 12px; cursor: pointer; user-select: none; }
   .estado-dot { width: 10px; height: 10px; border-radius: 50%; margin-top: 5px; flex-shrink: 0; }
-  .abierta .estado-dot { background: var(--naranja); box-shadow: 0 0 0 3px rgba(244,114,43,0.25); animation: pulso 2s infinite; }
-  .cerrada .estado-dot { background: var(--verde); }
+  .abierta .estado-dot { background: var(--verde); box-shadow: 0 0 0 3px rgba(46,204,113,0.25); animation: pulso 2s infinite; }
+  .cerrada .estado-dot { background: var(--rojo); }
   .pasada .estado-dot { background: var(--gris-texto); }
-  @keyframes pulso { 0%,100%{box-shadow:0 0 0 3px rgba(244,114,43,0.25)} 50%{box-shadow:0 0 0 7px rgba(244,114,43,0.05)} }
+  @keyframes pulso { 0%,100%{box-shadow:0 0 0 3px rgba(46,204,113,0.25)} 50%{box-shadow:0 0 0 7px rgba(46,204,113,0.05)} }
   .tarjeta-meta { flex: 1; }
   .tarjeta-top { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 6px; }
   .inc-id { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--gris-texto); background: rgba(168,191,212,0.1); padding: 2px 7px; border-radius: 4px; }
   .inc-quien { font-weight: 700; font-size: 14px; color: var(--blanco); }
   .badge { font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.5px; }
-  .badge-abierta { background: rgba(244,114,43,0.2); color: var(--naranja); }
-  .badge-cerrada { background: rgba(46,204,113,0.2); color: var(--verde); }
+  .badge-abierta { background: rgba(46,204,113,0.2); color: var(--verde); }
+  .badge-cerrada { background: rgba(231,76,60,0.2); color: var(--rojo); }
   .badge-pasada { background: rgba(168,191,212,0.15); color: var(--gris-texto); }
   .badge-norte { background: rgba(59,158,218,0.2); color: var(--azul-zona); }
   .badge-sur { background: rgba(155,89,182,0.2); color: var(--morado-zona); }
@@ -155,7 +155,18 @@
   .snackbar.ok { border-color: var(--verde); }
   .snackbar.err { border-color: var(--rojo); }
 
-  @media (max-width: 480px) {
+  .tarjeta-notas { border-top: 1px solid var(--borde); background: rgba(0,0,0,0.1); }
+  .notas-toggle { width:100%; background:none; border:none; padding:9px 16px; color:var(--gris-texto); font-size:12px; font-family:'Inter',sans-serif; cursor:pointer; display:flex; align-items:center; gap:6px; text-align:left; }
+  .notas-toggle:hover { color:var(--blanco); background:rgba(255,255,255,0.03); }
+  .notas-body { display:none; padding:10px 16px 14px; }
+  .notas-body.abierto { display:block; }
+  .nota-item { display:flex; gap:8px; margin-bottom:8px; font-size:12px; }
+  .nota-ts { font-family:'JetBrains Mono',monospace; color:var(--gris-texto); white-space:nowrap; flex-shrink:0; }
+  .nota-txt { color:var(--blanco); line-height:1.4; }
+  .notas-form { display:flex; gap:8px; margin-top:10px; }
+  .notas-form input { flex:1; background:rgba(0,0,0,0.25); border:1px solid var(--borde); border-radius:6px; padding:8px 10px; color:var(--blanco); font-family:'Inter',sans-serif; font-size:13px; }
+  .notas-form input:focus { outline:none; border-color:var(--naranja); }
+  .notas-form input::placeholder { color:rgba(168,191,212,0.4); }
     .logo-text h1 { font-size: 16px; }
     .lista-container { padding: 12px; }
     .stats-bar { margin: 12px 12px 0; }
@@ -170,7 +181,7 @@
     <div class="logo-icon">🚨</div>
     <div class="logo-text">
       <h1>REGIN</h1>
-      <span>v1.3 — Registro de Incidencias</span>
+      <span>v1.5 — Registro de Incidencias</span>
     </div>
   </div>
   <div class="header-actions">
@@ -182,16 +193,16 @@
 </header>
 
 <div class="stats-bar">
-  <div class="stat-item"><div class="stat-num naranja" id="statAbiertas">0</div><div class="stat-label">Abiertas</div></div>
-  <div class="stat-item"><div class="stat-num verde" id="statCerradas">0</div><div class="stat-label">Cerradas</div></div>
+  <div class="stat-item"><div class="stat-num verde" id="statAbiertas">0</div><div class="stat-label">Abiertas</div></div>
+  <div class="stat-item"><div class="stat-num" style="color:var(--rojo)" id="statCerradas">0</div><div class="stat-label">Cerradas</div></div>
   <div class="stat-item"><div class="stat-num gris" id="statPasadas">0</div><div class="stat-label">Pasadas</div></div>
   <div class="stat-item"><div class="stat-num" id="statTotal">0</div><div class="stat-label">Total</div></div>
 </div>
 
 <div class="filtros">
   <button class="filtro-chip activo" onclick="setFiltro('todas',this)">Todas <span class="contador-chip" id="cnt-todas">0</span></button>
-  <button class="filtro-chip" onclick="setFiltro('abierta',this)">🔴 Abiertas <span class="contador-chip" id="cnt-abierta">0</span></button>
-  <button class="filtro-chip" onclick="setFiltro('cerrada',this)">🟢 Cerradas <span class="contador-chip" id="cnt-cerrada">0</span></button>
+  <button class="filtro-chip" onclick="setFiltro('abierta',this)">🟢 Abiertas <span class="contador-chip" id="cnt-abierta">0</span></button>
+  <button class="filtro-chip" onclick="setFiltro('cerrada',this)">🔴 Cerradas <span class="contador-chip" id="cnt-cerrada">0</span></button>
   <button class="filtro-chip" onclick="setFiltro('pendiente',this)">⏳ Sin pasar <span class="contador-chip" id="cnt-pendiente">0</span></button>
   <button class="filtro-chip" onclick="setFiltro('pasada',this)">✅ Pasadas <span class="contador-chip" id="cnt-pasada">0</span></button>
 </div>
@@ -360,12 +371,22 @@
       <!-- AGENDA -->
       <div style="background:rgba(0,0,0,0.2); border-radius:10px; padding:14px; margin-bottom:12px;">
         <div style="font-size:12px; font-weight:700; color:var(--amarillo); margin-bottom:10px;">👥 AGENDA DE COORDINADORES</div>
-        <div style="display:flex; gap:8px; margin-bottom:10px;">
-          <input type="text" id="agenda-nombre" class="form-control" placeholder="Nombre completo" style="flex:2">
-          <input type="tel" id="agenda-tel" class="form-control" placeholder="600 000 000" style="flex:2">
-          <button class="btn btn-primary btn-sm" onclick="agregarPersonaAgenda()" style="flex-shrink:0; white-space:nowrap;">➕ Añadir</button>
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-bottom:8px;">
+          <div class="form-group" style="margin:0; grid-column:1/-1;">
+            <label>Nombre completo</label>
+            <input type="text" id="agenda-nombre" class="form-control" placeholder="Nombre completo">
+          </div>
+          <div class="form-group" style="margin:0;">
+            <label>Teléfono principal</label>
+            <input type="tel" id="agenda-tel" class="form-control" placeholder="600 000 000">
+          </div>
+          <div class="form-group" style="margin:0;">
+            <label>Teléfono 2 <span style="color:var(--gris-texto);font-weight:400;text-transform:none;letter-spacing:0;font-size:11px;">— opcional</span></label>
+            <input type="tel" id="agenda-tel2" class="form-control" placeholder="600 000 000">
+          </div>
         </div>
-        <div id="lista-agenda"></div>
+        <button class="btn btn-primary btn-sm" id="btn-agenda-guardar" onclick="agregarPersonaAgenda()" style="width:100%;">➕ Añadir coordinador</button>
+        <div id="lista-agenda" style="margin-top:10px;"></div>
       </div>
 
       <div id="coord-estado" style="font-size:12px; text-align:center; margin-top:4px;"></div>
@@ -654,7 +675,8 @@ function actualizarZona() {
         ? `<span style="font-size:11px;font-weight:700;color:var(--naranja);background:rgba(244,114,43,0.15);padding:2px 7px;border-radius:4px;margin-left:6px;">⚡ SUSTITUTO</span>`
         : '';
       infoEl.innerHTML = `👤 <strong>${coord.nombre}</strong>${sustTag}` +
-        (coord.tel ? ` &nbsp;·&nbsp; <a href="tel:${coord.tel}">📞 ${coord.tel}</a>` : '');
+        (coord.tel  ? ` &nbsp;·&nbsp; <a href="tel:${coord.tel}">📞 ${coord.tel}</a>` : '') +
+        (coord.tel2 ? ` &nbsp;<a href="tel:${coord.tel2}" style="color:var(--azul-zona);">📞 ${coord.tel2}</a>` : '');
     } else {
       infoEl.innerHTML = '<span style="color:var(--amarillo); font-size:12px;">⚠️ Coordinador no configurado — ve a ⚙️ Configuración</span>';
     }
@@ -741,8 +763,17 @@ function renderLista() {
     const horaCierre = inc.horaCierre ? `<span class="hora-cierre-dato">🔒 Cierre: <strong>${inc.horaCierre}</strong></span>` : '';
     const obsCierre = inc.obsCierre ? `<div style="font-size:12px;color:var(--verde);margin-top:4px;padding-top:6px;border-top:1px solid var(--borde);">💬 ${inc.obsCierre}</div>` : '';
 
+    // Panel de notas
+    const notas = inc.notas || [];
+    const notasHtml = notas.map(n => `
+      <div class="nota-item">
+        <span class="nota-ts">${n.ts}</span>
+        <span class="nota-txt">${n.txt}</span>
+        <button onclick="eliminarNota('${inc.id}','${n.id}')" style="background:none;border:none;color:var(--rojo);cursor:pointer;font-size:12px;flex-shrink:0;padding:0 2px;opacity:0.6;" title="Eliminar nota">✕</button>
+      </div>`).join('');
+
     return `
-    <div class="tarjeta ${estado}">
+    <div class="tarjeta ${estado}" id="t-${inc.id}">
       <div class="tarjeta-header">
         <div class="estado-dot"></div>
         <div class="tarjeta-meta">
@@ -763,6 +794,19 @@ function renderLista() {
         </div>
       </div>
       <div class="tarjeta-acciones">${acciones}${horaCierre}</div>
+      <div class="tarjeta-notas">
+        <button class="notas-toggle" onclick="toggleNotas('${inc.id}', this)">
+          📝 Notas de seguimiento <span style="background:rgba(168,191,212,0.15);border-radius:10px;padding:1px 7px;font-size:11px;margin-left:4px;">${notas.length}</span>
+          <span style="margin-left:auto;">▾</span>
+        </button>
+        <div class="notas-body" id="notas-${inc.id}">
+          ${notasHtml || '<p style="color:var(--gris-texto);font-size:12px;font-style:italic;margin-bottom:8px;">Sin notas todavía.</p>'}
+          <div class="notas-form">
+            <input type="text" id="nota-input-${inc.id}" placeholder="Añadir nota..." onkeydown="if(event.key==='Enter') agregarNota('${inc.id}')">
+            <button class="btn btn-primary btn-sm" onclick="agregarNota('${inc.id}')">➕</button>
+          </div>
+        </div>
+      </div>
     </div>`;
   }).join('');
 }
@@ -1148,26 +1192,64 @@ function guardarTurno() {
 function agregarPersonaAgenda() {
   const nombre = document.getElementById('agenda-nombre').value.trim();
   const tel    = document.getElementById('agenda-tel').value.trim();
+  const tel2   = document.getElementById('agenda-tel2').value.trim();
   if (!nombre) { toast('⚠️ Introduce el nombre','err'); return; }
-  agenda.push({ id: Date.now().toString(), nombre, tel });
+  agenda.push({ id: Date.now().toString(), nombre, tel, tel2 });
   guardarLS(AGENDA_KEY, agenda);
   document.getElementById('agenda-nombre').value = '';
   document.getElementById('agenda-tel').value = '';
+  document.getElementById('agenda-tel2').value = '';
   renderAgenda();
   poblarSelectsTurno();
+  poblarSelectCambio();
   toast('✓ ' + nombre + ' añadido a la agenda','ok');
 }
 
+function editarPersonaAgenda(id) {
+  const p = agenda.find(x => x.id === id);
+  if (!p) return;
+  document.getElementById('agenda-nombre').value = p.nombre;
+  document.getElementById('agenda-tel').value    = p.tel || '';
+  document.getElementById('agenda-tel2').value   = p.tel2 || '';
+  const btn = document.getElementById('btn-agenda-guardar');
+  btn.textContent = '💾 Guardar cambios';
+  btn.onclick = () => guardarEdicionAgenda(id);
+  document.getElementById('agenda-nombre').focus();
+  toast('✏️ Editando — modifica y pulsa Guardar cambios');
+}
+
+function guardarEdicionAgenda(id) {
+  const nombre = document.getElementById('agenda-nombre').value.trim();
+  const tel    = document.getElementById('agenda-tel').value.trim();
+  const tel2   = document.getElementById('agenda-tel2').value.trim();
+  if (!nombre) { toast('⚠️ Introduce el nombre','err'); return; }
+  const idx = agenda.findIndex(x => x.id === id);
+  if (idx === -1) return;
+  agenda[idx] = { ...agenda[idx], nombre, tel, tel2 };
+  guardarLS(AGENDA_KEY, agenda);
+  document.getElementById('agenda-nombre').value = '';
+  document.getElementById('agenda-tel').value = '';
+  document.getElementById('agenda-tel2').value = '';
+  const btn = document.getElementById('btn-agenda-guardar');
+  btn.textContent = '➕ Añadir coordinador';
+  btn.onclick = agregarPersonaAgenda;
+  renderAgenda();
+  poblarSelectsTurno();
+  poblarSelectCambio();
+  toast('✅ Coordinador actualizado','ok');
+}
+
 function eliminarPersonaAgenda(id) {
+  if (!confirm('¿Eliminar este coordinador de la agenda?')) return;
   agenda = agenda.filter(p => p.id !== id);
   guardarLS(AGENDA_KEY, agenda);
-  // Si estaba de turno, limpiar
   if (turno.norte === id) { turno.norte=''; }
   if (turno.sur   === id) { turno.sur=''; }
   guardarLS(TURNO_KEY, turno);
   renderAgenda();
   poblarSelectsTurno();
-  toast('🗑 Persona eliminada de la agenda');
+  poblarSelectCambio();
+  toast('🗑 Coordinador eliminado');
 }
 
 function renderAgenda() {
@@ -1177,13 +1259,19 @@ function renderAgenda() {
     return;
   }
   el.innerHTML = agenda.map(p => `
-    <div style="display:flex; align-items:center; gap:10px; padding:9px 0; border-bottom:1px solid var(--borde);">
+    <div style="display:flex; align-items:center; gap:10px; padding:10px 0; border-bottom:1px solid var(--borde);">
       <div style="width:34px;height:34px;background:var(--azul-medio);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0;">👤</div>
       <div style="flex:1; min-width:0;">
-        <div style="font-weight:700; font-size:13px; color:var(--blanco); white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">${p.nombre}</div>
-        ${p.tel ? `<a href="tel:${p.tel}" style="font-size:12px;font-family:'JetBrains Mono',monospace;color:var(--verde);text-decoration:none;">📞 ${p.tel}</a>` : '<span style="font-size:12px;color:var(--gris-texto);">Sin teléfono</span>'}
+        <div style="font-weight:700; font-size:13px; color:var(--blanco); margin-bottom:3px;">${p.nombre}</div>
+        <div style="display:flex; flex-wrap:wrap; gap:8px; align-items:center;">
+          ${p.tel  ? `<a href="tel:${p.tel}"  style="font-size:12px;font-family:'JetBrains Mono',monospace;color:var(--verde);text-decoration:none;">📞 ${p.tel}</a>`  : '<span style="font-size:12px;color:var(--gris-texto);">Sin teléfono</span>'}
+          ${p.tel2 ? `<a href="tel:${p.tel2}" style="font-size:12px;font-family:'JetBrains Mono',monospace;color:var(--azul-zona);text-decoration:none;">📞 ${p.tel2}</a>` : ''}
+        </div>
       </div>
-      <button class="btn-del" onclick="eliminarPersonaAgenda('${p.id}')">🗑</button>
+      <div style="display:flex; gap:4px; flex-shrink:0;">
+        <button style="background:none;border:none;color:var(--azul-zona);cursor:pointer;font-size:15px;padding:4px 6px;" onclick="editarPersonaAgenda('${p.id}')" title="Editar">✏️</button>
+        <button class="btn-del" onclick="eliminarPersonaAgenda('${p.id}')" title="Eliminar">🗑</button>
+      </div>
     </div>`).join('');
 }
 
@@ -1296,8 +1384,64 @@ async function descargarDeGitHub() {
 }
 
 // ══════════════════════════════════════════
-//  SNACKBAR
+//  NOTAS DE SEGUIMIENTO
 // ══════════════════════════════════════════
+function toggleNotas(id, btn) {
+  const body = document.getElementById('notas-' + id);
+  const abierto = body.classList.toggle('abierto');
+  btn.querySelector('span:last-child').textContent = abierto ? '▴' : '▾';
+  if (abierto) {
+    const input = document.getElementById('nota-input-' + id);
+    if (input) setTimeout(() => input.focus(), 100);
+  }
+}
+
+function agregarNota(incId) {
+  const input = document.getElementById('nota-input-' + incId);
+  const txt = input ? input.value.trim() : '';
+  if (!txt) return;
+  const inc = incidencias.find(i => i.id === incId);
+  if (!inc) return;
+  if (!inc.notas) inc.notas = [];
+  const d = new Date();
+  const ts = d.toLocaleDateString('es-ES',{day:'2-digit',month:'2-digit'}) + ' ' + d.toLocaleTimeString('es-ES',{hour:'2-digit',minute:'2-digit'});
+  inc.notas.push({ id: Date.now().toString(), ts, txt });
+  guardarDatos();
+  // Actualizar solo el panel de notas sin rerenderizar toda la lista
+  const notasHtml = inc.notas.map(n => `
+    <div class="nota-item">
+      <span class="nota-ts">${n.ts}</span>
+      <span class="nota-txt">${n.txt}</span>
+      <button onclick="eliminarNota('${incId}','${n.id}')" style="background:none;border:none;color:var(--rojo);cursor:pointer;font-size:12px;flex-shrink:0;padding:0 2px;opacity:0.6;" title="Eliminar nota">✕</button>
+    </div>`).join('');
+  const body = document.getElementById('notas-' + incId);
+  const form = body.querySelector('.notas-form');
+  // Limpiar notas anteriores y reinsertar
+  [...body.children].forEach(c => { if (!c.classList.contains('notas-form')) c.remove(); });
+  body.insertAdjacentHTML('afterbegin', notasHtml);
+  input.value = '';
+  // Actualizar contador en el toggle
+  const toggle = body.previousElementSibling;
+  const contador = toggle.querySelector('span:nth-child(2)');
+  if (contador) contador.textContent = inc.notas.length;
+}
+
+function eliminarNota(incId, notaId) {
+  const inc = incidencias.find(i => i.id === incId);
+  if (!inc || !inc.notas) return;
+  inc.notas = inc.notas.filter(n => n.id !== notaId);
+  guardarDatos();
+  renderLista();
+  // Reabrir el panel tras rerenderizar
+  setTimeout(() => {
+    const body = document.getElementById('notas-' + incId);
+    if (body) {
+      body.classList.add('abierto');
+      const btn = body.previousElementSibling;
+      if (btn) btn.querySelector('span:last-child').textContent = '▴';
+    }
+  }, 50);
+}
 let snackTimer;
 function toast(msg,tipo='') {
   const el=document.getElementById('snackbar');
