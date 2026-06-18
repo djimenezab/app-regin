@@ -174,6 +174,7 @@
     </div>
   </div>
   <div class="header-actions">
+    <button class="btn btn-ghost btn-icon" onclick="abrirDocs()" title="Documentación">📚</button>
     <button class="btn btn-ghost btn-icon" onclick="abrirConfig()" title="Configuración">⚙️</button>
     <button class="btn btn-ghost btn-icon" onclick="abrirSync()" title="Sincronización">⬆⬇</button>
     <button class="btn btn-primary" onclick="abrirFormulario()">＋ Nueva</button>
@@ -432,6 +433,62 @@
       </div>
     </details>
     <button class="btn btn-ghost" onclick="cerrarSync()" style="width:100%; margin-top:12px;">Cerrar</button>
+  </div>
+</div>
+
+<!-- ══ MODAL DOCUMENTOS ══ -->
+<div class="overlay" id="overlayDocs">
+  <div class="panel" style="max-width:640px;">
+    <div class="panel-header">
+      <span class="panel-titulo">📚 Documentación</span>
+      <button class="btn-cerrar" onclick="cerrarDocs()">✕</button>
+    </div>
+
+    <!-- Subir nuevo documento -->
+    <div style="background:rgba(0,0,0,0.2); border-radius:10px; padding:14px; margin-bottom:14px;">
+      <div style="font-size:12px; font-weight:700; color:var(--amarillo); margin-bottom:10px;">📤 Subir documento a GitHub</div>
+      <div class="form-group" style="margin-bottom:10px;">
+        <label>Archivo PDF</label>
+        <input type="file" id="doc-archivo" accept=".pdf" class="form-control" style="padding:7px;">
+      </div>
+      <div class="form-row" style="margin-bottom:10px;">
+        <div class="form-group" style="margin:0;">
+          <label>Nombre del documento</label>
+          <input type="text" id="doc-nombre" class="form-control" placeholder="Ej: Plano CM-332">
+        </div>
+        <div class="form-group" style="margin:0;">
+          <label>Categoría</label>
+          <select id="doc-categoria" class="form-control">
+            <option value="Planos">🗺️ Planos</option>
+            <option value="Teléfonos">📞 Teléfonos</option>
+            <option value="Procedimientos">📋 Procedimientos</option>
+            <option value="Cruces y detalles">🔀 Cruces y detalles</option>
+            <option value="Otros">📄 Otros</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group" style="margin-bottom:10px;">
+        <label>Descripción <span style="color:var(--gris-texto);font-weight:400;text-transform:none;letter-spacing:0;font-size:11px;">— opcional</span></label>
+        <input type="text" id="doc-desc" class="form-control" placeholder="Ej: Plano oficial tramo La Roda - Barrax">
+      </div>
+      <button class="btn btn-primary" style="width:100%" onclick="subirDocumento()" id="btn-subir-doc">☁️ Subir a GitHub</button>
+      <div id="doc-upload-estado" style="font-size:12px; text-align:center; margin-top:8px; min-height:16px;"></div>
+    </div>
+
+    <!-- Filtro categorías -->
+    <div style="display:flex; gap:6px; flex-wrap:wrap; margin-bottom:12px;" id="doc-filtros">
+      <button class="filtro-chip activo" onclick="setDocFiltro('todas',this)">Todos</button>
+      <button class="filtro-chip" onclick="setDocFiltro('Planos',this)">🗺️ Planos</button>
+      <button class="filtro-chip" onclick="setDocFiltro('Teléfonos',this)">📞 Teléfonos</button>
+      <button class="filtro-chip" onclick="setDocFiltro('Procedimientos',this)">📋 Procedimientos</button>
+      <button class="filtro-chip" onclick="setDocFiltro('Cruces y detalles',this)">🔀 Cruces</button>
+      <button class="filtro-chip" onclick="setDocFiltro('Otros',this)">📄 Otros</button>
+    </div>
+
+    <!-- Lista documentos -->
+    <div id="lista-docs" style="max-height:340px; overflow-y:auto;"></div>
+
+    <button class="btn btn-ghost" onclick="cerrarDocs()" style="width:100%; margin-top:12px;">Cerrar</button>
   </div>
 </div>
 
@@ -1038,9 +1095,26 @@ function setSyncEstado(msg, color='var(--gris-texto)') {
 async function subirAGitHub() {
   const cfg = cargarConfigGH();
   if (!cfg.token||!cfg.usuario||!cfg.repo) { setSyncEstado('⚠️ Configura primero usuario, repositorio y token','var(--naranja)'); return; }
-  setSyncEstado('⏳ Subiendo datos a GitHub...','var(--amarillo)');
-  // Incluir todo en el backup
-  const payload = { version:'1.1', exportado:new Date().toISOString(), incidencias, tramos, coordinadores, agenda, turno };
+
+  // Releer desde localStorage para asegurar datos más recientes
+  const agendaActual       = cargarLS(AGENDA_KEY, []);
+  const turnoActual        = cargarLS(TURNO_KEY, { norte:'', sur:'' });
+  const coordinadoresActual= cargarLS(COORD_KEY, {});
+  const tramosActual       = cargarLS(TRAMOS_KEY, []);
+  const docsActual         = cargarLS(DOCS_KEY, []);
+
+  setSyncEstado(`⏳ Subiendo: ${incidencias.length} incidencias · ${tramosActual.length} tramos · ${agendaActual.length} coordinadores...`, 'var(--amarillo)');
+
+  const payload = {
+    version: '1.2',
+    exportado: new Date().toISOString(),
+    incidencias,
+    tramos:        tramosActual,
+    coordinadores: coordinadoresActual,
+    agenda:        agendaActual,
+    turno:         turnoActual,
+    documentos:    docsActual
+  };
   const base64 = btoa(unescape(encodeURIComponent(JSON.stringify(payload, null, 2))));
   const apiUrl = `https://api.github.com/repos/${cfg.usuario}/${cfg.repo}/contents/${cfg.archivo}`;
   try {
@@ -1048,7 +1122,10 @@ async function subirAGitHub() {
     const gr = await fetch(apiUrl,{headers:{'Authorization':`token ${cfg.token}`,'Accept':'application/vnd.github.v3+json'}});
     if (gr.ok) { const gd=await gr.json(); sha=gd.sha; }
     const pr = await fetch(apiUrl,{method:'PUT',headers:{'Authorization':`token ${cfg.token}`,'Accept':'application/vnd.github.v3+json','Content-Type':'application/json'},body:JSON.stringify({message:`REGIN sync ${new Date().toLocaleString('es-ES')}`,content:base64,...(sha?{sha}:{})})});
-    if (pr.ok) { setSyncEstado(`✅ Datos subidos (${incidencias.length} incidencias)`,'var(--verde)'); toast('☁️ Datos subidos a GitHub','ok'); }
+    if (pr.ok) {
+      setSyncEstado(`✅ Subidos: ${incidencias.length} incidencias · ${tramosActual.length} tramos · ${agendaActual.length} coordinadores`, 'var(--verde)');
+      toast('☁️ Datos subidos a GitHub', 'ok');
+    }
     else { const e=await pr.json(); setSyncEstado('❌ Error: '+(e.message||pr.status),'var(--rojo)'); }
   } catch(e) { setSyncEstado('❌ Error de red: '+e.message,'var(--rojo)'); }
 }
@@ -1070,6 +1147,7 @@ async function descargarDeGitHub() {
     if (parsed.coordinadores){ coordinadores=parsed.coordinadores; guardarLS(COORD_KEY, coordinadores); }
     if (parsed.agenda)       { agenda=parsed.agenda;             guardarLS(AGENDA_KEY, agenda); }
     if (parsed.turno)        { turno=parsed.turno;               guardarLS(TURNO_KEY,  turno); }
+    if (parsed.documentos)   { documentos=parsed.documentos;     guardarLS(DOCS_KEY,   documentos); }
     guardarDatos(); renderLista();
     setSyncEstado(`✅ ${incidencias.length} incidencias descargadas`,'var(--verde)');
     toast('📥 Datos descargados de GitHub','ok');
@@ -1088,9 +1166,136 @@ function toast(msg,tipo='') {
 }
 
 // ══════════════════════════════════════════
+//  DOCUMENTOS
+// ══════════════════════════════════════════
+const DOCS_KEY   = 'regin_docs';
+let documentos   = cargarLS(DOCS_KEY, []);
+let docFiltroActivo = 'todas';
+
+function abrirDocs() {
+  renderDocs();
+  document.getElementById('doc-upload-estado').textContent = '';
+  document.getElementById('overlayDocs').classList.add('visible');
+}
+function cerrarDocs() { document.getElementById('overlayDocs').classList.remove('visible'); }
+
+function setDocFiltro(cat, el) {
+  docFiltroActivo = cat;
+  document.querySelectorAll('#doc-filtros .filtro-chip').forEach(c => c.classList.remove('activo'));
+  el.classList.add('activo');
+  renderDocs();
+}
+
+function setDocUploadEstado(msg, color='var(--gris-texto)') {
+  const el = document.getElementById('doc-upload-estado');
+  el.textContent = msg; el.style.color = color;
+}
+
+async function subirDocumento() {
+  const cfg = cargarConfigGH();
+  if (!cfg.token || !cfg.usuario || !cfg.repo) {
+    setDocUploadEstado('⚠️ Configura primero GitHub en ⬆⬇ Sincronización', 'var(--naranja)'); return;
+  }
+  const fileInput = document.getElementById('doc-archivo');
+  const nombre    = document.getElementById('doc-nombre').value.trim();
+  const categoria = document.getElementById('doc-categoria').value;
+  const desc      = document.getElementById('doc-desc').value.trim();
+
+  if (!fileInput.files[0]) { setDocUploadEstado('⚠️ Selecciona un archivo PDF', 'var(--naranja)'); return; }
+  if (!nombre)              { setDocUploadEstado('⚠️ Indica el nombre del documento', 'var(--naranja)'); return; }
+
+  const file = fileInput.files[0];
+  if (file.size > 25 * 1024 * 1024) { setDocUploadEstado('⚠️ El archivo supera los 25MB', 'var(--rojo)'); return; }
+
+  setDocUploadEstado('⏳ Subiendo documento...', 'var(--amarillo)');
+  document.getElementById('btn-subir-doc').disabled = true;
+
+  // Leer archivo como base64
+  const base64 = await new Promise((res, rej) => {
+    const r = new FileReader();
+    r.onload = () => res(r.result.split(',')[1]);
+    r.onerror = rej;
+    r.readAsDataURL(file);
+  });
+
+  // Nombre de archivo seguro: sin espacios ni caracteres raros
+  const nombreArchivo = 'docs/' + nombre.replace(/[^a-zA-Z0-9_\-\.]/g, '_').replace(/__+/g,'_') + '_' + Date.now() + '.pdf';
+  const apiUrl = `https://api.github.com/repos/${cfg.usuario}/${cfg.repo}/contents/${nombreArchivo}`;
+
+  try {
+    const pr = await fetch(apiUrl, {
+      method: 'PUT',
+      headers: { 'Authorization': `token ${cfg.token}`, 'Accept': 'application/vnd.github.v3+json', 'Content-Type': 'application/json' },
+      body: JSON.stringify({ message: `REGIN doc: ${nombre}`, content: base64 })
+    });
+
+    if (pr.ok) {
+      const prData = await pr.json();
+      const urlDoc = prData.content.download_url;
+      // Guardar referencia local
+      const doc = { id: Date.now().toString(), nombre, categoria, desc, archivo: nombreArchivo, url: urlDoc, fecha: new Date().toLocaleDateString('es-ES') };
+      documentos.push(doc);
+      guardarLS(DOCS_KEY, doc);
+      guardarLS(DOCS_KEY, documentos);
+      // Limpiar
+      fileInput.value='';
+      document.getElementById('doc-nombre').value='';
+      document.getElementById('doc-desc').value='';
+      setDocUploadEstado(`✅ "${nombre}" subido correctamente`, 'var(--verde)');
+      renderDocs();
+      toast('📄 Documento subido a GitHub', 'ok');
+    } else {
+      const e = await pr.json();
+      setDocUploadEstado('❌ Error: ' + (e.message || pr.status), 'var(--rojo)');
+    }
+  } catch(e) {
+    setDocUploadEstado('❌ Error de red: ' + e.message, 'var(--rojo)');
+  }
+  document.getElementById('btn-subir-doc').disabled = false;
+}
+
+function eliminarDocumento(id) {
+  if (!confirm('¿Eliminar este documento de la lista?\n(El archivo en GitHub no se borra)')) return;
+  documentos = documentos.filter(d => d.id !== id);
+  guardarLS(DOCS_KEY, documentos);
+  renderDocs();
+  toast('🗑 Documento eliminado de la lista');
+}
+
+const CAT_ICONS = { 'Planos':'🗺️', 'Teléfonos':'📞', 'Procedimientos':'📋', 'Cruces y detalles':'🔀', 'Otros':'📄' };
+
+function renderDocs() {
+  const el = document.getElementById('lista-docs');
+  let lista = docFiltroActivo === 'todas' ? documentos : documentos.filter(d => d.categoria === docFiltroActivo);
+  lista = [...lista].reverse();
+
+  if (!lista.length) {
+    el.innerHTML = `<div class="empty-state" style="padding:30px 20px;">
+      <div class="icon">📭</div>
+      <p>${documentos.length ? 'No hay documentos en esta categoría.' : 'No hay documentos. Sube el primero arriba.'}</p>
+    </div>`;
+    return;
+  }
+
+  el.innerHTML = lista.map(d => `
+    <div style="background:rgba(0,0,0,0.15); border-radius:8px; padding:11px 13px; margin-bottom:8px; display:flex; align-items:center; gap:10px;">
+      <div style="font-size:26px; flex-shrink:0;">${CAT_ICONS[d.categoria] || '📄'}</div>
+      <div style="flex:1; min-width:0;">
+        <div style="font-weight:700; font-size:13px; color:var(--blanco); white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">${d.nombre}</div>
+        <div style="font-size:11px; color:var(--gris-texto); margin-top:2px;">${d.categoria} · ${d.fecha}</div>
+        ${d.desc ? `<div style="font-size:12px; color:var(--gris-texto); margin-top:3px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">${d.desc}</div>` : ''}
+      </div>
+      <div style="display:flex; gap:4px; flex-shrink:0;">
+        <a href="${d.url}" target="_blank" class="btn btn-ghost btn-sm" style="text-decoration:none;">👁️ Ver</a>
+        <button class="btn-del" onclick="eliminarDocumento('${d.id}')" title="Quitar de lista">🗑</button>
+      </div>
+    </div>`).join('');
+}
+
+// ══════════════════════════════════════════
 //  CERRAR OVERLAYS AL CLICK FUERA
 // ══════════════════════════════════════════
-['overlayNueva','overlayCierre','overlaySync','overlayConfig'].forEach(id=>{
+['overlayNueva','overlayCierre','overlaySync','overlayConfig','overlayDocs'].forEach(id=>{
   document.getElementById(id).addEventListener('click',function(e){ if(e.target===this) this.classList.remove('visible'); });
 });
 
