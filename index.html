@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>REGIN v1.1 — Registro de Incidencias</title>
+<title>REGIN v1.2 — Registro de Incidencias</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 <style>
@@ -170,7 +170,7 @@
     <div class="logo-icon">🚨</div>
     <div class="logo-text">
       <h1>REGIN</h1>
-      <span>v1.1 — Registro de Incidencias</span>
+      <span>v1.2 — Registro de Incidencias</span>
     </div>
   </div>
   <div class="header-actions">
@@ -296,12 +296,50 @@
       <button class="btn-cerrar" onclick="cerrarConfig()">✕</button>
     </div>
     <div class="tabs">
-      <button class="tab activo" onclick="mostrarTab('tab-tramos',this)">🛣️ Tramos</button>
-      <button class="tab" onclick="mostrarTab('tab-coordinadores',this)">📞 Coordinadores</button>
+      <button class="tab activo" onclick="mostrarTab('tab-coordinadores',this)">📞 Coordinadores</button>
+      <button class="tab" onclick="mostrarTab('tab-tramos',this)">🛣️ Tramos</button>
     </div>
 
-    <!-- TAB TRAMOS -->
-    <div id="tab-tramos">
+    <!-- TAB COORDINADORES (visible por defecto) -->
+    <div id="tab-coordinadores">
+
+      <!-- TURNO SEMANAL -->
+      <div style="background:rgba(0,0,0,0.2); border-radius:10px; padding:14px; margin-bottom:14px;">
+        <div style="font-size:12px; font-weight:700; color:var(--amarillo); margin-bottom:12px;">📅 TURNO ESTA SEMANA</div>
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px;">
+          <div>
+            <div style="font-size:11px; font-weight:700; color:var(--azul-zona); text-transform:uppercase; letter-spacing:0.8px; margin-bottom:6px;">🔵 Zona Norte</div>
+            <select id="turno-norte" class="form-control" onchange="guardarTurno()">
+              <option value="">— Sin asignar —</option>
+            </select>
+            <div id="turno-norte-tel" style="font-family:'JetBrains Mono',monospace; font-size:12px; color:var(--verde); margin-top:6px; min-height:18px;"></div>
+          </div>
+          <div>
+            <div style="font-size:11px; font-weight:700; color:var(--morado-zona); text-transform:uppercase; letter-spacing:0.8px; margin-bottom:6px;">🟣 Zona Sur</div>
+            <select id="turno-sur" class="form-control" onchange="guardarTurno()">
+              <option value="">— Sin asignar —</option>
+            </select>
+            <div id="turno-sur-tel" style="font-family:'JetBrains Mono',monospace; font-size:12px; color:var(--verde); margin-top:6px; min-height:18px;"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- AGENDA -->
+      <div style="background:rgba(0,0,0,0.2); border-radius:10px; padding:14px; margin-bottom:12px;">
+        <div style="font-size:12px; font-weight:700; color:var(--amarillo); margin-bottom:10px;">👥 AGENDA DE COORDINADORES</div>
+        <div style="display:flex; gap:8px; margin-bottom:10px;">
+          <input type="text" id="agenda-nombre" class="form-control" placeholder="Nombre completo" style="flex:2">
+          <input type="tel" id="agenda-tel" class="form-control" placeholder="600 000 000" style="flex:2">
+          <button class="btn btn-primary btn-sm" onclick="agregarPersonaAgenda()" style="flex-shrink:0; white-space:nowrap;">➕ Añadir</button>
+        </div>
+        <div id="lista-agenda"></div>
+      </div>
+
+      <div id="coord-estado" style="font-size:12px; text-align:center; margin-top:4px;"></div>
+    </div>
+
+    <!-- TAB TRAMOS (oculto por defecto) -->
+    <div id="tab-tramos" style="display:none;">
       <p style="font-size:12px; color:var(--gris-texto); margin-bottom:14px;">Define los tramos de carretera con su zona. Al registrar una incidencia, REGIN detectará automáticamente la zona.</p>
       <div style="background:rgba(0,0,0,0.2); border-radius:10px; padding:14px; margin-bottom:14px;">
         <div style="font-size:12px; font-weight:700; color:var(--amarillo); margin-bottom:10px;">➕ Añadir tramo</div>
@@ -338,46 +376,7 @@
         </div>
         <button class="btn btn-primary" style="width:100%" onclick="agregarTramo()">➕ Añadir tramo</button>
       </div>
-
       <div id="lista-tramos" style="max-height:300px; overflow-y:auto;"></div>
-    </div>
-
-    <!-- TAB COORDINADORES -->
-    <div id="tab-coordinadores" style="display:none;">
-
-      <!-- TURNO SEMANAL -->
-      <div style="background:rgba(0,0,0,0.2); border-radius:10px; padding:14px; margin-bottom:14px;">
-        <div style="font-size:12px; font-weight:700; color:var(--amarillo); margin-bottom:12px;">📅 TURNO ESTA SEMANA</div>
-        <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px;">
-          <div>
-            <div style="font-size:11px; font-weight:700; color:var(--azul-zona); text-transform:uppercase; letter-spacing:0.8px; margin-bottom:6px;">🔵 Zona Norte</div>
-            <select id="turno-norte" class="form-control" onchange="guardarTurno()">
-              <option value="">— Sin asignar —</option>
-            </select>
-            <div id="turno-norte-tel" style="font-family:'JetBrains Mono',monospace; font-size:12px; color:var(--verde); margin-top:6px; min-height:18px;"></div>
-          </div>
-          <div>
-            <div style="font-size:11px; font-weight:700; color:var(--morado-zona); text-transform:uppercase; letter-spacing:0.8px; margin-bottom:6px;">🟣 Zona Sur</div>
-            <select id="turno-sur" class="form-control" onchange="guardarTurno()">
-              <option value="">— Sin asignar —</option>
-            </select>
-            <div id="turno-sur-tel" style="font-family:'JetBrains Mono',monospace; font-size:12px; color:var(--verde); margin-top:6px; min-height:18px;"></div>
-          </div>
-        </div>
-      </div>
-
-      <!-- AGENDA -->
-      <div style="background:rgba(0,0,0,0.2); border-radius:10px; padding:14px; margin-bottom:12px;">
-        <div style="font-size:12px; font-weight:700; color:var(--amarillo); margin-bottom:10px;">👥 AGENDA DE COORDINADORES</div>
-        <div style="display:flex; gap:8px; margin-bottom:10px;">
-          <input type="text" id="agenda-nombre" class="form-control" placeholder="Nombre completo" style="flex:2">
-          <input type="tel" id="agenda-tel" class="form-control" placeholder="600 000 000" style="flex:2">
-          <button class="btn btn-primary btn-sm" onclick="agregarPersonaAgenda()" style="flex-shrink:0; white-space:nowrap;">➕ Añadir</button>
-        </div>
-        <div id="lista-agenda"></div>
-      </div>
-
-      <div id="coord-estado" style="font-size:12px; text-align:center; margin-top:4px;"></div>
     </div>
   </div>
 </div>
@@ -389,27 +388,8 @@
       <span class="panel-titulo">⬆⬇ Sincronización GitHub</span>
       <button class="btn-cerrar" onclick="cerrarSync()">✕</button>
     </div>
-    <div style="background:rgba(0,0,0,0.2); border-radius:10px; padding:14px; margin-bottom:14px;">
-      <div style="font-size:12px; font-weight:700; color:var(--amarillo); margin-bottom:10px;">⚙️ CONFIGURACIÓN (solo una vez)</div>
-      <div class="form-group" style="margin-bottom:10px;">
-        <label>Usuario GitHub</label>
-        <input type="text" id="gh-usuario" class="form-control" placeholder="Ej: djimenezab">
-      </div>
-      <div class="form-group" style="margin-bottom:10px;">
-        <label>Repositorio</label>
-        <input type="text" id="gh-repo" class="form-control" placeholder="Ej: app-regin">
-      </div>
-      <div class="form-group" style="margin-bottom:10px;">
-        <label>Nombre del archivo de datos</label>
-        <input type="text" id="gh-archivo" class="form-control" placeholder="regin-datos.json">
-      </div>
-      <div class="form-group" style="margin-bottom:10px;">
-        <label>Token de acceso</label>
-        <input type="password" id="gh-token" class="form-control" placeholder="ghp_xxxxxxxxxxxx">
-      </div>
-      <button class="btn btn-ghost" style="width:100%" onclick="guardarConfigGH()">💾 Guardar configuración</button>
-      <div id="gh-config-estado" style="font-size:12px; margin-top:8px; text-align:center;"></div>
-    </div>
+
+    <!-- BOTONES PRINCIPALES -->
     <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-bottom:12px;">
       <button class="btn btn-primary" onclick="subirAGitHub()" style="flex-direction:column; padding:14px 10px; gap:4px;">
         <span style="font-size:20px;">☁️</span><span>Subir datos</span>
@@ -421,7 +401,37 @@
       </button>
     </div>
     <div id="sync-estado" style="font-size:13px; text-align:center; min-height:20px; color:var(--gris-texto); margin-bottom:12px;"></div>
-    <details style="cursor:pointer;">
+
+    <!-- CONFIGURACIÓN COLAPSADA -->
+    <details id="detalle-sync-config">
+      <summary style="cursor:pointer; background:rgba(0,0,0,0.2); border-radius:10px; padding:11px 14px; font-size:13px; font-weight:700; color:var(--amarillo); list-style:none; display:flex; align-items:center; gap:8px;">
+        <span>⚙️ Configuración GitHub</span>
+        <span style="margin-left:auto; font-size:11px; color:var(--gris-texto);" id="gh-config-resumen"></span>
+      </summary>
+      <div style="background:rgba(0,0,0,0.15); border-radius:0 0 10px 10px; padding:14px; border-top:1px solid var(--borde);">
+        <div class="form-group" style="margin-bottom:10px;">
+          <label>Usuario GitHub</label>
+          <input type="text" id="gh-usuario" class="form-control" placeholder="Ej: djimenezab">
+        </div>
+        <div class="form-group" style="margin-bottom:10px;">
+          <label>Repositorio</label>
+          <input type="text" id="gh-repo" class="form-control" placeholder="Ej: app-regin">
+        </div>
+        <div class="form-group" style="margin-bottom:10px;">
+          <label>Nombre del archivo de datos</label>
+          <input type="text" id="gh-archivo" class="form-control" placeholder="regin-datos.json">
+        </div>
+        <div class="form-group" style="margin-bottom:10px;">
+          <label>Token de acceso</label>
+          <input type="password" id="gh-token" class="form-control" placeholder="ghp_xxxxxxxxxxxx">
+        </div>
+        <button class="btn btn-ghost" style="width:100%" onclick="guardarConfigGH()">💾 Guardar configuración</button>
+        <div id="gh-config-estado" style="font-size:12px; margin-top:8px; text-align:center;"></div>
+      </div>
+    </details>
+
+    <!-- AYUDA TOKEN -->
+    <details style="cursor:pointer; margin-top:8px;">
       <summary style="font-size:12px; color:var(--gris-texto); padding:8px 0;">❓ ¿Cómo obtengo el token?</summary>
       <div style="font-size:12px; color:var(--gris-texto); line-height:1.7; padding:10px 0;">
         1. Ve a <strong style="color:var(--blanco);">github.com → Settings → Developer settings</strong><br>
@@ -432,6 +442,7 @@
         <strong style="color:var(--amarillo);">⚠️ Solo se muestra una vez en GitHub.</strong>
       </div>
     </details>
+
     <button class="btn btn-ghost" onclick="cerrarSync()" style="width:100%; margin-top:12px;">Cerrar</button>
   </div>
 </div>
@@ -1071,6 +1082,7 @@ function abrirSync() {
   document.getElementById('gh-token').value   = cfg.token || '';
   document.getElementById('gh-config-estado').textContent = cfg.token ? '✅ Configuración guardada' : '';
   document.getElementById('gh-config-estado').style.color = 'var(--verde)';
+  document.getElementById('gh-config-resumen').textContent = cfg.usuario && cfg.repo ? `✅ ${cfg.usuario}/${cfg.repo}` : '⚠️ Sin configurar';
   document.getElementById('sync-estado').textContent = '';
   document.getElementById('overlaySync').classList.add('visible');
 }
