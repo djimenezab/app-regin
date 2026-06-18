@@ -1,6 +1,6 @@
 {
-  "version": "1.1",
-  "exportado": "2026-06-18T14:16:52.876Z",
+  "version": "1.2",
+  "exportado": "2026-06-18T14:23:57.640Z",
   "incidencias": [],
   "tramos": [
     {
@@ -452,5 +452,27 @@
       "nombre": "Damian García",
       "tel": "600480999"
     }
-  }
+  },
+  "agenda": [
+    {
+      "id": "1781779351056",
+      "nombre": "Miguel A. Martínez",
+      "tel": "648586171"
+    },
+    {
+      "id": "1781779395115",
+      "nombre": "Damian García",
+      "tel": "600480999"
+    },
+    {
+      "id": "1781781672244",
+      "nombre": "Fco. Javier Sánchez",
+      "tel": "617582479"
+    }
+  ],
+  "turno": {
+    "norte": "1781779351056",
+    "sur": "1781779395115"
+  },
+  "documentos": []
 }
