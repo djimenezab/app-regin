@@ -1,6 +1,6 @@
 {
   "version": "1.3",
-  "exportado": "2026-06-18T17:23:13.055Z",
+  "exportado": "2026-06-19T11:52:33.695Z",
   "incidencias": [],
   "tramos": [
     {
@@ -484,6 +484,51 @@
       "archivo": "docs/Plano_Zona_2_1781803372248.pdf",
       "url": "https://raw.githubusercontent.com/djimenezab/app-regin/main/docs/Plano_Zona_2_1781803372248.pdf?raw=true",
       "fecha": "18/6/2026"
+    },
+    {
+      "id": "1781869289502",
+      "nombre": "Pk's Significativos",
+      "categoria": "Planos",
+      "desc": "Plano de Cesareo",
+      "archivo": "docs/Pk_s_Significativos_1781869287766.pdf",
+      "url": "https://raw.githubusercontent.com/djimenezab/app-regin/main/docs/Pk_s_Significativos_1781869287766.pdf?raw=true",
+      "fecha": "19/6/2026"
+    },
+    {
+      "id": "1781869343951",
+      "nombre": "Plano Zonas Guardias",
+      "categoria": "Planos",
+      "desc": "Plano de limitación zona norte-sur",
+      "archivo": "docs/Plano_Zonas_Guardias_1781869341443.pdf",
+      "url": "https://raw.githubusercontent.com/djimenezab/app-regin/main/docs/Plano_Zonas_Guardias_1781869341443.pdf?raw=true",
+      "fecha": "19/6/2026"
+    },
+    {
+      "id": "1781869516036",
+      "nombre": "Plano PK`s Albacete",
+      "categoria": "Planos",
+      "desc": "Plano con PKs. de todo Albacete",
+      "archivo": "docs/Plano_PK_s_Albacete_1781869509516.pdf",
+      "url": "https://raw.githubusercontent.com/djimenezab/app-regin/main/docs/Plano_PK_s_Albacete_1781869509516.pdf?raw=true",
+      "fecha": "19/6/2026"
+    },
+    {
+      "id": "1781869586676",
+      "nombre": "Guardias Localizadas",
+      "categoria": "Otros",
+      "desc": "Turnos de guardias Act. a 19/06/26",
+      "archivo": "docs/Guardias_Localizadas_1781869585141.pdf",
+      "url": "https://raw.githubusercontent.com/djimenezab/app-regin/main/docs/Guardias_Localizadas_1781869585141.pdf?raw=true",
+      "fecha": "19/6/2026"
+    },
+    {
+      "id": "1781869714357",
+      "nombre": "Listado Teléfonos",
+      "categoria": "Teléfonos",
+      "desc": "Teléfonos Act. a 8/5/26",
+      "archivo": "docs/Listado_Tel_fonos_1781869712694.pdf",
+      "url": "https://raw.githubusercontent.com/djimenezab/app-regin/main/docs/Listado_Tel_fonos_1781869712694.pdf?raw=true",
+      "fecha": "19/6/2026"
     }
   ]
 }
