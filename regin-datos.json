@@ -1,6 +1,6 @@
 {
   "version": "1.3",
-  "exportado": "2026-06-22T16:14:54.953Z",
+  "exportado": "2026-06-22T19:28:07.208Z",
   "incidencias": [
     {
       "id": "INC-260622-001",
@@ -28,6 +28,21 @@
           "txt": "Llegan a rotonda Almansa y hay algo también en el paso superior de la autovia, llamo a 112 para informarles"
         }
       ]
+    },
+    {
+      "id": "INC-260622-002",
+      "fecha": "22/06/2026",
+      "hora": "20:48",
+      "quien": "112",
+      "mensaje": "Accidente de moto con 2 ocupantes",
+      "carretera": "CM-332",
+      "pk": "31",
+      "zona": "Norte",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1782154178964
     }
   ],
   "tramos": [
