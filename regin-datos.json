@@ -1,7 +1,30 @@
 {
   "version": "1.3",
-  "exportado": "2026-06-22T10:56:08.865Z",
-  "incidencias": [],
+  "exportado": "2026-06-22T14:21:15.454Z",
+  "incidencias": [
+    {
+      "id": "INC-260622-001",
+      "fecha": "22/06/2026",
+      "hora": "15:37",
+      "quien": "112",
+      "mensaje": "Vertido grava y Hormigon. Al salir de la rotonda del polígono sentido Alicante.",
+      "carretera": "CM-412",
+      "pk": "344",
+      "zona": "Norte",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1782135595300,
+      "notas": [
+        {
+          "id": "1782138055436",
+          "ts": "22/6 16:20",
+          "txt": "GC hay más restos de Almansa a Montealegre"
+        }
+      ]
+    }
+  ],
   "tramos": [
     {
       "carretera": "CM-332",
