@@ -1,6 +1,6 @@
 {
   "version": "1.3",
-  "exportado": "2026-06-22T14:21:15.454Z",
+  "exportado": "2026-06-22T15:25:13.152Z",
   "incidencias": [
     {
       "id": "INC-260622-001",
@@ -21,6 +21,11 @@
           "id": "1782138055436",
           "ts": "22/6 16:20",
           "txt": "GC hay más restos de Almansa a Montealegre"
+        },
+        {
+          "id": "1782141678089",
+          "ts": "22/6 17:21",
+          "txt": "Llegan a rotonda Almansa y hay algo también en el paso superior de la autovia, llamo a 112 para informarles"
         }
       ]
     }
