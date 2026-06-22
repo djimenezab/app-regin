@@ -1,6 +1,6 @@
 {
   "version": "1.3",
-  "exportado": "2026-06-19T11:52:33.695Z",
+  "exportado": "2026-06-22T10:56:08.865Z",
   "incidencias": [],
   "tramos": [
     {
@@ -168,7 +168,7 @@
       "pkIni": "0",
       "pkFin": "10",
       "tramoDesc": "Ossa de Montiel - CM-320",
-      "obs": "AHORA ES DE DIPUTACION"
+      "obs": "AHORA ES DE DIPUTACION AB-607"
     },
     {
       "carretera": "CM-3169",
@@ -176,7 +176,7 @@
       "pkIni": "0",
       "pkFin": "10",
       "tramoDesc": "Ossa de Montiel - CM-320",
-      "obs": "AHORA ES DE DIPUTACIÓN"
+      "obs": "AHORA ES DE DIPUTACIÓN AB-606"
     },
     {
       "carretera": "CM-3201",
