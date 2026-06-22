@@ -1,6 +1,6 @@
 {
   "version": "1.3",
-  "exportado": "2026-06-22T15:37:31.016Z",
+  "exportado": "2026-06-22T16:14:54.953Z",
   "incidencias": [
     {
       "id": "INC-260622-001",
@@ -11,9 +11,9 @@
       "carretera": "CM-412",
       "pk": "344",
       "zona": "Norte",
-      "cerrada": false,
-      "horaCierre": null,
-      "obsCierre": null,
+      "cerrada": true,
+      "horaCierre": "18:13",
+      "obsCierre": "Llegan a FuenteAlamo y no ven mas restos de vertido, vuelta AB por CM-3211",
       "pasada": false,
       "tsCreacion": 1782135595300,
       "notas": [
