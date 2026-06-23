@@ -1,6 +1,6 @@
 {
   "version": "1.3",
-  "exportado": "2026-06-22T20:34:08.957Z",
+  "exportado": "2026-06-23T07:14:29.647Z",
   "incidencias": [
     {
       "id": "INC-260622-001",
@@ -48,6 +48,28 @@
           "id": "1782158590587",
           "ts": "22/6 22:03",
           "txt": "Es en el cruce de Pozolorente. Hay gravilla en carril de deceleración."
+        }
+      ]
+    },
+    {
+      "id": "INC-260623-003",
+      "fecha": "23/06/2026",
+      "hora": "07:02",
+      "quien": "112",
+      "mensaje": "Accidente con heridos en Tarazona, avisa policía local",
+      "carretera": "CM-316",
+      "pk": "50",
+      "zona": "Norte",
+      "cerrada": true,
+      "horaCierre": "08:47",
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1782191085117,
+      "notas": [
+        {
+          "id": "1782193093382",
+          "ts": "23/6 07:38",
+          "txt": "Llama GCT diciendo que es por el 49"
         }
       ]
     }
