@@ -212,8 +212,8 @@
 </div>
 
 <div class="filtros">
-  <button class="filtro-chip activo" onclick="setFiltro('todas',this)">Todas <span class="contador-chip" id="cnt-todas">0</span></button>
-  <button class="filtro-chip" onclick="setFiltro('abierta',this)">🟢 Abiertas <span class="contador-chip" id="cnt-abierta">0</span></button>
+  <button class="filtro-chip" onclick="setFiltro('todas',this)">Todas <span class="contador-chip" id="cnt-todas">0</span></button>
+  <button class="filtro-chip activo" onclick="setFiltro('abierta',this)">🟢 Abiertas <span class="contador-chip" id="cnt-abierta">0</span></button>
   <button class="filtro-chip" onclick="setFiltro('cerrada',this)">🔴 Cerradas <span class="contador-chip" id="cnt-cerrada">0</span></button>
   <button class="filtro-chip" onclick="setFiltro('pendiente',this)">⏳ Sin pasar <span class="contador-chip" id="cnt-pendiente">0</span></button>
   <button class="filtro-chip" onclick="setFiltro('pasada',this)">✅ Pasadas <span class="contador-chip" id="cnt-pasada">0</span></button>
@@ -596,7 +596,7 @@ const GH_KEY        = 'regin_gh_config';
 let incidencias  = cargarLS(STORAGE_KEY, []);
 let tramos       = cargarLS(TRAMOS_KEY, []);
 let coordinadores= cargarLS(COORD_KEY, { norte:{nombre:'',tel:''}, sur:{nombre:'',tel:''} });
-let filtroActivo = 'todas';
+let filtroActivo = 'abierta';
 let idCierreActual = null;
 
 function cargarLS(key, def) {
