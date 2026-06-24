@@ -1,6 +1,6 @@
 {
   "version": "1.3",
-  "exportado": "2026-06-23T16:27:29.470Z",
+  "exportado": "2026-06-24T06:12:15.461Z",
   "incidencias": [
     {
       "id": "INC-260622-001",
@@ -82,11 +82,26 @@
       "carretera": "CM-3211",
       "pk": "16 - 17",
       "zona": "Norte",
-      "cerrada": false,
-      "horaCierre": null,
-      "obsCierre": null,
+      "cerrada": true,
+      "horaCierre": "19:55",
+      "obsCierre": "Se retiran 2 trozos de plástico de un camión",
       "pasada": false,
       "tsCreacion": 1782231934394
+    },
+    {
+      "id": "INC-260623-005",
+      "fecha": "23/06/2026",
+      "hora": "21:03",
+      "quien": "Guardia Civil",
+      "mensaje": "Corzo muerto en calzada",
+      "carretera": "Cm-3251",
+      "pk": "3+500",
+      "zona": "Norte",
+      "cerrada": true,
+      "horaCierre": "22:44",
+      "obsCierre": "No se encuentra el animal",
+      "pasada": false,
+      "tsCreacion": 1782241475569
     }
   ],
   "tramos": [
@@ -528,6 +543,14 @@
       "pkFin": "8+425",
       "tramoDesc": "Nerpio - Pedro Andrés",
       "obs": ""
+    },
+    {
+      "carretera": "CM-412A",
+      "zona": "Sur",
+      "pkIni": "263+000",
+      "pkFin": "269+000",
+      "tramoDesc": "Isso - Hellín",
+      "obs": "CEDIDO AYTO. HELLÍN"
     }
   ],
   "coordinadores": {
