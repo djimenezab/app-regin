@@ -1,6 +1,6 @@
 {
   "version": "1.3",
-  "exportado": "2026-06-24T06:12:15.461Z",
+  "exportado": "2026-06-30T10:52:55.860Z",
   "incidencias": [
     {
       "id": "INC-260622-001",
@@ -85,7 +85,7 @@
       "cerrada": true,
       "horaCierre": "19:55",
       "obsCierre": "Se retiran 2 trozos de plástico de un camión",
-      "pasada": false,
+      "pasada": true,
       "tsCreacion": 1782231934394
     },
     {
@@ -100,8 +100,15 @@
       "cerrada": true,
       "horaCierre": "22:44",
       "obsCierre": "No se encuentra el animal",
-      "pasada": false,
-      "tsCreacion": 1782241475569
+      "pasada": true,
+      "tsCreacion": 1782241475569,
+      "notas": [
+        {
+          "id": "1782816726946",
+          "ts": "30/6 12:52",
+          "txt": "Me falto añadir, que luego si me llaman diciendo que encuentran el animal."
+        }
+      ]
     }
   ],
   "tramos": [
