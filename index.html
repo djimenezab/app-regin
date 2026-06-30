@@ -257,7 +257,8 @@
     <div class="form-row">
       <div class="form-group">
         <label>Carretera</label>
-        <input type="text" id="campo-carretera" class="form-control" placeholder="Ej: A-30, N-430..." oninput="actualizarZona()">
+        <input type="text" id="campo-carretera" class="form-control" placeholder="Ej: A-30, N-430..." list="lista-carreteras-datalist" oninput="this.value=this.value.toUpperCase(); actualizarZona()">
+        <datalist id="lista-carreteras-datalist"></datalist>
       </div>
       <div class="form-group">
         <label>PK (punto kilométrico)</label>
@@ -848,6 +849,13 @@ function actualizarContadores() {
 // ══════════════════════════════════════════
 //  FORMULARIO NUEVA INCIDENCIA
 // ══════════════════════════════════════════
+function poblarListaCarreteras() {
+  const dl = document.getElementById('lista-carreteras-datalist');
+  if (!dl) return;
+  const unicas = [...new Set(tramos.map(t => t.carretera))].sort();
+  dl.innerHTML = unicas.map(c => `<option value="${c}">`).join('');
+}
+
 function abrirFormulario() {
   const {fecha, hora} = ahora();
   document.getElementById('campo-fecha').value = fecha;
@@ -856,6 +864,7 @@ function abrirFormulario() {
   document.getElementById('campo-mensaje').value = '';
   document.getElementById('campo-carretera').value = '';
   document.getElementById('campo-pk').value = '';
+  poblarListaCarreteras();
   ['zona-norte','zona-sur','zona-sin'].forEach(id => document.getElementById(id).style.display='none');
   document.getElementById('overlayNueva').classList.add('visible');
 }
