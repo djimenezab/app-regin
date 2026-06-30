@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>REGIN v1.6 — Registro de Incidencias</title>
+<title>REGIN v1.7 — Registro de Incidencias</title>
 <link rel="manifest" href="manifest.json">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -193,7 +193,7 @@
     <div class="logo-icon">🚨</div>
     <div class="logo-text">
       <h1>REGIN</h1>
-      <span>v1.6 — Registro de Incidencias</span>
+      <span>v1.7 — Registro de Incidencias</span>
     </div>
   </div>
   <div class="header-actions">
@@ -257,8 +257,12 @@
     <div class="form-row">
       <div class="form-group">
         <label>Carretera</label>
-        <input type="text" id="campo-carretera" class="form-control" placeholder="Ej: A-30, N-430..." list="lista-carreteras-datalist" oninput="this.value=this.value.toUpperCase(); actualizarZona()">
-        <datalist id="lista-carreteras-datalist"></datalist>
+        <div style="position:relative;">
+          <input type="text" id="campo-carretera" class="form-control" placeholder="Ej: A-30, N-430..." autocomplete="off"
+            oninput="this.value=this.value.toUpperCase(); actualizarZona(); filtrarSugerenciasCarretera();"
+            onfocus="mostrarSugerenciasCarretera()">
+          <div id="sugerencias-carretera" style="display:none; position:absolute; top:100%; left:0; right:0; background:var(--azul-panel); border:1px solid var(--naranja); border-radius:8px; margin-top:4px; max-height:180px; overflow-y:auto; z-index:50; box-shadow:0 8px 24px rgba(0,0,0,0.4);"></div>
+        </div>
       </div>
       <div class="form-group">
         <label>PK (punto kilométrico)</label>
@@ -578,7 +582,7 @@
 <div class="snackbar" id="snackbar"></div>
 
 <footer style="text-align:center; padding:24px 20px 32px; margin-top:20px; border-top:1px solid var(--borde);">
-  <div style="font-family:'JetBrains Mono',monospace; font-size:13px; font-weight:700; color:var(--gris-texto); letter-spacing:1px;">REGIN <span style="color:var(--naranja);">v1.6</span></div>
+  <div style="font-family:'JetBrains Mono',monospace; font-size:13px; font-weight:700; color:var(--gris-texto); letter-spacing:1px;">REGIN <span style="color:var(--naranja);">v1.7</span></div>
   <div style="font-size:12px; color:rgba(168,191,212,0.5); margin-top:4px;">© JUN 2026 &nbsp;|&nbsp; David Jiménez</div>
 </footer>
 
@@ -849,12 +853,46 @@ function actualizarContadores() {
 // ══════════════════════════════════════════
 //  FORMULARIO NUEVA INCIDENCIA
 // ══════════════════════════════════════════
+let carreterasDisponibles = [];
+
 function poblarListaCarreteras() {
-  const dl = document.getElementById('lista-carreteras-datalist');
-  if (!dl) return;
-  const unicas = [...new Set(tramos.map(t => t.carretera))].sort();
-  dl.innerHTML = unicas.map(c => `<option value="${c}">`).join('');
+  carreterasDisponibles = [...new Set(tramos.map(t => t.carretera))].sort();
 }
+
+function mostrarSugerenciasCarretera() {
+  filtrarSugerenciasCarretera();
+}
+
+function filtrarSugerenciasCarretera() {
+  const input = document.getElementById('campo-carretera');
+  const cont = document.getElementById('sugerencias-carretera');
+  const texto = input.value.trim();
+  const filtradas = texto
+    ? carreterasDisponibles.filter(c => c.includes(texto))
+    : carreterasDisponibles;
+
+  if (!filtradas.length) { cont.style.display = 'none'; return; }
+
+  cont.innerHTML = filtradas.map(c => `
+    <div onclick="seleccionarCarretera('${c}')" style="padding:10px 14px; cursor:pointer; font-family:'JetBrains Mono',monospace; font-size:13px; color:var(--blanco); border-bottom:1px solid var(--borde);" onmousedown="event.preventDefault()">
+      🛣️ ${c}
+    </div>`).join('');
+  cont.style.display = 'block';
+}
+
+function seleccionarCarretera(c) {
+  document.getElementById('campo-carretera').value = c;
+  document.getElementById('sugerencias-carretera').style.display = 'none';
+  actualizarZona();
+}
+
+document.addEventListener('click', function(e) {
+  const cont = document.getElementById('sugerencias-carretera');
+  const input = document.getElementById('campo-carretera');
+  if (cont && input && e.target !== input && !cont.contains(e.target)) {
+    cont.style.display = 'none';
+  }
+});
 
 function abrirFormulario() {
   const {fecha, hora} = ahora();
