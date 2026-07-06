@@ -593,6 +593,10 @@
 //  STORAGE KEYS
 // ══════════════════════════════════════════
 const STORAGE_KEY   = 'regin_v1_datos';
+// Variables de auto-sincronización (declaradas arriba para evitar errores de inicialización)
+let autoSubidaTimer = null;
+let sincronizando = false;
+let appLista = false; // evita auto-subidas durante la carga inicial
 const TRAMOS_KEY    = 'regin_tramos';
 const COORD_KEY     = 'regin_coordinadores';
 const GH_KEY        = 'regin_gh_config';
@@ -1669,9 +1673,6 @@ function renderDocs() {
 // ══════════════════════════════════════════
 //  AUTO-SINCRONIZACIÓN
 // ══════════════════════════════════════════
-let autoSubidaTimer = null;
-let sincronizando = false;
-let appLista = false; // evita auto-subidas durante la carga inicial
 
 function setSyncDot(color, titulo) {
   const dot = document.getElementById('sync-dot');
