@@ -1,6 +1,6 @@
 {
   "version": "1.3",
-  "exportado": "2026-07-02T06:50:59.615Z",
+  "exportado": "2026-07-06T06:45:23.937Z",
   "incidencias": [],
   "tramos": [
     {
@@ -453,12 +453,12 @@
   ],
   "coordinadores": {
     "norte": {
-      "nombre": "Miguel A. Martínez",
-      "tel": "648586171"
+      "nombre": "Francisco J. Céspedes",
+      "tel": "675834748"
     },
     "sur": {
-      "nombre": "Fco. Javier Sánchez",
-      "tel": "617582479"
+      "nombre": "Miguel A. Mtnez. Córcoles",
+      "tel": "648587771"
     }
   },
   "agenda": [
@@ -476,11 +476,23 @@
       "id": "1781781672244",
       "nombre": "Fco. Javier Sánchez",
       "tel": "617582479"
+    },
+    {
+      "id": "1783320263298",
+      "nombre": "Francisco J. Céspedes",
+      "tel": "675834748",
+      "tel2": ""
+    },
+    {
+      "id": "1783320305442",
+      "nombre": "Miguel A. Mtnez. Córcoles",
+      "tel": "648587771",
+      "tel2": ""
     }
   ],
   "turno": {
-    "norte": "1781779351056",
-    "sur": "1781781672244"
+    "norte": "1783320263298",
+    "sur": "1783320305442"
   },
   "cambiosTurno": [],
   "documentos": [
