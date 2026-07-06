@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>REGIN v1.8 — Registro de Incidencias</title>
+<title>REGIN v1.9 — Registro de Incidencias</title>
 <link rel="manifest" href="manifest.json">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -193,10 +193,11 @@
     <div class="logo-icon">🚨</div>
     <div class="logo-text">
       <h1>REGIN</h1>
-      <span>v1.8 — Registro de Incidencias</span>
+      <span>v1.9 — Registro de Incidencias</span>
     </div>
   </div>
   <div class="header-actions">
+    <div id="sync-dot" title="Estado de sincronización" style="width:10px; height:10px; border-radius:50%; background:var(--gris-texto); margin-right:4px; flex-shrink:0; transition:background 0.3s;"></div>
     <button class="btn btn-ghost btn-icon" onclick="abrirDocs()" title="Documentación">📚</button>
     <button class="btn btn-ghost btn-icon" onclick="abrirConfig()" title="Configuración">⚙️</button>
     <button class="btn btn-ghost btn-icon" onclick="abrirSync()" title="Sincronización">⬆⬇</button>
@@ -583,7 +584,7 @@
 <div class="snackbar" id="snackbar"></div>
 
 <footer style="text-align:center; padding:24px 20px 32px; margin-top:20px; border-top:1px solid var(--borde);">
-  <div style="font-family:'JetBrains Mono',monospace; font-size:13px; font-weight:700; color:var(--gris-texto); letter-spacing:1px;">REGIN <span style="color:var(--naranja);">v1.8</span></div>
+  <div style="font-family:'JetBrains Mono',monospace; font-size:13px; font-weight:700; color:var(--gris-texto); letter-spacing:1px;">REGIN <span style="color:var(--naranja);">v1.9</span></div>
   <div style="font-size:12px; color:rgba(168,191,212,0.5); margin-top:4px;">© JUN 2026 &nbsp;|&nbsp; David Jiménez</div>
 </footer>
 
@@ -608,7 +609,12 @@ let idCierreActual = null;
 function cargarLS(key, def) {
   try { const r = localStorage.getItem(key); return r ? JSON.parse(r) : def; } catch(e) { return def; }
 }
-function guardarLS(key, val) { localStorage.setItem(key, JSON.stringify(val)); }
+// Claves que representan DATOS (disparan auto-sync). La config GH no.
+const CLAVES_DATOS = ['regin_v1_datos','regin_tramos','regin_coordinadores','regin_agenda','regin_turno','regin_cambios_turno','regin_docs'];
+function guardarLS(key, val) {
+  localStorage.setItem(key, JSON.stringify(val));
+  if (CLAVES_DATOS.includes(key)) programarAutoSubida();
+}
 function guardarDatos() { guardarLS(STORAGE_KEY, incidencias); }
 
 // ══════════════════════════════════════════
@@ -1661,6 +1667,116 @@ function renderDocs() {
 });
 
 // ══════════════════════════════════════════
+//  AUTO-SINCRONIZACIÓN
+// ══════════════════════════════════════════
+let autoSubidaTimer = null;
+let sincronizando = false;
+let appLista = false; // evita auto-subidas durante la carga inicial
+
+function setSyncDot(color, titulo) {
+  const dot = document.getElementById('sync-dot');
+  if (!dot) return;
+  dot.style.background = color;
+  dot.title = titulo;
+}
+
+function ghConfigurado() {
+  const cfg = cargarConfigGH();
+  return !!(cfg.token && cfg.usuario && cfg.repo);
+}
+
+// Programa una subida con retraso de 3s (agrupa cambios seguidos en una sola subida)
+function programarAutoSubida() {
+  if (!appLista || !ghConfigurado()) return;
+  clearTimeout(autoSubidaTimer);
+  setSyncDot('var(--amarillo)', 'Cambios pendientes de subir...');
+  autoSubidaTimer = setTimeout(autoSubir, 3000);
+}
+
+async function autoSubir() {
+  if (sincronizando || !ghConfigurado()) return;
+  sincronizando = true;
+  setSyncDot('var(--amarillo)', 'Subiendo a GitHub...');
+  const cfg = cargarConfigGH();
+  const payload = {
+    version: '1.9',
+    exportado: new Date().toISOString(),
+    incidencias:   cargarLS(STORAGE_KEY, []),
+    tramos:        cargarLS(TRAMOS_KEY, []),
+    coordinadores: cargarLS(COORD_KEY, {}),
+    agenda:        cargarLS(AGENDA_KEY, []),
+    turno:         cargarLS(TURNO_KEY, { norte:'', sur:'' }),
+    cambiosTurno:  cargarLS(CAMBIOS_KEY, []),
+    documentos:    cargarLS(DOCS_KEY, [])
+  };
+  const base64 = btoa(unescape(encodeURIComponent(JSON.stringify(payload, null, 2))));
+  const apiUrl = `https://api.github.com/repos/${cfg.usuario}/${cfg.repo}/contents/${cfg.archivo}`;
+  try {
+    let sha = null;
+    const gr = await fetch(apiUrl, { headers: { 'Authorization': `token ${cfg.token}`, 'Accept': 'application/vnd.github.v3+json' } });
+    if (gr.ok) { const gd = await gr.json(); sha = gd.sha; }
+    const pr = await fetch(apiUrl, {
+      method: 'PUT',
+      headers: { 'Authorization': `token ${cfg.token}`, 'Accept': 'application/vnd.github.v3+json', 'Content-Type': 'application/json' },
+      body: JSON.stringify({ message: `REGIN auto-sync ${new Date().toLocaleString('es-ES')}`, content: base64, ...(sha ? { sha } : {}) })
+    });
+    if (pr.ok) {
+      setSyncDot('var(--verde)', 'Sincronizado ✓');
+    } else {
+      setSyncDot('var(--rojo)', 'Error al subir — usa el panel ⬆⬇ para reintentarlo');
+    }
+  } catch(e) {
+    setSyncDot('var(--rojo)', 'Sin conexión — los cambios se guardan localmente');
+  }
+  sincronizando = false;
+}
+
+// Descarga automática al abrir la app
+async function autoDescargar() {
+  if (!ghConfigurado()) {
+    setSyncDot('var(--gris-texto)', 'GitHub sin configurar — ve a ⬆⬇');
+    appLista = true;
+    return;
+  }
+  sincronizando = true;
+  setSyncDot('var(--amarillo)', 'Descargando datos de GitHub...');
+  toast('⏳ Sincronizando con GitHub...');
+  const cfg = cargarConfigGH();
+  const apiUrl = `https://api.github.com/repos/${cfg.usuario}/${cfg.repo}/contents/${cfg.archivo}`;
+  try {
+    const res = await fetch(apiUrl, { headers: { 'Authorization': `token ${cfg.token}`, 'Accept': 'application/vnd.github.v3+json' } });
+    if (res.ok) {
+      const data = await res.json();
+      const texto = decodeURIComponent(escape(atob(data.content.replace(/\n/g,''))));
+      const parsed = JSON.parse(texto);
+      if (parsed.incidencias && Array.isArray(parsed.incidencias)) {
+        incidencias = parsed.incidencias;
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(incidencias));
+        if (parsed.tramos)       { tramos = parsed.tramos;              localStorage.setItem(TRAMOS_KEY, JSON.stringify(tramos)); }
+        if (parsed.coordinadores){ coordinadores = parsed.coordinadores; localStorage.setItem(COORD_KEY, JSON.stringify(coordinadores)); }
+        if (parsed.agenda)       { agenda = parsed.agenda;              localStorage.setItem(AGENDA_KEY, JSON.stringify(agenda)); }
+        if (parsed.turno)        { turno = parsed.turno;                localStorage.setItem(TURNO_KEY, JSON.stringify(turno)); }
+        if (parsed.cambiosTurno) { cambiosTurno = parsed.cambiosTurno;  localStorage.setItem(CAMBIOS_KEY, JSON.stringify(cambiosTurno)); }
+        if (parsed.documentos)   { documentos = parsed.documentos;      localStorage.setItem(DOCS_KEY, JSON.stringify(documentos)); }
+        renderLista();
+        setSyncDot('var(--verde)', 'Sincronizado ✓');
+        toast('✓ Datos actualizados desde GitHub', 'ok');
+      } else {
+        setSyncDot('var(--rojo)', 'El archivo de GitHub tiene formato incorrecto');
+      }
+    } else {
+      setSyncDot('var(--rojo)', 'No se pudo descargar de GitHub');
+      toast('⚠️ No se pudo sincronizar — trabajando con datos locales', 'err');
+    }
+  } catch(e) {
+    setSyncDot('var(--rojo)', 'Sin conexión — trabajando con datos locales');
+    toast('⚠️ Sin conexión — datos locales', 'err');
+  }
+  sincronizando = false;
+  appLista = true;
+}
+
+// ══════════════════════════════════════════
 //  SERVICE WORKER (PWA)
 // ══════════════════════════════════════════
 if ('serviceWorker' in navigator) {
@@ -1673,6 +1789,7 @@ if ('serviceWorker' in navigator) {
 //  INICIO
 // ══════════════════════════════════════════
 renderLista();
+autoDescargar();
 </script>
 </body>
 </html>
