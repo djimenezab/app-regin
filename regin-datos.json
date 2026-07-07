@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-07-06T11:14:38.965Z",
+  "exportado": "2026-07-07T09:53:19.331Z",
   "incidencias": [
     {
       "id": "INC-260706-001",
@@ -23,6 +23,21 @@
           "txt": "Llama 112 diciendo que es al salir de Casas Ibañez"
         }
       ]
+    },
+    {
+      "id": "INC-260707-002",
+      "fecha": "07/07/2026",
+      "hora": "11:52",
+      "quien": "112",
+      "mensaje": "Gato muerto",
+      "carretera": "CM-3203",
+      "pk": "7",
+      "zona": "Norte",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1783417996323
     }
   ],
   "tramos": [
