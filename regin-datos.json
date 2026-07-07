@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-07-07T09:53:19.331Z",
+  "exportado": "2026-07-07T11:12:13.913Z",
   "incidencias": [
     {
       "id": "INC-260706-001",
@@ -33,9 +33,9 @@
       "carretera": "CM-3203",
       "pk": "7",
       "zona": "Norte",
-      "cerrada": false,
-      "horaCierre": null,
-      "obsCierre": null,
+      "cerrada": true,
+      "horaCierre": "13:11",
+      "obsCierre": "Me pasa foto Tomas del gato.",
       "pasada": false,
       "tsCreacion": 1783417996323
     }
