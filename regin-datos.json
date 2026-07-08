@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-07-08T12:15:06.069Z",
+  "exportado": "2026-07-08T13:25:00.760Z",
   "incidencias": [
     {
       "id": "INC-260706-001",
@@ -80,6 +80,21 @@
           "txt": "Nos dice la G.C. que volvamos a por señales, mando a Manolo a recoger las señales del cambión de la brigada."
         }
       ]
+    },
+    {
+      "id": "INC-260708-005",
+      "fecha": "08/07/2026",
+      "hora": "15:24",
+      "quien": "112",
+      "mensaje": "3 turismos",
+      "carretera": "CM-332",
+      "pk": "12+500",
+      "zona": "Norte",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1783517097758
     }
   ],
   "tramos": [
