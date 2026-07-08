@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-07-08T04:28:00.458Z",
+  "exportado": "2026-07-08T09:46:16.023Z",
   "incidencias": [
     {
       "id": "INC-260706-001",
@@ -53,6 +53,21 @@
       "obsCierre": null,
       "pasada": false,
       "tsCreacion": 1783484877451
+    },
+    {
+      "id": "INC-260708-004",
+      "fecha": "08/07/2026",
+      "hora": "11:45",
+      "quien": "112",
+      "mensaje": "8 km antes de llegar a Tarazona desde La Roda, camión averiado en cuesta.",
+      "carretera": "CM-316",
+      "pk": "",
+      "zona": "Norte",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1783503973009
     }
   ],
   "tramos": [
