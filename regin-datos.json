@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-07-08T12:14:44.603Z",
+  "exportado": "2026-07-08T12:15:06.069Z",
   "incidencias": [
     {
       "id": "INC-260706-001",
@@ -36,7 +36,7 @@
       "cerrada": true,
       "horaCierre": "13:11",
       "obsCierre": "Me pasa foto Tomas del gato.",
-      "pasada": false,
+      "pasada": true,
       "tsCreacion": 1783417996323
     },
     {
