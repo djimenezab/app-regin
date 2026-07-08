@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-07-08T09:46:40.021Z",
+  "exportado": "2026-07-08T10:34:04.579Z",
   "incidencias": [
     {
       "id": "INC-260706-001",
@@ -67,7 +67,14 @@
       "horaCierre": null,
       "obsCierre": null,
       "pasada": false,
-      "tsCreacion": 1783503973009
+      "tsCreacion": 1783503973009,
+      "notas": [
+        {
+          "id": "1783506841565",
+          "ts": "8/7 12:34",
+          "txt": "Llama G.C. que esta en el PK 49 y esta peligroso por curva y cambio rasante."
+        }
+      ]
     }
   ],
   "tramos": [
