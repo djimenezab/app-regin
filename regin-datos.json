@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-07-08T09:46:16.023Z",
+  "exportado": "2026-07-08T09:46:40.021Z",
   "incidencias": [
     {
       "id": "INC-260706-001",
@@ -48,9 +48,9 @@
       "carretera": "CM-313",
       "pk": "139",
       "zona": "Sur",
-      "cerrada": false,
-      "horaCierre": null,
-      "obsCierre": null,
+      "cerrada": true,
+      "horaCierre": "11:46",
+      "obsCierre": "Era un zorro, hay foto. Va Tomas G. Uceda.",
       "pasada": false,
       "tsCreacion": 1783484877451
     },
