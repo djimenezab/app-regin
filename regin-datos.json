@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-07-08T13:25:00.760Z",
+  "exportado": "2026-07-08T15:02:05.767Z",
   "incidencias": [
     {
       "id": "INC-260706-001",
@@ -95,6 +95,21 @@
       "obsCierre": null,
       "pasada": false,
       "tsCreacion": 1783517097758
+    },
+    {
+      "id": "INC-260708-006",
+      "fecha": "08/07/2026",
+      "hora": "17:01",
+      "quien": "Guardia Civil",
+      "mensaje": "Señalizar Camion enfrente Sanchez y Murcia",
+      "carretera": "CM-332",
+      "pk": "0",
+      "zona": "Norte",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1783522922755
     }
   ],
   "tramos": [
