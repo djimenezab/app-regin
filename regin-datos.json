@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-07-07T11:12:13.913Z",
+  "exportado": "2026-07-08T04:28:00.458Z",
   "incidencias": [
     {
       "id": "INC-260706-001",
@@ -38,6 +38,21 @@
       "obsCierre": "Me pasa foto Tomas del gato.",
       "pasada": false,
       "tsCreacion": 1783417996323
+    },
+    {
+      "id": "INC-260708-003",
+      "fecha": "08/07/2026",
+      "hora": "06:26",
+      "quien": "112",
+      "mensaje": "Jabalí atropellado y restos del turismo.",
+      "carretera": "CM-313",
+      "pk": "139",
+      "zona": "Sur",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1783484877451
     }
   ],
   "tramos": [
