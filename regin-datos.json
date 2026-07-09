@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-07-09T06:43:26.529Z",
+  "exportado": "2026-07-09T18:53:10.657Z",
   "incidencias": [
     {
       "id": "INC-260706-001",
@@ -110,6 +110,21 @@
       "obsCierre": "No era nuestra.",
       "pasada": true,
       "tsCreacion": 1783522922755
+    },
+    {
+      "id": "INC-260709-007",
+      "fecha": "09/07/2026",
+      "hora": "20:52",
+      "quien": "112",
+      "mensaje": "Incendio por la Roda",
+      "carretera": "CM-3121",
+      "pk": "28",
+      "zona": "Norte",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1783623187656
     }
   ],
   "tramos": [
