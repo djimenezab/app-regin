@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-07-09T18:53:10.657Z",
+  "exportado": "2026-07-09T20:53:45.592Z",
   "incidencias": [
     {
       "id": "INC-260706-001",
@@ -120,9 +120,9 @@
       "carretera": "CM-3121",
       "pk": "28",
       "zona": "Norte",
-      "cerrada": false,
-      "horaCierre": null,
-      "obsCierre": null,
+      "cerrada": true,
+      "horaCierre": "22:53",
+      "obsCierre": "Nos dice G.C. Que nos podemos retirar.",
       "pasada": false,
       "tsCreacion": 1783623187656
     }
