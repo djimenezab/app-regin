@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-07-10T17:46:00.844Z",
+  "exportado": "2026-07-10T17:46:41.207Z",
   "incidencias": [
     {
       "id": "INC-260706-001",
@@ -172,9 +172,9 @@
       "carretera": "CM-412",
       "pk": "222",
       "zona": "Sur",
-      "cerrada": false,
-      "horaCierre": null,
-      "obsCierre": null,
+      "cerrada": true,
+      "horaCierre": "19:46",
+      "obsCierre": "En la carretera no hay nada, esta el coche en el bancal.",
       "pasada": false,
       "tsCreacion": 1783703089364,
       "notas": [
