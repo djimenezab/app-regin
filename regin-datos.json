@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-07-10T17:05:07.418Z",
+  "exportado": "2026-07-10T17:46:00.844Z",
   "incidencias": [
     {
       "id": "INC-260706-001",
@@ -176,7 +176,14 @@
       "horaCierre": null,
       "obsCierre": null,
       "pasada": false,
-      "tsCreacion": 1783703089364
+      "tsCreacion": 1783703089364,
+      "notas": [
+        {
+          "id": "1783705557842",
+          "ts": "10/7 19:45",
+          "txt": "Daños 1 panel direccional y 2 postes"
+        }
+      ]
     }
   ],
   "tramos": [
