@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-07-10T16:21:52.386Z",
+  "exportado": "2026-07-10T17:04:52.365Z",
   "incidencias": [
     {
       "id": "INC-260706-001",
@@ -162,6 +162,21 @@
           "txt": "Miguel se da una vuelta y no ve nada."
         }
       ]
+    },
+    {
+      "id": "INC-260710-010",
+      "fecha": "10/07/2026",
+      "hora": "19:02",
+      "quien": "112",
+      "mensaje": "Accidente salida de vía.",
+      "carretera": "CM-412",
+      "pk": "222",
+      "zona": "Sur",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1783703089364
     }
   ],
   "tramos": [
