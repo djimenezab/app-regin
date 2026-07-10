@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-07-10T13:05:13.692Z",
+  "exportado": "2026-07-10T16:02:39.661Z",
   "incidencias": [
     {
       "id": "INC-260706-001",
@@ -140,6 +140,21 @@
       "obsCierre": "Llega GC y dice que nos retiremos que el coche está fuera, se va el equipo a comer.",
       "pasada": false,
       "tsCreacion": 1783684620756
+    },
+    {
+      "id": "INC-260710-009",
+      "fecha": "10/07/2026",
+      "hora": "18:00",
+      "quien": "112",
+      "mensaje": "Cabra muerta, esperamos a ver si guardia civil, avisa a retirarla.",
+      "carretera": "CM-412",
+      "pk": "238",
+      "zona": "Sur",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1783699356649
     }
   ],
   "tramos": [
