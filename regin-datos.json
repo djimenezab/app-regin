@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-07-10T05:56:35.911Z",
+  "exportado": "2026-07-10T11:57:03.759Z",
   "incidencias": [
     {
       "id": "INC-260706-001",
@@ -125,6 +125,21 @@
       "obsCierre": "Nos dice G.C. Que nos podemos retirar.",
       "pasada": true,
       "tsCreacion": 1783623187656
+    },
+    {
+      "id": "INC-260710-008",
+      "fecha": "10/07/2026",
+      "hora": "13:55",
+      "quien": "112",
+      "mensaje": "Accidente con vehículo volcado, sentido Hellin.",
+      "carretera": "CM-313",
+      "pk": "130",
+      "zona": "Sur",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1783684620756
     }
   ],
   "tramos": [
