@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-07-09T20:53:45.592Z",
+  "exportado": "2026-07-10T05:56:35.911Z",
   "incidencias": [
     {
       "id": "INC-260706-001",
@@ -123,7 +123,7 @@
       "cerrada": true,
       "horaCierre": "22:53",
       "obsCierre": "Nos dice G.C. Que nos podemos retirar.",
-      "pasada": false,
+      "pasada": true,
       "tsCreacion": 1783623187656
     }
   ],
