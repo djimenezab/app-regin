@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-07-10T11:57:03.759Z",
+  "exportado": "2026-07-10T13:05:13.692Z",
   "incidencias": [
     {
       "id": "INC-260706-001",
@@ -135,9 +135,9 @@
       "carretera": "CM-313",
       "pk": "130",
       "zona": "Sur",
-      "cerrada": false,
-      "horaCierre": null,
-      "obsCierre": null,
+      "cerrada": true,
+      "horaCierre": "15:04",
+      "obsCierre": "Llega GC y dice que nos retiremos que el coche está fuera, se va el equipo a comer.",
       "pasada": false,
       "tsCreacion": 1783684620756
     }
