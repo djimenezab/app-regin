@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-07-10T16:02:39.661Z",
+  "exportado": "2026-07-10T16:21:52.386Z",
   "incidencias": [
     {
       "id": "INC-260706-001",
@@ -154,7 +154,14 @@
       "horaCierre": null,
       "obsCierre": null,
       "pasada": false,
-      "tsCreacion": 1783699356649
+      "tsCreacion": 1783699356649,
+      "notas": [
+        {
+          "id": "1783700509383",
+          "ts": "10/7 18:21",
+          "txt": "Miguel se da una vuelta y no ve nada."
+        }
+      ]
     }
   ],
   "tramos": [
