@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-07-10T17:46:41.207Z",
+  "exportado": "2026-07-11T10:05:30.276Z",
   "incidencias": [
     {
       "id": "INC-260706-001",
@@ -184,6 +184,21 @@
           "txt": "Daños 1 panel direccional y 2 postes"
         }
       ]
+    },
+    {
+      "id": "INC-260711-011",
+      "fecha": "11/07/2026",
+      "hora": "12:04",
+      "quien": "112",
+      "mensaje": "Restos de accidente de moto.",
+      "carretera": "CM-3204",
+      "pk": "18",
+      "zona": "Sur",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1783764327273
     }
   ],
   "tramos": [
