@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-07-11T13:03:05.390Z",
+  "exportado": "2026-07-11T14:08:45.436Z",
   "incidencias": [
     {
       "id": "INC-260706-001",
@@ -209,9 +209,9 @@
       "carretera": "CM-412",
       "pk": "219",
       "zona": "Sur",
-      "cerrada": false,
-      "horaCierre": null,
-      "obsCierre": null,
+      "cerrada": true,
+      "horaCierre": "16:08",
+      "obsCierre": "Retiran el coche a un camino.",
       "pasada": false,
       "tsCreacion": 1783774982382
     }
