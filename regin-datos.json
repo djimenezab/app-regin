@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-07-11T12:22:48.961Z",
+  "exportado": "2026-07-11T13:03:05.390Z",
   "incidencias": [
     {
       "id": "INC-260706-001",
@@ -199,6 +199,21 @@
       "obsCierre": "No se encuentran restos.",
       "pasada": false,
       "tsCreacion": 1783764327273
+    },
+    {
+      "id": "INC-260711-012",
+      "fecha": "11/07/2026",
+      "hora": "14:59",
+      "quien": "112",
+      "mensaje": "Vehículo averiado.",
+      "carretera": "CM-412",
+      "pk": "219",
+      "zona": "Sur",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1783774982382
     }
   ],
   "tramos": [
