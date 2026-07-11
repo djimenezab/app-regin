@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-07-11T10:05:30.276Z",
+  "exportado": "2026-07-11T12:22:48.961Z",
   "incidencias": [
     {
       "id": "INC-260706-001",
@@ -194,9 +194,9 @@
       "carretera": "CM-3204",
       "pk": "18",
       "zona": "Sur",
-      "cerrada": false,
-      "horaCierre": null,
-      "obsCierre": null,
+      "cerrada": true,
+      "horaCierre": "14:22",
+      "obsCierre": "No se encuentran restos.",
       "pasada": false,
       "tsCreacion": 1783764327273
     }
