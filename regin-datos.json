@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-07-11T14:08:45.436Z",
+  "exportado": "2026-07-12T16:00:50.486Z",
   "incidencias": [
     {
       "id": "INC-260706-001",
@@ -214,6 +214,21 @@
       "obsCierre": "Retiran el coche a un camino.",
       "pasada": false,
       "tsCreacion": 1783774982382
+    },
+    {
+      "id": "INC-260712-013",
+      "fecha": "12/07/2026",
+      "hora": "18:00",
+      "quien": "112",
+      "mensaje": "Salida de vía",
+      "carretera": "CM-412",
+      "pk": "228",
+      "zona": "Sur",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1783872047484
     }
   ],
   "tramos": [
