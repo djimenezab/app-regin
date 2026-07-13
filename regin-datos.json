@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-07-13T06:32:52.966Z",
+  "exportado": "2026-07-13T06:41:08.849Z",
   "incidencias": [
     {
       "id": "INC-260706-001",
@@ -229,6 +229,21 @@
       "obsCierre": "Se retira el turismo por la grúa.",
       "pasada": false,
       "tsCreacion": 1783872047484
+    },
+    {
+      "id": "INC-260713-014",
+      "fecha": "13/07/2026",
+      "hora": "08:40",
+      "quien": "112",
+      "mensaje": "Acc. camión atropello ciclista.",
+      "carretera": "CM-412",
+      "pk": "324",
+      "zona": "Norte",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1783924865836
     }
   ],
   "tramos": [
