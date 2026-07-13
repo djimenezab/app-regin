@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-07-13T06:46:04.759Z",
+  "exportado": "2026-07-13T08:21:08.564Z",
   "incidencias": [
     {
       "id": "INC-260706-001",
@@ -239,9 +239,9 @@
       "carretera": "CM-412",
       "pk": "324",
       "zona": "Norte",
-      "cerrada": false,
-      "horaCierre": null,
-      "obsCierre": null,
+      "cerrada": true,
+      "horaCierre": "10:20",
+      "obsCierre": "El camión ya no estaba, no ha habido daños.",
       "pasada": false,
       "tsCreacion": 1783924865836
     }
