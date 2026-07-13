@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-07-13T11:14:56.854Z",
+  "exportado": "2026-07-13T12:46:06.263Z",
   "incidencias": [
     {
       "id": "INC-260706-001",
@@ -259,6 +259,21 @@
       "obsCierre": "Llama 112 diciendo que ya no es necesario ir. Jose dice que están en el cruce y que tienen apoyo para irse",
       "pasada": false,
       "tsCreacion": 1783938226356
+    },
+    {
+      "id": "INC-260713-016",
+      "fecha": "13/07/2026",
+      "hora": "14:45",
+      "quien": "Guardia Civil",
+      "mensaje": "Accidente en La Roda. Hay piedras y esta bastante mal.",
+      "carretera": "CM-3135",
+      "pk": "1",
+      "zona": "Norte",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1783946763253
     }
   ],
   "tramos": [
