@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-07-13T12:46:06.263Z",
+  "exportado": "2026-07-13T14:27:45.445Z",
   "incidencias": [
     {
       "id": "INC-260706-001",
@@ -269,9 +269,9 @@
       "carretera": "CM-3135",
       "pk": "1",
       "zona": "Norte",
-      "cerrada": false,
-      "horaCierre": null,
-      "obsCierre": null,
+      "cerrada": true,
+      "horaCierre": "16:27",
+      "obsCierre": "Se queda limpio, había restos de cristales.",
       "pasada": false,
       "tsCreacion": 1783946763253
     }
