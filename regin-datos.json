@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-07-12T18:30:50.865Z",
+  "exportado": "2026-07-13T06:32:39.968Z",
   "incidencias": [
     {
       "id": "INC-260706-001",
@@ -138,7 +138,7 @@
       "cerrada": true,
       "horaCierre": "15:04",
       "obsCierre": "Llega GC y dice que nos retiremos que el coche está fuera, se va el equipo a comer.",
-      "pasada": false,
+      "pasada": true,
       "tsCreacion": 1783684620756
     },
     {
