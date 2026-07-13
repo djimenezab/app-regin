@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-07-13T08:56:21.328Z",
+  "exportado": "2026-07-13T09:08:13.976Z",
   "incidencias": [
     {
       "id": "INC-260706-001",
@@ -227,7 +227,7 @@
       "cerrada": true,
       "horaCierre": "20:30",
       "obsCierre": "Se retira el turismo por la grúa.",
-      "pasada": false,
+      "pasada": true,
       "tsCreacion": 1783872047484
     },
     {
