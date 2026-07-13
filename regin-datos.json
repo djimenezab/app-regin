@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-07-13T09:42:11.394Z",
+  "exportado": "2026-07-13T09:43:05.777Z",
   "incidencias": [
     {
       "id": "INC-260706-001",
@@ -756,7 +756,16 @@
     "norte": "1783935624448",
     "sur": "1783935653620"
   },
-  "cambiosTurno": [],
+  "cambiosTurno": [
+    {
+      "id": "1783935782767",
+      "zona": "Norte",
+      "coordId": "1783935728393",
+      "desde": "2026-07-18T07:00",
+      "hasta": "2026-07-20T08:00",
+      "nombreCoord": "Acisclo Valcarcel"
+    }
+  ],
   "documentos": [
     {
       "id": "1781803373918",
