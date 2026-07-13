@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-07-13T09:08:13.976Z",
+  "exportado": "2026-07-13T09:20:59.492Z",
   "incidencias": [
     {
       "id": "INC-260706-001",
@@ -242,7 +242,7 @@
       "cerrada": true,
       "horaCierre": "10:20",
       "obsCierre": "El camión ya no estaba, no ha habido daños.",
-      "pasada": false,
+      "pasada": true,
       "tsCreacion": 1783924865836
     }
   ],
