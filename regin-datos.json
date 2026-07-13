@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-07-13T09:40:56.630Z",
+  "exportado": "2026-07-13T09:41:08.580Z",
   "incidencias": [
     {
       "id": "INC-260706-001",
@@ -697,8 +697,8 @@
   ],
   "coordinadores": {
     "norte": {
-      "nombre": "Francisco J. Céspedes",
-      "tel": "675834748"
+      "nombre": "Jose L. García García",
+      "tel": "627268112"
     },
     "sur": {
       "nombre": "Miguel A. Mtnez. Córcoles",
@@ -747,7 +747,7 @@
     }
   ],
   "turno": {
-    "norte": "1783320263298",
+    "norte": "1783935624448",
     "sur": "1783320305442"
   },
   "cambiosTurno": [],
