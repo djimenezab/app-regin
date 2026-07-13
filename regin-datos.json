@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-07-13T09:41:08.580Z",
+  "exportado": "2026-07-13T09:41:12.684Z",
   "incidencias": [
     {
       "id": "INC-260706-001",
@@ -701,8 +701,8 @@
       "tel": "627268112"
     },
     "sur": {
-      "nombre": "Miguel A. Mtnez. Córcoles",
-      "tel": "648587771"
+      "nombre": "Ana R. García Hurtado",
+      "tel": "646265011"
     }
   },
   "agenda": [
@@ -748,7 +748,7 @@
   ],
   "turno": {
     "norte": "1783935624448",
-    "sur": "1783320305442"
+    "sur": "1783935653620"
   },
   "cambiosTurno": [],
   "documentos": [
