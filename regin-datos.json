@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-07-13T10:21:29.356Z",
+  "exportado": "2026-07-13T10:23:49.365Z",
   "incidencias": [
     {
       "id": "INC-260706-001",
@@ -244,6 +244,21 @@
       "obsCierre": "El camión ya no estaba, no ha habido daños.",
       "pasada": true,
       "tsCreacion": 1783924865836
+    },
+    {
+      "id": "INC-260713-015",
+      "fecha": "13/07/2026",
+      "hora": "12:23",
+      "quien": "Guardia Civil",
+      "mensaje": "Hay una cosechadora incendiada en la carretera.",
+      "carretera": "CM-3209",
+      "pk": "29",
+      "zona": "Norte",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1783938226356
     }
   ],
   "tramos": [
