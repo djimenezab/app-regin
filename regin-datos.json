@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-07-13T08:46:59.802Z",
+  "exportado": "2026-07-13T08:56:21.328Z",
   "incidencias": [
     {
       "id": "INC-260706-001",
@@ -212,7 +212,7 @@
       "cerrada": true,
       "horaCierre": "16:08",
       "obsCierre": "Retiran el coche a un camino.",
-      "pasada": false,
+      "pasada": true,
       "tsCreacion": 1783774982382
     },
     {
