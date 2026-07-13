@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-07-13T06:41:08.849Z",
+  "exportado": "2026-07-13T06:46:04.759Z",
   "incidencias": [
     {
       "id": "INC-260706-001",
@@ -175,7 +175,7 @@
       "cerrada": true,
       "horaCierre": "19:46",
       "obsCierre": "En la carretera no hay nada, esta el coche en el bancal.",
-      "pasada": false,
+      "pasada": true,
       "tsCreacion": 1783703089364,
       "notas": [
         {
