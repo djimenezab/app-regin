@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-07-13T10:23:49.365Z",
+  "exportado": "2026-07-13T11:14:56.854Z",
   "incidencias": [
     {
       "id": "INC-260706-001",
@@ -254,9 +254,9 @@
       "carretera": "CM-3209",
       "pk": "29",
       "zona": "Norte",
-      "cerrada": false,
-      "horaCierre": null,
-      "obsCierre": null,
+      "cerrada": true,
+      "horaCierre": "13:14",
+      "obsCierre": "Llama 112 diciendo que ya no es necesario ir. Jose dice que están en el cruce y que tienen apoyo para irse",
       "pasada": false,
       "tsCreacion": 1783938226356
     }
