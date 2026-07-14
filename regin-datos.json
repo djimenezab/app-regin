@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-07-14T09:37:37.339Z",
+  "exportado": "2026-07-14T14:05:25.753Z",
   "incidencias": [
     {
       "id": "INC-260706-001",
@@ -274,6 +274,21 @@
       "obsCierre": "Se queda limpio, había restos de cristales.",
       "pasada": true,
       "tsCreacion": 1783946763253
+    },
+    {
+      "id": "INC-260714-017",
+      "fecha": "14/07/2026",
+      "hora": "16:04",
+      "quien": "112",
+      "mensaje": "Veh. Averiado",
+      "carretera": "CM-3220",
+      "pk": "15",
+      "zona": "Norte",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1784037922750
     }
   ],
   "tramos": [
