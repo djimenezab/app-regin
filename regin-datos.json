@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-07-14T14:05:32.677Z",
+  "exportado": "2026-07-14T14:05:48.082Z",
   "incidencias": [
     {
       "id": "INC-260706-001",
@@ -742,8 +742,8 @@
   ],
   "coordinadores": {
     "norte": {
-      "nombre": "Jose L. García García",
-      "tel": "627268112"
+      "nombre": "Acisclo Valcarcel",
+      "tel": "627528917"
     },
     "sur": {
       "nombre": "Ana R. García Hurtado",
@@ -798,7 +798,7 @@
     }
   ],
   "turno": {
-    "norte": "1783935624448",
+    "norte": "1783935728393",
     "sur": "1783935653620"
   },
   "cambiosTurno": [
