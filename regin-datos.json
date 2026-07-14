@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-07-13T14:27:45.445Z",
+  "exportado": "2026-07-14T06:59:23.077Z",
   "incidencias": [
     {
       "id": "INC-260706-001",
@@ -272,7 +272,7 @@
       "cerrada": true,
       "horaCierre": "16:27",
       "obsCierre": "Se queda limpio, había restos de cristales.",
-      "pasada": false,
+      "pasada": true,
       "tsCreacion": 1783946763253
     }
   ],
