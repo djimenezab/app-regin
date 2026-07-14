@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-07-14T15:24:24.869Z",
+  "exportado": "2026-07-14T22:22:20.592Z",
   "incidencias": [
     {
       "id": "INC-260706-001",
@@ -289,6 +289,21 @@
       "obsCierre": "Comentó que no vamos porque la grúa va llegar más rápido.",
       "pasada": false,
       "tsCreacion": 1784037922750
+    },
+    {
+      "id": "INC-260715-018",
+      "fecha": "15/07/2026",
+      "hora": "00:21",
+      "quien": "112",
+      "mensaje": "Jabali muerto en carretera.",
+      "carretera": "CM-332",
+      "pk": "44",
+      "zona": "Norte",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1784067737589
     }
   ],
   "tramos": [
