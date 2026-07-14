@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-07-14T06:59:33.499Z",
+  "exportado": "2026-07-14T09:36:43.782Z",
   "incidencias": [
     {
       "id": "INC-260706-001",
@@ -850,15 +850,6 @@
       "archivo": "docs/Listado_Tel_fonos_1781869712694.pdf",
       "url": "https://raw.githubusercontent.com/djimenezab/app-regin/main/docs/Listado_Tel_fonos_1781869712694.pdf?raw=true",
       "fecha": "19/6/2026"
-    },
-    {
-      "id": "1783938086340",
-      "nombre": "Horarios Destacamentos",
-      "categoria": "Otros",
-      "desc": "Horarios Invierno-Verano de los destacamentos para saber cuando entran de guardia.",
-      "archivo": "docs/Horarios_Destacamentos_1783938084818.pdf",
-      "url": "https://raw.githubusercontent.com/djimenezab/app-regin/main/docs/Horarios_Destacamentos_1783938084818.pdf?raw=true",
-      "fecha": "13/7/2026"
     }
   ]
 }
