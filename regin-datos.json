@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-07-14T14:05:54.274Z",
+  "exportado": "2026-07-14T15:24:24.869Z",
   "incidencias": [
     {
       "id": "INC-260706-001",
@@ -284,9 +284,9 @@
       "carretera": "CM-3220",
       "pk": "15",
       "zona": "Norte",
-      "cerrada": false,
-      "horaCierre": null,
-      "obsCierre": null,
+      "cerrada": true,
+      "horaCierre": "17:24",
+      "obsCierre": "Comentó que no vamos porque la grúa va llegar más rápido.",
       "pasada": false,
       "tsCreacion": 1784037922750
     }
