@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-07-14T06:59:23.077Z",
+  "exportado": "2026-07-14T06:59:33.499Z",
   "incidencias": [
     {
       "id": "INC-260706-001",
@@ -257,7 +257,7 @@
       "cerrada": true,
       "horaCierre": "13:14",
       "obsCierre": "Llama 112 diciendo que ya no es necesario ir. Jose dice que están en el cruce y que tienen apoyo para irse",
-      "pasada": false,
+      "pasada": true,
       "tsCreacion": 1783938226356
     },
     {
