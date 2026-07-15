@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-07-15T03:58:13.504Z",
+  "exportado": "2026-07-15T04:38:48.044Z",
   "incidencias": [
     {
       "id": "INC-260706-001",
@@ -318,7 +318,14 @@
       "horaCierre": null,
       "obsCierre": null,
       "pasada": false,
-      "tsCreacion": 1784087890490
+      "tsCreacion": 1784087890490,
+      "notas": [
+        {
+          "id": "1784090325032",
+          "ts": "15/7 06:38",
+          "txt": "4+600 Alcaraz - Vianos"
+        }
+      ]
     }
   ],
   "tramos": [
