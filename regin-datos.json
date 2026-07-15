@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-07-15T17:39:24.677Z",
+  "exportado": "2026-07-15T19:17:58.512Z",
   "incidencias": [
     {
       "id": "INC-260706-001",
@@ -336,9 +336,9 @@
       "carretera": "CM-3261",
       "pk": "",
       "zona": "Norte",
-      "cerrada": false,
-      "horaCierre": null,
-      "obsCierre": null,
+      "cerrada": true,
+      "horaCierre": "21:17",
+      "obsCierre": "Eran ramas secas.",
       "pasada": false,
       "tsCreacion": 1784137161675
     }
