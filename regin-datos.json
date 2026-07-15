@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-07-15T06:31:50.265Z",
+  "exportado": "2026-07-15T06:41:11.375Z",
   "incidencias": [
     {
       "id": "INC-260706-001",
@@ -302,7 +302,7 @@
       "cerrada": true,
       "horaCierre": "02:00",
       "obsCierre": "De momento no se encuentra el animal.",
-      "pasada": false,
+      "pasada": true,
       "tsCreacion": 1784067737589
     },
     {
