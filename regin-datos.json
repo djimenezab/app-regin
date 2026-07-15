@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-07-15T04:38:48.044Z",
+  "exportado": "2026-07-15T06:31:30.449Z",
   "incidencias": [
     {
       "id": "INC-260706-001",
@@ -314,9 +314,9 @@
       "carretera": "CM-3216",
       "pk": "4",
       "zona": "Sur",
-      "cerrada": false,
-      "horaCierre": null,
-      "obsCierre": null,
+      "cerrada": true,
+      "horaCierre": "08:31",
+      "obsCierre": "Retirado.",
       "pasada": false,
       "tsCreacion": 1784087890490,
       "notas": [
