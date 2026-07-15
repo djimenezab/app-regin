@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-07-15T06:52:58.441Z",
+  "exportado": "2026-07-15T17:39:24.677Z",
   "incidencias": [
     {
       "id": "INC-260706-001",
@@ -326,6 +326,21 @@
           "txt": "4+600 Alcaraz - Vianos"
         }
       ]
+    },
+    {
+      "id": "INC-260715-020",
+      "fecha": "15/07/2026",
+      "hora": "19:37",
+      "quien": "Guardia Civil",
+      "mensaje": "Al salir de la autovía entrando a Bonete se ha caído un árbol.",
+      "carretera": "CM-3261",
+      "pk": "",
+      "zona": "Norte",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1784137161675
     }
   ],
   "tramos": [
