@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-07-14T22:22:20.592Z",
+  "exportado": "2026-07-15T00:00:49.978Z",
   "incidencias": [
     {
       "id": "INC-260706-001",
@@ -299,9 +299,9 @@
       "carretera": "CM-332",
       "pk": "44",
       "zona": "Norte",
-      "cerrada": false,
-      "horaCierre": null,
-      "obsCierre": null,
+      "cerrada": true,
+      "horaCierre": "02:00",
+      "obsCierre": "De momento no se encuentra el animal.",
       "pasada": false,
       "tsCreacion": 1784067737589
     }
