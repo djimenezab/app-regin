@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-07-15T00:00:49.978Z",
+  "exportado": "2026-07-15T03:58:13.504Z",
   "incidencias": [
     {
       "id": "INC-260706-001",
@@ -304,6 +304,21 @@
       "obsCierre": "De momento no se encuentra el animal.",
       "pasada": false,
       "tsCreacion": 1784067737589
+    },
+    {
+      "id": "INC-260715-019",
+      "fecha": "15/07/2026",
+      "hora": "05:57",
+      "quien": "112",
+      "mensaje": "Autobús atropella animal.",
+      "carretera": "CM-3216",
+      "pk": "4",
+      "zona": "Sur",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1784087890490
     }
   ],
   "tramos": [
