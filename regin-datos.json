@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-07-16T13:41:46.253Z",
+  "exportado": "2026-07-16T14:29:18.481Z",
   "incidencias": [
     {
       "id": "INC-260706-001",
@@ -366,9 +366,9 @@
       "carretera": "CM-3135",
       "pk": "22",
       "zona": "Norte",
-      "cerrada": false,
-      "horaCierre": null,
-      "obsCierre": null,
+      "cerrada": true,
+      "horaCierre": "16:29",
+      "obsCierre": "Es un alcance, no hay daños en la vía.",
       "pasada": false,
       "tsCreacion": 1784206984060
     },
