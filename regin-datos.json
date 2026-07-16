@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-07-16T14:29:18.481Z",
+  "exportado": "2026-07-16T14:31:38.435Z",
   "incidencias": [
     {
       "id": "INC-260706-001",
@@ -370,7 +370,14 @@
       "horaCierre": "16:29",
       "obsCierre": "Es un alcance, no hay daños en la vía.",
       "pasada": false,
-      "tsCreacion": 1784206984060
+      "tsCreacion": 1784206984060,
+      "notas": [
+        {
+          "id": "1784212295424",
+          "ts": "16/7 16:31",
+          "txt": "PK 22+256"
+        }
+      ]
     },
     {
       "id": "INC-260716-023",
