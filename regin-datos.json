@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-07-16T06:37:43.259Z",
+  "exportado": "2026-07-16T06:54:15.697Z",
   "incidencias": [
     {
       "id": "INC-260706-001",
@@ -339,7 +339,7 @@
       "cerrada": true,
       "horaCierre": "21:17",
       "obsCierre": "Eran ramas secas.",
-      "pasada": false,
+      "pasada": true,
       "tsCreacion": 1784137161675
     },
     {
