@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-07-15T19:17:58.512Z",
+  "exportado": "2026-07-16T03:38:51.690Z",
   "incidencias": [
     {
       "id": "INC-260706-001",
@@ -341,6 +341,21 @@
       "obsCierre": "Eran ramas secas.",
       "pasada": false,
       "tsCreacion": 1784137161675
+    },
+    {
+      "id": "INC-260716-021",
+      "fecha": "16/07/2026",
+      "hora": "05:37",
+      "quien": "Guardia Civil",
+      "mensaje": "Jabalís en la calzada 217-218",
+      "carretera": "CM-412",
+      "pk": "217",
+      "zona": "Sur",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1784173128687
     }
   ],
   "tramos": [
