@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-07-16T03:38:51.690Z",
+  "exportado": "2026-07-16T06:37:43.259Z",
   "incidencias": [
     {
       "id": "INC-260706-001",
@@ -351,9 +351,9 @@
       "carretera": "CM-412",
       "pk": "217",
       "zona": "Sur",
-      "cerrada": false,
-      "horaCierre": null,
-      "obsCierre": null,
+      "cerrada": true,
+      "horaCierre": "08:37",
+      "obsCierre": "Había varios jabalis pequeños y restos de sangre.",
       "pasada": false,
       "tsCreacion": 1784173128687
     }
