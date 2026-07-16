@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-07-16T18:15:57.901Z",
+  "exportado": "2026-07-16T19:45:30.003Z",
   "incidencias": [
     {
       "id": "INC-260706-001",
@@ -408,6 +408,21 @@
       "obsCierre": null,
       "pasada": false,
       "tsCreacion": 1784225754896
+    },
+    {
+      "id": "INC-260716-025",
+      "fecha": "16/07/2026",
+      "hora": "21:44",
+      "quien": "112",
+      "mensaje": "Piedra grande entre el 208-210",
+      "carretera": "CM-412",
+      "pk": "208",
+      "zona": "Sur",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1784231126993
     }
   ],
   "tramos": [
