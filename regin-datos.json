@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-07-16T06:54:15.697Z",
+  "exportado": "2026-07-16T13:03:07.063Z",
   "incidencias": [
     {
       "id": "INC-260706-001",
@@ -356,6 +356,21 @@
       "obsCierre": "Había varios jabalis pequeños y restos de sangre.",
       "pasada": false,
       "tsCreacion": 1784173128687
+    },
+    {
+      "id": "INC-260716-022",
+      "fecha": "16/07/2026",
+      "hora": "15:02",
+      "quien": "112",
+      "mensaje": "Camión accidentado.",
+      "carretera": "CM-3135",
+      "pk": "22",
+      "zona": "Norte",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1784206984060
     }
   ],
   "tramos": [
