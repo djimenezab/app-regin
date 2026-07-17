@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-07-16T22:15:34.571Z",
+  "exportado": "2026-07-17T06:57:56.262Z",
   "incidencias": [
     {
       "id": "INC-260706-001",
@@ -354,7 +354,7 @@
       "cerrada": true,
       "horaCierre": "08:37",
       "obsCierre": "Había varios jabalis pequeños y restos de sangre.",
-      "pasada": false,
+      "pasada": true,
       "tsCreacion": 1784173128687
     },
     {
