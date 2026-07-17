@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-07-17T07:07:33.711Z",
+  "exportado": "2026-07-17T07:13:42.299Z",
   "incidencias": [
     {
       "id": "INC-260706-001",
@@ -391,7 +391,7 @@
       "cerrada": true,
       "horaCierre": "17:00",
       "obsCierre": "Nos dice GC, que no hace falta nuestra presencia.",
-      "pasada": false,
+      "pasada": true,
       "tsCreacion": 1784208276870
     },
     {
