@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-07-17T14:59:28.488Z",
+  "exportado": "2026-07-17T16:34:22.617Z",
   "incidencias": [
     {
       "id": "INC-260706-001",
@@ -433,9 +433,9 @@
       "carretera": "CM-412",
       "pk": "311",
       "zona": "Norte",
-      "cerrada": false,
-      "horaCierre": null,
-      "obsCierre": null,
+      "cerrada": true,
+      "horaCierre": "18:33",
+      "obsCierre": "Turismo con 3 ocupantes fuera de la calzada, se barre y retiran plásticos",
       "pasada": false,
       "tsCreacion": 1784300365475
     }
