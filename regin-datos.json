@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-07-17T07:21:04.792Z",
+  "exportado": "2026-07-17T14:59:28.488Z",
   "incidencias": [
     {
       "id": "INC-260706-001",
@@ -423,6 +423,21 @@
       "obsCierre": "No se encuentra nada.",
       "pasada": false,
       "tsCreacion": 1784231126993
+    },
+    {
+      "id": "INC-260717-026",
+      "fecha": "17/07/2026",
+      "hora": "16:57",
+      "quien": "112",
+      "mensaje": "Accidente con heridos saliendo de fuentealamo hacia Montealegre a unos 3 kilómetros.",
+      "carretera": "CM-412",
+      "pk": "311",
+      "zona": "Norte",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1784300365475
     }
   ],
   "tramos": [
