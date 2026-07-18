@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-07-18T06:45:14.755Z",
+  "exportado": "2026-07-18T18:21:13.216Z",
   "incidencias": [
     {
       "id": "INC-260706-001",
@@ -453,6 +453,21 @@
       "obsCierre": "Se retiran restos.",
       "pasada": false,
       "tsCreacion": 1784349900203
+    },
+    {
+      "id": "INC-260718-028",
+      "fecha": "18/07/2026",
+      "hora": "20:19",
+      "quien": "112",
+      "mensaje": "Accidente turismo-moto",
+      "carretera": "CM-3213",
+      "pk": "23",
+      "zona": "Sur",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1784398870214
     }
   ],
   "tramos": [
