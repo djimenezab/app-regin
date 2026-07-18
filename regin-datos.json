@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-07-18T04:45:03.206Z",
+  "exportado": "2026-07-18T06:45:14.755Z",
   "incidencias": [
     {
       "id": "INC-260706-001",
@@ -448,9 +448,9 @@
       "carretera": "CM-332",
       "pk": "54",
       "zona": "Norte",
-      "cerrada": false,
-      "horaCierre": null,
-      "obsCierre": null,
+      "cerrada": true,
+      "horaCierre": "08:44",
+      "obsCierre": "Se retiran restos.",
       "pasada": false,
       "tsCreacion": 1784349900203
     }
