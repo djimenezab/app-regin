@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-07-18T18:21:13.216Z",
+  "exportado": "2026-07-18T20:23:48.314Z",
   "incidencias": [
     {
       "id": "INC-260706-001",
@@ -463,9 +463,9 @@
       "carretera": "CM-3213",
       "pk": "23",
       "zona": "Sur",
-      "cerrada": false,
-      "horaCierre": null,
-      "obsCierre": null,
+      "cerrada": true,
+      "horaCierre": "22:23",
+      "obsCierre": "2 heridos graves de moto",
       "pasada": false,
       "tsCreacion": 1784398870214
     }
