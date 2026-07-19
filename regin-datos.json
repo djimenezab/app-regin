@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-07-19T10:52:05.413Z",
+  "exportado": "2026-07-19T16:01:19.300Z",
   "incidencias": [
     {
       "id": "INC-260706-001",
@@ -505,6 +505,21 @@
           "txt": "Centeno 8 y 9 rotonda"
         }
       ]
+    },
+    {
+      "id": "INC-260719-031",
+      "fecha": "19/07/2026",
+      "hora": "18:00",
+      "quien": "112",
+      "mensaje": "Salida de vía de un turismo en la cuneta.",
+      "carretera": "CM-3217",
+      "pk": "13",
+      "zona": "Sur",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1784476876296
     }
   ],
   "tramos": [
