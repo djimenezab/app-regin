@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-07-19T06:02:11.900Z",
+  "exportado": "2026-07-19T08:36:03.377Z",
   "incidencias": [
     {
       "id": "INC-260706-001",
@@ -478,9 +478,9 @@
       "carretera": "CM-3217",
       "pk": "8",
       "zona": "Sur",
-      "cerrada": false,
-      "horaCierre": null,
-      "obsCierre": null,
+      "cerrada": true,
+      "horaCierre": "10:35",
+      "obsCierre": "No se encuentra ya al accidentado",
       "pasada": false,
       "tsCreacion": 1784440928886
     }
