@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-07-19T18:32:40.249Z",
+  "exportado": "2026-07-19T18:51:29.753Z",
   "incidencias": [
     {
       "id": "INC-260706-001",
@@ -545,9 +545,9 @@
       "carretera": "CM-3203",
       "pk": "24",
       "zona": "Norte",
-      "cerrada": false,
-      "horaCierre": null,
-      "obsCierre": null,
+      "cerrada": true,
+      "horaCierre": "20:51",
+      "obsCierre": "Estaba en el PK 27+500",
       "pasada": false,
       "tsCreacion": 1784485957238
     }
