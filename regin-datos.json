@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-07-19T18:51:29.753Z",
+  "exportado": "2026-07-19T19:02:58.092Z",
   "incidencias": [
     {
       "id": "INC-260706-001",
@@ -530,9 +530,9 @@
       "carretera": "CM-313",
       "pk": "140",
       "zona": "Sur",
-      "cerrada": false,
-      "horaCierre": null,
-      "obsCierre": null,
+      "cerrada": true,
+      "horaCierre": "21:02",
+      "obsCierre": "Era un zorro.",
       "pasada": false,
       "tsCreacion": 1784484666085
     },
