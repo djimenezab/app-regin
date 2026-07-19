@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-07-19T09:44:19.358Z",
+  "exportado": "2026-07-19T09:47:02.275Z",
   "incidencias": [
     {
       "id": "INC-260706-001",
@@ -497,7 +497,14 @@
       "horaCierre": null,
       "obsCierre": null,
       "pasada": false,
-      "tsCreacion": 1784454256313
+      "tsCreacion": 1784454256313,
+      "notas": [
+        {
+          "id": "1784454419271",
+          "ts": "19/7 11:46",
+          "txt": "Centeno 8 y 9 rotonda"
+        }
+      ]
     }
   ],
   "tramos": [
