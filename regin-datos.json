@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-07-18T20:23:48.314Z",
+  "exportado": "2026-07-19T06:02:11.900Z",
   "incidencias": [
     {
       "id": "INC-260706-001",
@@ -468,6 +468,21 @@
       "obsCierre": "2 heridos graves de moto",
       "pasada": false,
       "tsCreacion": 1784398870214
+    },
+    {
+      "id": "INC-260719-029",
+      "fecha": "19/07/2026",
+      "hora": "08:00",
+      "quien": "112",
+      "mensaje": "Antes del gallego, saliendo de Ferez hacia Elche",
+      "carretera": "CM-3217",
+      "pk": "8",
+      "zona": "Sur",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1784440928886
     }
   ],
   "tramos": [
