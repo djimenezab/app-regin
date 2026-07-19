@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-07-19T18:14:10.959Z",
+  "exportado": "2026-07-19T18:32:40.249Z",
   "incidencias": [
     {
       "id": "INC-260706-001",
@@ -535,6 +535,21 @@
       "obsCierre": null,
       "pasada": false,
       "tsCreacion": 1784484666085
+    },
+    {
+      "id": "INC-260719-033",
+      "fecha": "19/07/2026",
+      "hora": "20:32",
+      "quien": "112",
+      "mensaje": "Zorro muerto en la calzada",
+      "carretera": "CM-3203",
+      "pk": "24",
+      "zona": "Norte",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1784485957238
     }
   ],
   "tramos": [
