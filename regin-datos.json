@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-07-19T19:02:58.092Z",
+  "exportado": "2026-07-20T00:53:05.876Z",
   "incidencias": [
     {
       "id": "INC-260706-001",
@@ -550,6 +550,21 @@
       "obsCierre": "Estaba en el PK 27+500",
       "pasada": false,
       "tsCreacion": 1784485957238
+    },
+    {
+      "id": "INC-260720-034",
+      "fecha": "20/07/2026",
+      "hora": "02:52",
+      "quien": "112",
+      "mensaje": "Turismo averiado",
+      "carretera": "CM-3216",
+      "pk": "6",
+      "zona": "Sur",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1784508782872
     }
   ],
   "tramos": [
