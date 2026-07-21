@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-07-21T09:44:10.754Z",
+  "exportado": "2026-07-21T09:47:42.164Z",
   "incidencias": [
     {
       "id": "INC-260706-001",
@@ -496,7 +496,7 @@
       "cerrada": true,
       "horaCierre": "12:51",
       "obsCierre": "Se queda todo limpio.",
-      "pasada": false,
+      "pasada": true,
       "tsCreacion": 1784454256313,
       "notas": [
         {
