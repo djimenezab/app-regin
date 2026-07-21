@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-07-21T09:56:54.184Z",
+  "exportado": "2026-07-21T10:09:56.932Z",
   "incidencias": [
     {
       "id": "INC-260706-001",
@@ -535,21 +535,6 @@
       "obsCierre": "Era un zorro.",
       "pasada": true,
       "tsCreacion": 1784484666085
-    },
-    {
-      "id": "INC-260719-033",
-      "fecha": "19/07/2026",
-      "hora": "20:32",
-      "quien": "112",
-      "mensaje": "Zorro muerto en la calzada",
-      "carretera": "CM-3203",
-      "pk": "24",
-      "zona": "Norte",
-      "cerrada": true,
-      "horaCierre": "20:51",
-      "obsCierre": "Estaba en el PK 27+500",
-      "pasada": false,
-      "tsCreacion": 1784485957238
     }
   ],
   "tramos": [
