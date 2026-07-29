@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-07-29T05:39:17.939Z",
+  "exportado": "2026-07-29T05:41:08.004Z",
   "incidencias": [
     {
       "id": "INC-260706-001",
@@ -1102,6 +1102,15 @@
       "archivo": "docs/Listado_Tel_fonos_1781869712694.pdf",
       "url": "https://raw.githubusercontent.com/djimenezab/app-regin/main/docs/Listado_Tel_fonos_1781869712694.pdf?raw=true",
       "fecha": "19/6/2026"
+    },
+    {
+      "id": "1785303664990",
+      "nombre": "Horarios Destacamentos",
+      "categoria": "Procedimientos",
+      "desc": "Horarios de las jornadas laborales de los destacamentos",
+      "archivo": "docs/Horarios_Destacamentos_1785303663645.pdf",
+      "url": "https://raw.githubusercontent.com/djimenezab/app-regin/main/docs/Horarios_Destacamentos_1785303663645.pdf?raw=true",
+      "fecha": "29/7/2026"
     }
   ]
 }
