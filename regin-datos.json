@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-08-03T17:13:24.386Z",
+  "exportado": "2026-08-03T17:20:57.419Z",
   "incidencias": [
     {
       "id": "INC-260803-001",
@@ -15,7 +15,14 @@
       "horaCierre": null,
       "obsCierre": null,
       "pasada": false,
-      "tsCreacion": 1785777201370
+      "tsCreacion": 1785777201370,
+      "notas": [
+        {
+          "id": "1785777654418",
+          "ts": "3/8 19:20",
+          "txt": "Dice 112 que avisa G.C.T. que es en la CM-412a, abortamos misión."
+        }
+      ]
     }
   ],
   "tramos": [
