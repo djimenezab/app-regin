@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-08-03T08:55:18.664Z",
+  "exportado": "2026-08-03T08:55:24.014Z",
   "incidencias": [],
   "tramos": [
     {
@@ -453,12 +453,12 @@
   ],
   "coordinadores": {
     "norte": {
-      "nombre": "Acisclo Valcarcel",
-      "tel": "627528917"
+      "nombre": "Miguel A. Martínez",
+      "tel": "648586171"
     },
     "sur": {
-      "nombre": "Ana R. García Hurtado",
-      "tel": "646265011"
+      "nombre": "Damian García",
+      "tel": "600480999"
     }
   },
   "agenda": [
@@ -509,8 +509,8 @@
     }
   ],
   "turno": {
-    "norte": "1783935728393",
-    "sur": "1783935653620"
+    "norte": "1781779351056",
+    "sur": "1781779395115"
   },
   "cambiosTurno": [],
   "documentos": [
