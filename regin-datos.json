@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-08-04T09:39:43.050Z",
+  "exportado": "2026-08-04T11:43:50.516Z",
   "incidencias": [
     {
       "id": "INC-260803-002",
@@ -31,6 +31,21 @@
       "obsCierre": null,
       "pasada": false,
       "tsCreacion": 1785827501276
+    },
+    {
+      "id": "INC-260804-003",
+      "fecha": "04/08/2026",
+      "hora": "13:42",
+      "quien": "112",
+      "mensaje": "Accidente con corzo en calzada",
+      "carretera": "CM-412",
+      "pk": "203",
+      "zona": "Sur",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1785843827514
     }
   ],
   "tramos": [
