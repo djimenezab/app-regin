@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-08-04T06:23:21.480Z",
+  "exportado": "2026-08-04T07:11:44.280Z",
   "incidencias": [
     {
       "id": "INC-260803-002",
@@ -16,6 +16,21 @@
       "obsCierre": "Se ve un vehículo que se lo lleva la grúa pero no se ve animal ni restos.",
       "pasada": false,
       "tsCreacion": 1785790557808
+    },
+    {
+      "id": "INC-260804-002",
+      "fecha": "04/08/2026",
+      "hora": "09:10",
+      "quien": "112",
+      "mensaje": "Colisión viniendo da Santa Marta 1km antes del cruce de Minaya",
+      "carretera": "CM-3121",
+      "pk": "24",
+      "zona": "Norte",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1785827501276
     }
   ],
   "tramos": [
