@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-08-05T07:29:06.568Z",
+  "exportado": "2026-08-05T08:08:41.517Z",
   "incidencias": [
     {
       "id": "INC-260803-002",
@@ -44,8 +44,23 @@
       "cerrada": true,
       "horaCierre": "14:39",
       "obsCierre": "Se retira el animal",
-      "pasada": true,
+      "pasada": false,
       "tsCreacion": 1785843827514
+    },
+    {
+      "id": "INC-260805-004",
+      "fecha": "05/08/2026",
+      "hora": "10:07",
+      "quien": "112",
+      "mensaje": "Turismo accidentando de Navas de Jorquera hacia Cenizate",
+      "carretera": "CM-3226",
+      "pk": "6",
+      "zona": "Norte",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1785917318507
     }
   ],
   "tramos": [
