@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-08-04T12:39:26.570Z",
+  "exportado": "2026-08-05T07:04:50.880Z",
   "incidencias": [
     {
       "id": "INC-260803-002",
@@ -14,7 +14,7 @@
       "cerrada": true,
       "horaCierre": "00:12",
       "obsCierre": "Se ve un vehículo que se lo lleva la grúa pero no se ve animal ni restos.",
-      "pasada": false,
+      "pasada": true,
       "tsCreacion": 1785790557808
     },
     {
