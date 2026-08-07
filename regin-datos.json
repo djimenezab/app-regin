@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-08-05T09:45:33.271Z",
+  "exportado": "2026-08-07T16:46:24.990Z",
   "incidencias": [
     {
       "id": "INC-260803-002",
@@ -61,6 +61,21 @@
       "obsCierre": "No se encuentra nada",
       "pasada": false,
       "tsCreacion": 1785917318507
+    },
+    {
+      "id": "INC-260807-005",
+      "fecha": "07/08/2026",
+      "hora": "18:45",
+      "quien": "112",
+      "mensaje": "Camión perdiendo paja. Sentido hellin desde pozohondo",
+      "carretera": "CM-313",
+      "pk": "130",
+      "zona": "Sur",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1786121181985
     }
   ],
   "tramos": [
