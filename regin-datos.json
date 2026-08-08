@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-08-08T15:37:03.021Z",
+  "exportado": "2026-08-08T16:19:35.780Z",
   "incidencias": [
     {
       "id": "INC-260803-002",
@@ -138,9 +138,9 @@
       "carretera": "CM-3205",
       "pk": "",
       "zona": "Sur",
-      "cerrada": false,
-      "horaCierre": null,
-      "obsCierre": null,
+      "cerrada": true,
+      "horaCierre": "18:19",
+      "obsCierre": "Se queda señalizado a espera de rescate.",
       "pasada": false,
       "tsCreacion": 1786201919490
     }
