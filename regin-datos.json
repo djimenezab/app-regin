@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-08-08T11:20:38.130Z",
+  "exportado": "2026-08-08T11:45:20.254Z",
   "incidencias": [
     {
       "id": "INC-260803-002",
@@ -120,7 +120,14 @@
       "horaCierre": null,
       "obsCierre": null,
       "pasada": false,
-      "tsCreacion": 1786188035121
+      "tsCreacion": 1786188035121,
+      "notas": [
+        {
+          "id": "1786189517250",
+          "ts": "8/8 13:45",
+          "txt": "Nos solita 112 cortar carretera, estamos en Nerpio"
+        }
+      ]
     }
   ],
   "tramos": [
