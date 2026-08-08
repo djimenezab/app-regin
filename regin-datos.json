@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-08-07T18:24:19.611Z",
+  "exportado": "2026-08-08T06:49:09.960Z",
   "incidencias": [
     {
       "id": "INC-260803-002",
@@ -76,6 +76,21 @@
       "obsCierre": "No se encuentra nada",
       "pasada": false,
       "tsCreacion": 1786121181985
+    },
+    {
+      "id": "INC-260808-006",
+      "fecha": "08/08/2026",
+      "hora": "08:48",
+      "quien": "Policía Local",
+      "mensaje": "Ramas y árboles en carril bici",
+      "carretera": "",
+      "pk": "",
+      "zona": null,
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1786171746958
     }
   ],
   "tramos": [
