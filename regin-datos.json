@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-08-08T11:45:20.254Z",
+  "exportado": "2026-08-08T15:12:02.503Z",
   "incidencias": [
     {
       "id": "INC-260803-002",
@@ -128,6 +128,21 @@
           "txt": "Nos solita 112 cortar carretera, estamos en Nerpio"
         }
       ]
+    },
+    {
+      "id": "INC-260808-009",
+      "fecha": "08/08/2026",
+      "hora": "17:10",
+      "quien": "112",
+      "mensaje": "Saliendo a 1km de villa verde hacia bellotar.",
+      "carretera": "CM-3205",
+      "pk": "",
+      "zona": "Sur",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1786201919490
     }
   ],
   "tramos": [
