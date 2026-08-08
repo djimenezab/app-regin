@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-08-08T09:19:02.340Z",
+  "exportado": "2026-08-08T11:20:38.130Z",
   "incidencias": [
     {
       "id": "INC-260803-002",
@@ -106,6 +106,21 @@
       "obsCierre": null,
       "pasada": false,
       "tsCreacion": 1786171978338
+    },
+    {
+      "id": "INC-260808-008",
+      "fecha": "08/08/2026",
+      "hora": "13:19",
+      "quien": "112",
+      "mensaje": "Salida de vía",
+      "carretera": "CM-3133",
+      "pk": "20 -22",
+      "zona": "Sur",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1786188035121
     }
   ],
   "tramos": [
