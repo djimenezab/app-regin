@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-08-08T16:19:35.780Z",
+  "exportado": "2026-08-08T16:25:38.194Z",
   "incidencias": [
     {
       "id": "INC-260803-002",
@@ -142,7 +142,14 @@
       "horaCierre": "18:19",
       "obsCierre": "Se queda señalizado a espera de rescate.",
       "pasada": false,
-      "tsCreacion": 1786201919490
+      "tsCreacion": 1786201919490,
+      "notas": [
+        {
+          "id": "1786206335190",
+          "ts": "8/8 18:25",
+          "txt": "PK 22+100"
+        }
+      ]
     }
   ],
   "tramos": [
