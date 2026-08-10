@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-08-10T06:42:18.910Z",
+  "exportado": "2026-08-10T06:50:36.814Z",
   "incidencias": [
     {
       "id": "INC-260803-002",
@@ -104,7 +104,7 @@
       "cerrada": true,
       "horaCierre": "17:27",
       "obsCierre": "Varios arrastres y piedras",
-      "pasada": false,
+      "pasada": true,
       "tsCreacion": 1786171978338
     },
     {
