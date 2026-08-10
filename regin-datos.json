@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-08-08T16:25:38.194Z",
+  "exportado": "2026-08-10T05:11:43.502Z",
   "incidencias": [
     {
       "id": "INC-260803-002",
@@ -150,6 +150,21 @@
           "txt": "PK 22+100"
         }
       ]
+    },
+    {
+      "id": "INC-260810-010",
+      "fecha": "10/08/2026",
+      "hora": "07:10",
+      "quien": "112",
+      "mensaje": "Retirar animal atropellado",
+      "carretera": "CM-3213",
+      "pk": "22",
+      "zona": "Sur",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1786338700500
     }
   ],
   "tramos": [
