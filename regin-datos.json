@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-08-10T07:30:48.943Z",
+  "exportado": "2026-08-10T08:36:50.184Z",
   "incidencias": [
     {
       "id": "INC-260803-002",
@@ -119,7 +119,7 @@
       "cerrada": true,
       "horaCierre": "17:35",
       "obsCierre": "20+100 rotura de imposta paso salvacunetas",
-      "pasada": false,
+      "pasada": true,
       "tsCreacion": 1786188035121,
       "notas": [
         {
@@ -160,9 +160,9 @@
       "carretera": "CM-3213",
       "pk": "22",
       "zona": "Sur",
-      "cerrada": true,
-      "horaCierre": "09:30",
-      "obsCierre": "No hay animal",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
       "pasada": false,
       "tsCreacion": 1786338700500
     }
