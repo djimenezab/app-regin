@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-08-10T08:37:01.353Z",
+  "exportado": "2026-08-10T08:37:16.173Z",
   "incidencias": [
     {
       "id": "INC-260803-002",
@@ -160,9 +160,9 @@
       "carretera": "CM-3213",
       "pk": "22",
       "zona": "Sur",
-      "cerrada": false,
-      "horaCierre": null,
-      "obsCierre": null,
+      "cerrada": true,
+      "horaCierre": "10:37",
+      "obsCierre": "Ya no se encuentra animal",
       "pasada": false,
       "tsCreacion": 1786338700500
     }
