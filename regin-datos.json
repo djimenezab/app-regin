@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-08-17T15:14:04.308Z",
+  "exportado": "2026-08-17T15:14:08.516Z",
   "incidencias": [
     {
       "id": "INC-260803-002",
@@ -633,8 +633,8 @@
   ],
   "coordinadores": {
     "norte": {
-      "nombre": "Miguel A. Martínez",
-      "tel": "648586171"
+      "nombre": "Francisco J. Céspedes",
+      "tel": "675834748"
     },
     "sur": {
       "nombre": "Damian García",
@@ -689,7 +689,7 @@
     }
   ],
   "turno": {
-    "norte": "1781779351056",
+    "norte": "1783320263298",
     "sur": "1781779395115"
   },
   "cambiosTurno": [],
