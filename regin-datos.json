@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-08-10T10:40:45.282Z",
+  "exportado": "2026-08-17T15:14:00.932Z",
   "incidencias": [
     {
       "id": "INC-260803-002",
@@ -165,6 +165,21 @@
       "obsCierre": "Ya no se encuentra animal",
       "pasada": true,
       "tsCreacion": 1786338700500
+    },
+    {
+      "id": "INC-260817-011",
+      "fecha": "17/08/2026",
+      "hora": "17:12",
+      "quien": "112",
+      "mensaje": "Turismo averiado o parado",
+      "carretera": "CM-3119",
+      "pk": "5",
+      "zona": "Norte",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1786979637929
     }
   ],
   "tramos": [
