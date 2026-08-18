@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-08-18T14:33:28.083Z",
+  "exportado": "2026-08-18T14:33:34.417Z",
   "incidencias": [
     {
       "id": "INC-260818-001",
@@ -473,8 +473,8 @@
       "tel": "675834748"
     },
     "sur": {
-      "nombre": "Damian García",
-      "tel": "600480999"
+      "nombre": "Miguel A. Mtnez. Córcoles",
+      "tel": "648587771"
     }
   },
   "agenda": [
@@ -526,7 +526,7 @@
   ],
   "turno": {
     "norte": "1783320263298",
-    "sur": "1781779395115"
+    "sur": "1783320305442"
   },
   "cambiosTurno": [],
   "documentos": [
