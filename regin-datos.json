@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-08-19T18:08:45.573Z",
+  "exportado": "2026-08-19T18:44:38.123Z",
   "incidencias": [
     {
       "id": "INC-260819-002",
@@ -11,9 +11,9 @@
       "carretera": "CM-3203",
       "pk": "60",
       "zona": "Sur",
-      "cerrada": false,
-      "horaCierre": null,
-      "obsCierre": null,
+      "cerrada": true,
+      "horaCierre": "20:44",
+      "obsCierre": "Se retira la cabra.",
       "pasada": false,
       "tsCreacion": 1787158755767
     },
