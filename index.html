@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>REGIN v1.92 — Registro de Incidencias</title>
+<title>REGIN v1.95 — Registro de Incidencias</title>
 <link rel="manifest" href="manifest.json">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -193,11 +193,11 @@
     <div class="logo-icon">🚨</div>
     <div class="logo-text">
       <h1>REGIN</h1>
-      <span>v1.92 — Registro de Incidencias</span>
+      <span>v1.95 — Registro de Incidencias</span>
     </div>
   </div>
   <div class="header-actions">
-    <div id="sync-dot" title="Estado de sincronización" style="width:10px; height:10px; border-radius:50%; background:var(--gris-texto); margin-right:4px; flex-shrink:0; transition:background 0.3s;"></div>
+    <div id="sync-dot" onclick="abrirSync()" title="Estado de sincronización — toca para ver detalles" style="width:10px; height:10px; border-radius:50%; background:var(--gris-texto); margin-right:4px; flex-shrink:0; transition:background 0.3s; cursor:pointer;"></div>
     <button class="btn btn-ghost btn-icon" onclick="abrirDocs()" title="Documentación">📚</button>
     <button class="btn btn-ghost btn-icon" onclick="abrirConfig()" title="Configuración">⚙️</button>
     <button class="btn btn-ghost btn-icon" onclick="abrirSync()" title="Sincronización">⬆⬇</button>
@@ -584,7 +584,7 @@
 <div class="snackbar" id="snackbar"></div>
 
 <footer style="text-align:center; padding:24px 20px 32px; margin-top:20px; border-top:1px solid var(--borde);">
-  <div style="font-family:'JetBrains Mono',monospace; font-size:13px; font-weight:700; color:var(--gris-texto); letter-spacing:1px;">REGIN <span style="color:var(--naranja);">v1.92</span></div>
+  <div style="font-family:'JetBrains Mono',monospace; font-size:13px; font-weight:700; color:var(--gris-texto); letter-spacing:1px;">REGIN <span style="color:var(--naranja);">v1.95</span></div>
   <div style="font-size:12px; color:rgba(168,191,212,0.5); margin-top:4px;">© JUN 2026 &nbsp;|&nbsp; David Jiménez</div>
 </footer>
 
@@ -633,10 +633,47 @@ function ahora() {
     hora:  d.toLocaleTimeString('es-ES', {hour:'2-digit',minute:'2-digit'})
   };
 }
+// Repara IDs duplicados que puedan existir de versiones anteriores a la v1.95.
+// Conserva todas las incidencias, solo renombra los duplicados para que sean únicos.
+function repararIdsDuplicados() {
+  const vistos = new Set();
+  let huboReparacion = false;
+  incidencias.forEach(inc => {
+    if (vistos.has(inc.id)) {
+      const base = inc.id.substring(0, inc.id.lastIndexOf('-'));
+      let n = 1;
+      let nuevoId;
+      do {
+        n++;
+        nuevoId = `${base}-${String(n).padStart(3,'0')}`;
+      } while (vistos.has(nuevoId) || incidencias.some(i => i.id === nuevoId));
+      inc.id = nuevoId;
+      huboReparacion = true;
+    }
+    vistos.add(inc.id);
+  });
+  if (huboReparacion) {
+    guardarDatos();
+    renderLista();
+    toast('🔧 Se han corregido incidencias con ID duplicado', 'ok');
+  }
+}
 function generarId() {
   const d = new Date();
   const base = d.getFullYear().toString().slice(-2) + String(d.getMonth()+1).padStart(2,'0') + String(d.getDate()).padStart(2,'0');
-  return `INC-${base}-${String(incidencias.length+1).padStart(3,'0')}`;
+  let contador = cargarLS(CONTADOR_ID_KEY, { fecha: '', num: 0 });
+  if (contador.fecha !== base) contador = { fecha: base, num: 0 };
+  contador.num += 1;
+  localStorage.setItem(CONTADOR_ID_KEY, JSON.stringify(contador)); // no dispara auto-sync, es solo un contador interno
+  let id = `INC-${base}-${String(contador.num).padStart(3,'0')}`;
+  // Salvaguarda extra: si por lo que sea ese id ya existiera (p.ej. datos
+  // importados de otro dispositivo), seguimos incrementando hasta que sea único
+  while (incidencias.some(i => i.id === id)) {
+    contador.num += 1;
+    localStorage.setItem(CONTADOR_ID_KEY, JSON.stringify(contador));
+    id = `INC-${base}-${String(contador.num).padStart(3,'0')}`;
+  }
+  return id;
 }
 
 // ══════════════════════════════════════════
@@ -1379,7 +1416,7 @@ function abrirSync() {
   document.getElementById('gh-config-estado').textContent = cfg.token ? '✅ Configuración guardada' : '';
   document.getElementById('gh-config-estado').style.color = 'var(--verde)';
   document.getElementById('gh-config-resumen').textContent = cfg.usuario && cfg.repo ? `✅ ${cfg.usuario}/${cfg.repo}` : '⚠️ Sin configurar';
-  document.getElementById('sync-estado').textContent = '';
+  document.getElementById('sync-estado').textContent = ultimoMensajeSync || '';
   document.getElementById('overlaySync').classList.add('visible');
 }
 function cerrarSync() { document.getElementById('overlaySync').classList.remove('visible'); }
@@ -1448,6 +1485,19 @@ async function subirAGitHub() {
 async function descargarDeGitHub() {
   const cfg = cargarConfigGH();
   if (!cfg.token||!cfg.usuario||!cfg.repo) { setSyncEstado('⚠️ Configura primero usuario, repositorio y token','var(--naranja)'); return; }
+
+  // Protección: si hay cambios locales que aún no se han subido a GitHub,
+  // los subimos primero para no perderlos al descargar la versión remota.
+  if (hayCambiosSinSubir) {
+    setSyncEstado('⏳ Tienes cambios sin subir — subiéndolos primero...', 'var(--amarillo)');
+    clearTimeout(autoSubidaTimer);
+    await autoSubir();
+    if (hayCambiosSinSubir) {
+      setSyncEstado('❌ No se pudieron subir tus cambios (revisa la conexión). Descarga cancelada para no perderlos — reinténtalo cuando tengas conexión.', 'var(--rojo)');
+      return;
+    }
+  }
+
   setSyncEstado('⏳ Descargando datos de GitHub...','var(--amarillo)');
   const apiUrl = `https://api.github.com/repos/${cfg.usuario}/${cfg.repo}/contents/${cfg.archivo}`;
   try {
@@ -1465,6 +1515,7 @@ async function descargarDeGitHub() {
     if (parsed.cambiosTurno) { cambiosTurno=parsed.cambiosTurno; guardarLS(CAMBIOS_KEY, cambiosTurno); }
     if (parsed.documentos)   { documentos=parsed.documentos;     guardarLS(DOCS_KEY,   documentos); }
     guardarDatos(); renderLista();
+    repararIdsDuplicados();
     setSyncEstado(`✅ ${incidencias.length} incidencias descargadas`,'var(--verde)');
     toast('📥 Datos descargados de GitHub','ok');
   } catch(e) { setSyncEstado('❌ Error: '+e.message,'var(--rojo)'); }
@@ -1676,11 +1727,19 @@ function renderDocs() {
 //  AUTO-SINCRONIZACIÓN
 // ══════════════════════════════════════════
 
+let ultimoMensajeSync = '';
+let hayCambiosSinSubir = false; // true si hay un cambio local que aún no llegó a GitHub
+
 function setSyncDot(color, titulo) {
   const dot = document.getElementById('sync-dot');
+  ultimoMensajeSync = titulo;
   if (!dot) return;
   dot.style.background = color;
-  dot.title = titulo;
+  dot.title = titulo + ' — toca para ver detalles';
+  const overlay = document.getElementById('overlaySync');
+  if (overlay && overlay.classList.contains('visible')) {
+    setSyncEstado(titulo, color);
+  }
 }
 
 function ghConfigurado() {
@@ -1693,6 +1752,7 @@ function programarAutoSubida() {
   // Si el usuario edita algo mientras se está descargando de GitHub, marcamos
   // el cambio para no perderlo cuando la descarga termine y sobrescriba.
   if (descargaEnCurso) cambioDuranteDescarga = true;
+  hayCambiosSinSubir = true;
   if (!appLista || !ghConfigurado()) return;
   clearTimeout(autoSubidaTimer);
   setSyncDot('var(--amarillo)', 'Cambios pendientes de subir...');
@@ -1727,12 +1787,14 @@ async function autoSubir() {
       body: JSON.stringify({ message: `REGIN auto-sync ${new Date().toLocaleString('es-ES')}`, content: base64, ...(sha ? { sha } : {}) })
     });
     if (pr.ok) {
+      hayCambiosSinSubir = false;
       setSyncDot('var(--verde)', 'Sincronizado ✓');
     } else {
-      setSyncDot('var(--rojo)', 'Error al subir — usa el panel ⬆⬇ para reintentarlo');
+      const e = await pr.json().catch(()=>({}));
+      setSyncDot('var(--rojo)', 'Error al subir: ' + (e.message || pr.status) + ' — tus datos están a salvo en este dispositivo');
     }
   } catch(e) {
-    setSyncDot('var(--rojo)', 'Sin conexión — los cambios se guardan localmente');
+    setSyncDot('var(--rojo)', 'Sin conexión — tus cambios están guardados en este dispositivo, se subirán cuando vuelva la conexión');
   }
   sincronizando = false;
 }
@@ -1775,6 +1837,8 @@ async function autoDescargar() {
           if (parsed.cambiosTurno) { cambiosTurno = parsed.cambiosTurno;  localStorage.setItem(CAMBIOS_KEY, JSON.stringify(cambiosTurno)); }
           if (parsed.documentos)   { documentos = parsed.documentos;      localStorage.setItem(DOCS_KEY, JSON.stringify(documentos)); }
           renderLista();
+          repararIdsDuplicados();
+          hayCambiosSinSubir = false;
           setSyncDot('var(--verde)', 'Sincronizado ✓');
           toast('✓ Datos actualizados desde GitHub', 'ok');
         }
@@ -1812,6 +1876,7 @@ if ('serviceWorker' in navigator) {
 //  INICIO
 // ══════════════════════════════════════════
 renderLista();
+repararIdsDuplicados();
 autoDescargar();
 </script>
 </body>

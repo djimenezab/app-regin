@@ -1,4 +1,4 @@
-const CACHE_NAME = 'regin-v1.92';
+const CACHE_NAME = 'regin-v1.95';
 const ASSETS = [
   '/app-regin/',
   '/app-regin/index.html',
