@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-08-19T16:59:33.445Z",
+  "exportado": "2026-08-19T18:08:45.573Z",
   "incidencias": [
     {
       "id": "INC-260819-002",
@@ -16,6 +16,21 @@
       "obsCierre": null,
       "pasada": false,
       "tsCreacion": 1787158755767
+    },
+    {
+      "id": "INC-260819-002",
+      "fecha": "19/08/2026",
+      "hora": "20:07",
+      "quien": "112",
+      "mensaje": "Cereal 3261 con 3211",
+      "carretera": "CM-3261",
+      "pk": "16",
+      "zona": "Norte",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1787162922562
     }
   ],
   "tramos": [
