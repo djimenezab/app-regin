@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-08-18T14:33:34.417Z",
+  "exportado": "2026-08-19T16:59:18.769Z",
   "incidencias": [
     {
       "id": "INC-260818-001",
@@ -16,6 +16,21 @@
       "obsCierre": null,
       "pasada": false,
       "tsCreacion": 1787063602719
+    },
+    {
+      "id": "INC-260819-002",
+      "fecha": "19/08/2026",
+      "hora": "18:57",
+      "quien": "112",
+      "mensaje": "Accidente con una cabra montesa que ha quedado en la calzada.",
+      "carretera": "CM-3203",
+      "pk": "60",
+      "zona": "Sur",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1787158755767
     }
   ],
   "tramos": [
