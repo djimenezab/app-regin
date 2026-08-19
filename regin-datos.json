@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-08-19T18:44:38.123Z",
+  "exportado": "2026-08-19T19:55:43.416Z",
   "incidencias": [
     {
       "id": "INC-260819-002",
@@ -12,8 +12,8 @@
       "pk": "60",
       "zona": "Sur",
       "cerrada": true,
-      "horaCierre": "20:44",
-      "obsCierre": "Se retira la cabra.",
+      "horaCierre": "21:55",
+      "obsCierre": "Se retira el cereal.",
       "pasada": false,
       "tsCreacion": 1787158755767
     },
