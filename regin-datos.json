@@ -1,22 +1,7 @@
 {
   "version": "1.9",
-  "exportado": "2026-08-19T16:59:18.769Z",
+  "exportado": "2026-08-19T16:59:23.589Z",
   "incidencias": [
-    {
-      "id": "INC-260818-001",
-      "fecha": "18/08/2026",
-      "hora": "16:32",
-      "quien": "112",
-      "mensaje": "Furgoneta de centro de día, averiada.",
-      "carretera": "CM-3133",
-      "pk": "10",
-      "zona": "Sur",
-      "cerrada": false,
-      "horaCierre": null,
-      "obsCierre": null,
-      "pasada": false,
-      "tsCreacion": 1787063602719
-    },
     {
       "id": "INC-260819-002",
       "fecha": "19/08/2026",
