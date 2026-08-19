@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>REGIN v1.91 — Registro de Incidencias</title>
+<title>REGIN v1.92 — Registro de Incidencias</title>
 <link rel="manifest" href="manifest.json">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -193,7 +193,7 @@
     <div class="logo-icon">🚨</div>
     <div class="logo-text">
       <h1>REGIN</h1>
-      <span>v1.91 — Registro de Incidencias</span>
+      <span>v1.92 — Registro de Incidencias</span>
     </div>
   </div>
   <div class="header-actions">
@@ -584,7 +584,7 @@
 <div class="snackbar" id="snackbar"></div>
 
 <footer style="text-align:center; padding:24px 20px 32px; margin-top:20px; border-top:1px solid var(--borde);">
-  <div style="font-family:'JetBrains Mono',monospace; font-size:13px; font-weight:700; color:var(--gris-texto); letter-spacing:1px;">REGIN <span style="color:var(--naranja);">v1.91</span></div>
+  <div style="font-family:'JetBrains Mono',monospace; font-size:13px; font-weight:700; color:var(--gris-texto); letter-spacing:1px;">REGIN <span style="color:var(--naranja);">v1.92</span></div>
   <div style="font-size:12px; color:rgba(168,191,212,0.5); margin-top:4px;">© JUN 2026 &nbsp;|&nbsp; David Jiménez</div>
 </footer>
 
@@ -597,6 +597,8 @@ const STORAGE_KEY   = 'regin_v1_datos';
 let autoSubidaTimer = null;
 let sincronizando = false;
 let appLista = false; // evita auto-subidas durante la carga inicial
+let descargaEnCurso = false;    // true mientras autoDescargar() está en marcha
+let cambioDuranteDescarga = false; // true si el usuario edita algo mientras se descarga
 const TRAMOS_KEY    = 'regin_tramos';
 const COORD_KEY     = 'regin_coordinadores';
 const GH_KEY        = 'regin_gh_config';
@@ -1688,6 +1690,9 @@ function ghConfigurado() {
 
 // Programa una subida con retraso de 3s (agrupa cambios seguidos en una sola subida)
 function programarAutoSubida() {
+  // Si el usuario edita algo mientras se está descargando de GitHub, marcamos
+  // el cambio para no perderlo cuando la descarga termine y sobrescriba.
+  if (descargaEnCurso) cambioDuranteDescarga = true;
   if (!appLista || !ghConfigurado()) return;
   clearTimeout(autoSubidaTimer);
   setSyncDot('var(--amarillo)', 'Cambios pendientes de subir...');
@@ -1740,6 +1745,8 @@ async function autoDescargar() {
     return;
   }
   sincronizando = true;
+  descargaEnCurso = true;
+  cambioDuranteDescarga = false;
   setSyncDot('var(--amarillo)', 'Descargando datos de GitHub...');
   toast('⏳ Sincronizando con GitHub...');
   const cfg = cargarConfigGH();
@@ -1751,17 +1758,26 @@ async function autoDescargar() {
       const texto = decodeURIComponent(escape(atob(data.content.replace(/\n/g,''))));
       const parsed = JSON.parse(texto);
       if (parsed.incidencias && Array.isArray(parsed.incidencias)) {
-        incidencias = parsed.incidencias;
-        localStorage.setItem(STORAGE_KEY, JSON.stringify(incidencias));
-        if (parsed.tramos)       { tramos = parsed.tramos;              localStorage.setItem(TRAMOS_KEY, JSON.stringify(tramos)); }
-        if (parsed.coordinadores){ coordinadores = parsed.coordinadores; localStorage.setItem(COORD_KEY, JSON.stringify(coordinadores)); }
-        if (parsed.agenda)       { agenda = parsed.agenda;              localStorage.setItem(AGENDA_KEY, JSON.stringify(agenda)); }
-        if (parsed.turno)        { turno = parsed.turno;                localStorage.setItem(TURNO_KEY, JSON.stringify(turno)); }
-        if (parsed.cambiosTurno) { cambiosTurno = parsed.cambiosTurno;  localStorage.setItem(CAMBIOS_KEY, JSON.stringify(cambiosTurno)); }
-        if (parsed.documentos)   { documentos = parsed.documentos;      localStorage.setItem(DOCS_KEY, JSON.stringify(documentos)); }
-        renderLista();
-        setSyncDot('var(--verde)', 'Sincronizado ✓');
-        toast('✓ Datos actualizados desde GitHub', 'ok');
+        if (cambioDuranteDescarga) {
+          // El usuario ha tocado algo mientras se descargaba (p.ej. cerrar una
+          // incidencia justo al abrir la app). Sus datos locales son más
+          // recientes que los descargados: los conservamos y en su lugar
+          // subimos el estado local actualizado a GitHub para reconciliar.
+          setSyncDot('var(--amarillo)', 'Cambios locales detectados — subiendo tu versión...');
+          toast('⚠️ Se han mantenido tus cambios más recientes', 'ok');
+        } else {
+          incidencias = parsed.incidencias;
+          localStorage.setItem(STORAGE_KEY, JSON.stringify(incidencias));
+          if (parsed.tramos)       { tramos = parsed.tramos;              localStorage.setItem(TRAMOS_KEY, JSON.stringify(tramos)); }
+          if (parsed.coordinadores){ coordinadores = parsed.coordinadores; localStorage.setItem(COORD_KEY, JSON.stringify(coordinadores)); }
+          if (parsed.agenda)       { agenda = parsed.agenda;              localStorage.setItem(AGENDA_KEY, JSON.stringify(agenda)); }
+          if (parsed.turno)        { turno = parsed.turno;                localStorage.setItem(TURNO_KEY, JSON.stringify(turno)); }
+          if (parsed.cambiosTurno) { cambiosTurno = parsed.cambiosTurno;  localStorage.setItem(CAMBIOS_KEY, JSON.stringify(cambiosTurno)); }
+          if (parsed.documentos)   { documentos = parsed.documentos;      localStorage.setItem(DOCS_KEY, JSON.stringify(documentos)); }
+          renderLista();
+          setSyncDot('var(--verde)', 'Sincronizado ✓');
+          toast('✓ Datos actualizados desde GitHub', 'ok');
+        }
       } else {
         setSyncDot('var(--rojo)', 'El archivo de GitHub tiene formato incorrecto');
       }
@@ -1774,7 +1790,13 @@ async function autoDescargar() {
     toast('⚠️ Sin conexión — datos locales', 'err');
   }
   sincronizando = false;
+  descargaEnCurso = false;
   appLista = true;
+  // Si hubo cambios locales durante la descarga, súbelos ya (sin esperar el debounce)
+  if (cambioDuranteDescarga) {
+    clearTimeout(autoSubidaTimer);
+    autoSubir();
+  }
 }
 
 // ══════════════════════════════════════════
