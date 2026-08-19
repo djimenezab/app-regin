@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-08-19T20:33:03.769Z",
+  "exportado": "2026-08-19T20:45:00.249Z",
   "incidencias": [
     {
       "id": "INC-260819-002",
@@ -18,7 +18,7 @@
       "tsCreacion": 1787158755767
     },
     {
-      "id": "INC-260819-002",
+      "id": "INC-260819-003",
       "fecha": "19/08/2026",
       "hora": "20:07",
       "quien": "112",
@@ -26,9 +26,9 @@
       "carretera": "CM-3261",
       "pk": "16",
       "zona": "Norte",
-      "cerrada": false,
-      "horaCierre": null,
-      "obsCierre": null,
+      "cerrada": true,
+      "horaCierre": "22:39",
+      "obsCierre": "Se limpia y cierra a las 22:00",
       "pasada": false,
       "tsCreacion": 1787162922562
     }
