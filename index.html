@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>REGIN v1.96 — Registro de Incidencias</title>
+<title>REGIN v1.97 — Registro de Incidencias</title>
 <link rel="manifest" href="manifest.json">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -193,7 +193,7 @@
     <div class="logo-icon">🚨</div>
     <div class="logo-text">
       <h1>REGIN</h1>
-      <span>v1.96 — Registro de Incidencias</span>
+      <span>v1.97 — Registro de Incidencias</span>
     </div>
   </div>
   <div class="header-actions">
@@ -584,7 +584,7 @@
 <div class="snackbar" id="snackbar"></div>
 
 <footer style="text-align:center; padding:24px 20px 32px; margin-top:20px; border-top:1px solid var(--borde);">
-  <div style="font-family:'JetBrains Mono',monospace; font-size:13px; font-weight:700; color:var(--gris-texto); letter-spacing:1px;">REGIN <span style="color:var(--naranja);">v1.96</span></div>
+  <div style="font-family:'JetBrains Mono',monospace; font-size:13px; font-weight:700; color:var(--gris-texto); letter-spacing:1px;">REGIN <span style="color:var(--naranja);">v1.97</span></div>
   <div style="font-size:12px; color:rgba(168,191,212,0.5); margin-top:4px;">© JUN 2026 &nbsp;|&nbsp; David Jiménez</div>
 </footer>
 
@@ -633,7 +633,7 @@ function ahora() {
     hora:  d.toLocaleTimeString('es-ES', {hour:'2-digit',minute:'2-digit'})
   };
 }
-// Repara IDs duplicados que puedan existir de versiones anteriores a la v1.96.
+// Repara IDs duplicados que puedan existir de versiones anteriores a la v1.97.
 // Conserva todas las incidencias, solo renombra los duplicados para que sean únicos.
 function repararIdsDuplicados(subirCorreccion) {
   const vistos = new Set();
@@ -1173,13 +1173,17 @@ let turno  = cargarLS(TURNO_KEY,  { norte: '', sur: '' });
 
 // Compatibilidad: si coordinadores venía del formato antiguo, migrarlo a agenda
 (function migrarCoord() {
+  let huboMigracion = false;
   if (coordinadores.norte && coordinadores.norte.nombre && !agenda.find(p=>p.nombre===coordinadores.norte.nombre)) {
-    if (coordinadores.norte.nombre) agenda.push({ id: Date.now()+'n', nombre: coordinadores.norte.nombre, tel: coordinadores.norte.tel||'' });
+    if (coordinadores.norte.nombre) { agenda.push({ id: Date.now()+'n', nombre: coordinadores.norte.nombre, tel: coordinadores.norte.tel||'' }); huboMigracion = true; }
   }
   if (coordinadores.sur && coordinadores.sur.nombre && !agenda.find(p=>p.nombre===coordinadores.sur.nombre)) {
-    if (coordinadores.sur.nombre) agenda.push({ id: Date.now()+'s', nombre: coordinadores.sur.nombre, tel: coordinadores.sur.tel||'' });
+    if (coordinadores.sur.nombre) { agenda.push({ id: Date.now()+'s', nombre: coordinadores.sur.nombre, tel: coordinadores.sur.tel||'' }); huboMigracion = true; }
   }
-  if (agenda.length) guardarLS(AGENDA_KEY, agenda);
+  // Solo guardamos (y por tanto solo marcamos "cambios pendientes de subir") si
+  // de verdad se ha migrado algo nuevo. Si no, esto se ejecutaría en cada
+  // apertura de la app sin motivo y bloquearía descargas innecesariamente.
+  if (huboMigracion) guardarLS(AGENDA_KEY, agenda);
 })();
 
 const CAMBIOS_KEY = 'regin_cambios_turno';
@@ -1499,8 +1503,12 @@ async function descargarDeGitHub() {
     clearTimeout(autoSubidaTimer);
     await autoSubir();
     if (hayCambiosSinSubir) {
-      setSyncEstado('❌ No se pudieron subir tus cambios (revisa la conexión). Descarga cancelada para no perderlos — reinténtalo cuando tengas conexión.', 'var(--rojo)');
-      return;
+      const continuar = confirm('No se han podido subir tus cambios pendientes (revisa la conexión).\n\n¿Descargar de todas formas? Si tenías un cambio real sin subir, se perdería.');
+      if (!continuar) {
+        setSyncEstado('❌ Descarga cancelada para proteger tus cambios.', 'var(--rojo)');
+        return;
+      }
+      setSyncEstado('⏳ Descargando de todas formas...', 'var(--amarillo)');
     }
   }
 
