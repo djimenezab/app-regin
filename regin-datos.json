@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-08-19T20:03:46.292Z",
+  "exportado": "2026-08-19T20:05:42.097Z",
   "incidencias": [
     {
       "id": "INC-260819-002",
@@ -12,8 +12,8 @@
       "pk": "60",
       "zona": "Sur",
       "cerrada": true,
-      "horaCierre": "22:03",
-      "obsCierre": "Limpiar cereal",
+      "horaCierre": "22:05",
+      "obsCierre": "Se limpia cereal",
       "pasada": false,
       "tsCreacion": 1787158755767
     },
