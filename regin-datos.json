@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-08-20T19:18:05.932Z",
+  "exportado": "2026-08-20T20:49:39.272Z",
   "incidencias": [
     {
       "id": "INC-260819-002",
@@ -61,6 +61,21 @@
       "obsCierre": null,
       "pasada": false,
       "tsCreacion": 1787245860124
+    },
+    {
+      "id": "INC-260820-003",
+      "fecha": "20/08/2026",
+      "hora": "22:48",
+      "quien": "112",
+      "mensaje": "Animal atropellado",
+      "carretera": "CM-412",
+      "pk": "215",
+      "zona": "Sur",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1787258976271
     }
   ],
   "tramos": [
