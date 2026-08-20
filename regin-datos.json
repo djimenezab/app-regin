@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-08-20T15:23:30.914Z",
+  "exportado": "2026-08-20T17:11:03.126Z",
   "incidencias": [
     {
       "id": "INC-260819-002",
@@ -46,6 +46,21 @@
       "obsCierre": null,
       "pasada": false,
       "tsCreacion": 1787239407913
+    },
+    {
+      "id": "INC-260820-002",
+      "fecha": "20/08/2026",
+      "hora": "19:10",
+      "quien": "Otro",
+      "mensaje": "Balsa de agua",
+      "carretera": "CM-3225",
+      "pk": "4",
+      "zona": "Sur",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1787245860124
     }
   ],
   "tramos": [
