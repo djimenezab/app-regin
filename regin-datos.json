@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-08-20T22:17:50.645Z",
+  "exportado": "2026-08-20T22:18:19.182Z",
   "incidencias": [
     {
       "id": "INC-260819-002",
@@ -56,9 +56,9 @@
       "carretera": "CM-3225",
       "pk": "4",
       "zona": "Sur",
-      "cerrada": false,
-      "horaCierre": null,
-      "obsCierre": null,
+      "cerrada": true,
+      "horaCierre": "00:18",
+      "obsCierre": "Se quitan en la CM-3217",
       "pasada": false,
       "tsCreacion": 1787245860124
     },
