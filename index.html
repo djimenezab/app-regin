@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>REGIN v1.97 — Registro de Incidencias</title>
+<title>REGIN v1.98 — Registro de Incidencias</title>
 <link rel="manifest" href="manifest.json">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -193,7 +193,7 @@
     <div class="logo-icon">🚨</div>
     <div class="logo-text">
       <h1>REGIN</h1>
-      <span>v1.97 — Registro de Incidencias</span>
+      <span>v1.98 — Registro de Incidencias</span>
     </div>
   </div>
   <div class="header-actions">
@@ -584,7 +584,7 @@
 <div class="snackbar" id="snackbar"></div>
 
 <footer style="text-align:center; padding:24px 20px 32px; margin-top:20px; border-top:1px solid var(--borde);">
-  <div style="font-family:'JetBrains Mono',monospace; font-size:13px; font-weight:700; color:var(--gris-texto); letter-spacing:1px;">REGIN <span style="color:var(--naranja);">v1.97</span></div>
+  <div style="font-family:'JetBrains Mono',monospace; font-size:13px; font-weight:700; color:var(--gris-texto); letter-spacing:1px;">REGIN <span style="color:var(--naranja);">v1.98</span></div>
   <div style="font-size:12px; color:rgba(168,191,212,0.5); margin-top:4px;">© JUN 2026 &nbsp;|&nbsp; David Jiménez</div>
 </footer>
 
@@ -633,7 +633,7 @@ function ahora() {
     hora:  d.toLocaleTimeString('es-ES', {hour:'2-digit',minute:'2-digit'})
   };
 }
-// Repara IDs duplicados que puedan existir de versiones anteriores a la v1.97.
+// Repara IDs duplicados que puedan existir de versiones anteriores a la v1.98.
 // Conserva todas las incidencias, solo renombra los duplicados para que sean únicos.
 function repararIdsDuplicados(subirCorreccion) {
   const vistos = new Set();
@@ -665,6 +665,7 @@ function repararIdsDuplicados(subirCorreccion) {
   }
 }
 function generarId() {
+  const CONTADOR_ID_KEY = 'regin_contador_id';
   const d = new Date();
   const base = d.getFullYear().toString().slice(-2) + String(d.getMonth()+1).padStart(2,'0') + String(d.getDate()).padStart(2,'0');
   let contador = cargarLS(CONTADOR_ID_KEY, { fecha: '', num: 0 });
