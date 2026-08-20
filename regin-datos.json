@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-08-20T06:45:04.816Z",
+  "exportado": "2026-08-20T15:23:30.914Z",
   "incidencias": [
     {
       "id": "INC-260819-002",
@@ -31,6 +31,21 @@
       "obsCierre": "Se limpia y cierra a las 22:00",
       "pasada": true,
       "tsCreacion": 1787162922562
+    },
+    {
+      "id": "INC-260820-001",
+      "fecha": "20/08/2026",
+      "hora": "17:23",
+      "quien": "Guardia Civil",
+      "mensaje": "Agua cortando la carretera",
+      "carretera": "CM-3211",
+      "pk": "0.500",
+      "zona": "Norte",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1787239407913
     }
   ],
   "tramos": [
