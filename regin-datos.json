@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-08-21T06:36:05.570Z",
+  "exportado": "2026-08-21T06:49:06.557Z",
   "incidencias": [
     {
       "id": "INC-260819-002",
@@ -104,7 +104,7 @@
       "cerrada": true,
       "horaCierre": "08:35",
       "obsCierre": "El turismo se encuentra en la travesía y sin interrumpir la calzada.",
-      "pasada": false,
+      "pasada": true,
       "tsCreacion": 1787286545386
     }
   ],
