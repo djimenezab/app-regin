@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-08-21T04:19:37.797Z",
+  "exportado": "2026-08-21T04:29:08.389Z",
   "incidencias": [
     {
       "id": "INC-260819-002",
@@ -91,6 +91,21 @@
       "obsCierre": null,
       "pasada": false,
       "tsCreacion": 1787285974794
+    },
+    {
+      "id": "INC-260821-002",
+      "fecha": "21/08/2026",
+      "hora": "06:28",
+      "quien": "112",
+      "mensaje": "Accidente con heridos, tazona",
+      "carretera": "CM-3217",
+      "pk": "30",
+      "zona": "Sur",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1787286545386
     }
   ],
   "tramos": [
