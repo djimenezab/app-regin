@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-08-21T04:29:08.389Z",
+  "exportado": "2026-08-21T05:42:35.245Z",
   "incidencias": [
     {
       "id": "INC-260819-002",
@@ -86,9 +86,9 @@
       "carretera": "CM-332",
       "pk": "17",
       "zona": "Norte",
-      "cerrada": false,
-      "horaCierre": null,
-      "obsCierre": null,
+      "cerrada": true,
+      "horaCierre": "07:42",
+      "obsCierre": "Se retira animal.",
       "pasada": false,
       "tsCreacion": 1787285974794
     },
