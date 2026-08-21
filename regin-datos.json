@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-08-21T06:49:06.557Z",
+  "exportado": "2026-08-21T09:49:49.881Z",
   "incidencias": [
     {
       "id": "INC-260819-002",
@@ -106,6 +106,21 @@
       "obsCierre": "El turismo se encuentra en la travesía y sin interrumpir la calzada.",
       "pasada": true,
       "tsCreacion": 1787286545386
+    },
+    {
+      "id": "INC-260821-003",
+      "fecha": "21/08/2026",
+      "hora": "11:49",
+      "quien": "112",
+      "mensaje": "Cristales por carretera.",
+      "carretera": "CM-220",
+      "pk": "23",
+      "zona": "Norte",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1787305786878
     }
   ],
   "tramos": [
