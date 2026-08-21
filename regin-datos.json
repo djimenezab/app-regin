@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-08-21T10:39:31.046Z",
+  "exportado": "2026-08-21T10:49:49.556Z",
   "incidencias": [
     {
       "id": "INC-260819-002",
@@ -59,7 +59,7 @@
       "cerrada": true,
       "horaCierre": "00:18",
       "obsCierre": "Se quitan en la CM-3217",
-      "pasada": false,
+      "pasada": true,
       "tsCreacion": 1787245860124
     },
     {
