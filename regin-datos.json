@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-08-21T09:49:49.881Z",
+  "exportado": "2026-08-21T10:38:29.919Z",
   "incidencias": [
     {
       "id": "INC-260819-002",
@@ -120,7 +120,14 @@
       "horaCierre": null,
       "obsCierre": null,
       "pasada": false,
-      "tsCreacion": 1787305786878
+      "tsCreacion": 1787305786878,
+      "notas": [
+        {
+          "id": "1787308706917",
+          "ts": "21/8 12:38",
+          "txt": "Buitre vivo."
+        }
+      ]
     }
   ],
   "tramos": [
