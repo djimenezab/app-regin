@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-08-20T22:18:19.182Z",
+  "exportado": "2026-08-21T04:19:37.797Z",
   "incidencias": [
     {
       "id": "INC-260819-002",
@@ -76,6 +76,21 @@
       "obsCierre": "No se ve animal",
       "pasada": false,
       "tsCreacion": 1787258976271
+    },
+    {
+      "id": "INC-260821-001",
+      "fecha": "21/08/2026",
+      "hora": "06:18",
+      "quien": "112",
+      "mensaje": "Accidente contra jabali, pasar a ver si hay daños",
+      "carretera": "CM-332",
+      "pk": "17",
+      "zona": "Norte",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1787285974794
     }
   ],
   "tramos": [
