@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-08-21T05:42:35.245Z",
+  "exportado": "2026-08-21T06:09:18.345Z",
   "incidencias": [
     {
       "id": "INC-260819-002",
@@ -89,7 +89,7 @@
       "cerrada": true,
       "horaCierre": "07:42",
       "obsCierre": "Se retira animal.",
-      "pasada": false,
+      "pasada": true,
       "tsCreacion": 1787285974794
     },
     {
