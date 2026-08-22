@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-08-22T03:32:19.607Z",
+  "exportado": "2026-08-22T09:20:54.351Z",
   "incidencias": [
     {
       "id": "INC-260819-002",
@@ -143,6 +143,21 @@
       "obsCierre": "Se comprueba con 112 y resolvió GC sobre las 3 y algo.",
       "pasada": false,
       "tsCreacion": 1787357501312
+    },
+    {
+      "id": "INC-260822-002",
+      "fecha": "22/08/2026",
+      "hora": "11:20",
+      "quien": "112",
+      "mensaje": "2 zorros muertos en la curva",
+      "carretera": "CM-3203",
+      "pk": "26",
+      "zona": "Norte",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1787390451347
     }
   ],
   "tramos": [
