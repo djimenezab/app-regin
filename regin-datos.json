@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-08-22T00:11:44.314Z",
+  "exportado": "2026-08-22T03:32:19.607Z",
   "incidencias": [
     {
       "id": "INC-260819-002",
@@ -138,9 +138,9 @@
       "carretera": "CM-3133",
       "pk": "11",
       "zona": "Sur",
-      "cerrada": false,
-      "horaCierre": null,
-      "obsCierre": null,
+      "cerrada": true,
+      "horaCierre": "05:31",
+      "obsCierre": "Se comprueba con 112 y resolvió GC sobre las 3 y algo.",
       "pasada": false,
       "tsCreacion": 1787357501312
     }
