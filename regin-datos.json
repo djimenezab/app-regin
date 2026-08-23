@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-08-23T13:31:24.996Z",
+  "exportado": "2026-08-23T13:32:02.960Z",
   "incidencias": [
     {
       "id": "INC-260819-002",
@@ -194,7 +194,14 @@
       "horaCierre": null,
       "obsCierre": null,
       "pasada": false,
-      "tsCreacion": 1787486249938
+      "tsCreacion": 1787486249938,
+      "notas": [
+        {
+          "id": "1787491919959",
+          "ts": "23/8 15:31",
+          "txt": "Se sale a las 15:00"
+        }
+      ]
     }
   ],
   "tramos": [
