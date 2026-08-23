@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-08-23T10:11:20.972Z",
+  "exportado": "2026-08-23T11:57:32.945Z",
   "incidencias": [
     {
       "id": "INC-260819-002",
@@ -173,6 +173,21 @@
       "obsCierre": null,
       "pasada": false,
       "tsCreacion": 1787479877967
+    },
+    {
+      "id": "INC-260823-002",
+      "fecha": "23/08/2026",
+      "hora": "13:56",
+      "quien": "112",
+      "mensaje": "Jabali muerto entre los mardos y Ontur",
+      "carretera": "CM-3215",
+      "pk": "11",
+      "zona": "Norte",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1787486249938
     }
   ],
   "tramos": [
