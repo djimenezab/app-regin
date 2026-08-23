@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-08-22T11:16:34.354Z",
+  "exportado": "2026-08-23T10:11:20.972Z",
   "incidencias": [
     {
       "id": "INC-260819-002",
@@ -158,6 +158,21 @@
       "obsCierre": "Se queda limpio, había en el 25 y 29 tejon",
       "pasada": false,
       "tsCreacion": 1787390451347
+    },
+    {
+      "id": "INC-260823-001",
+      "fecha": "23/08/2026",
+      "hora": "12:10",
+      "quien": "112",
+      "mensaje": "Motocicleta accidente caída",
+      "carretera": "CM-412",
+      "pk": "227",
+      "zona": "Sur",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1787479877967
     }
   ],
   "tramos": [
