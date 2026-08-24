@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-08-24T09:37:40.323Z",
+  "exportado": "2026-08-24T09:37:45.952Z",
   "incidencias": [
     {
       "id": "INC-260819-002",
@@ -215,7 +215,7 @@
       "cerrada": true,
       "horaCierre": "11:29",
       "obsCierre": null,
-      "pasada": false,
+      "pasada": true,
       "tsCreacion": 1787547789690
     },
     {
