@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-08-24T09:37:15.121Z",
+  "exportado": "2026-08-24T09:37:24.681Z",
   "incidencias": [
     {
       "id": "INC-260819-002",
@@ -141,7 +141,7 @@
       "cerrada": true,
       "horaCierre": "05:31",
       "obsCierre": "Se comprueba con 112 y resolvió GC sobre las 3 y algo.",
-      "pasada": false,
+      "pasada": true,
       "tsCreacion": 1787357501312
     },
     {
