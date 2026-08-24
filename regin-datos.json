@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-08-24T05:35:11.522Z",
+  "exportado": "2026-08-24T06:31:12.413Z",
   "incidencias": [
     {
       "id": "INC-260819-002",
@@ -156,7 +156,7 @@
       "cerrada": true,
       "horaCierre": "13:16",
       "obsCierre": "Se queda limpio, había en el 25 y 29 tejon",
-      "pasada": false,
+      "pasada": true,
       "tsCreacion": 1787390451347
     },
     {
