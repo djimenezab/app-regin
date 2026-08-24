@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-08-24T07:12:22.482Z",
+  "exportado": "2026-08-24T07:21:44.335Z",
   "incidencias": [
     {
       "id": "INC-260819-002",
@@ -141,7 +141,7 @@
       "cerrada": true,
       "horaCierre": "05:31",
       "obsCierre": "Se comprueba con 112 y resolvió GC sobre las 3 y algo.",
-      "pasada": true,
+      "pasada": false,
       "tsCreacion": 1787357501312
     },
     {
@@ -156,7 +156,7 @@
       "cerrada": true,
       "horaCierre": "13:16",
       "obsCierre": "Se queda limpio, había en el 25 y 29 tejon",
-      "pasada": true,
+      "pasada": false,
       "tsCreacion": 1787390451347
     },
     {
@@ -171,7 +171,7 @@
       "cerrada": true,
       "horaCierre": "15:31",
       "obsCierre": "Se queda limpio",
-      "pasada": true,
+      "pasada": false,
       "tsCreacion": 1787479877967,
       "notas": [
         {
@@ -193,7 +193,7 @@
       "cerrada": true,
       "horaCierre": "16:11",
       "obsCierre": "Era un tejón grande, cerramos a las 16:00",
-      "pasada": true,
+      "pasada": false,
       "tsCreacion": 1787486249938,
       "notas": [
         {
@@ -228,9 +228,9 @@
       "pk": "261",
       "zona": "Sur",
       "cerrada": true,
-      "horaCierre": "09:11",
+      "horaCierre": "09:21",
       "obsCierre": "Retirado",
-      "pasada": true,
+      "pasada": false,
       "tsCreacion": 1787549708515
     }
   ],
