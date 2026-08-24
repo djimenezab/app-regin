@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-08-24T05:03:12.695Z",
+  "exportado": "2026-08-24T05:35:11.522Z",
   "incidencias": [
     {
       "id": "INC-260819-002",
@@ -217,6 +217,21 @@
       "obsCierre": null,
       "pasada": false,
       "tsCreacion": 1787547789690
+    },
+    {
+      "id": "INC-260824-002",
+      "fecha": "24/08/2026",
+      "hora": "07:34",
+      "quien": "112",
+      "mensaje": "Jabali muerto",
+      "carretera": "CM-412",
+      "pk": "261",
+      "zona": "Sur",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1787549708515
     }
   ],
   "tramos": [
