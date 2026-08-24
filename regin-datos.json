@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-08-23T14:11:42.841Z",
+  "exportado": "2026-08-24T05:03:12.695Z",
   "incidencias": [
     {
       "id": "INC-260819-002",
@@ -202,6 +202,21 @@
           "txt": "Se sale a las 15:00"
         }
       ]
+    },
+    {
+      "id": "INC-260824-001",
+      "fecha": "24/08/2026",
+      "hora": "07:01",
+      "quien": "112",
+      "mensaje": "Accidente furgoneta y tractor.\nSentido Hellin -> Pozohondo",
+      "carretera": "CM-313",
+      "pk": "126",
+      "zona": "Sur",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1787547789690
     }
   ],
   "tramos": [
