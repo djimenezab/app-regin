@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-08-24T09:37:35.435Z",
+  "exportado": "2026-08-24T09:37:40.323Z",
   "incidencias": [
     {
       "id": "INC-260819-002",
@@ -193,7 +193,7 @@
       "cerrada": true,
       "horaCierre": "16:11",
       "obsCierre": "Era un tejón grande, cerramos a las 16:00",
-      "pasada": false,
+      "pasada": true,
       "tsCreacion": 1787486249938,
       "notas": [
         {
