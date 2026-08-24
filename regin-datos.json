@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-08-24T14:39:17.217Z",
+  "exportado": "2026-08-24T23:02:42.876Z",
   "incidencias": [
     {
       "id": "INC-260819-002",
@@ -262,6 +262,21 @@
       "obsCierre": "Ya no hay leña.",
       "pasada": false,
       "tsCreacion": 1787575709739
+    },
+    {
+      "id": "INC-260825-001",
+      "fecha": "25/08/2026",
+      "hora": "01:01",
+      "quien": "112",
+      "mensaje": "Accidente 2 turismos",
+      "carretera": "CM-3114",
+      "pk": "12",
+      "zona": "Norte",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1787612559873
     }
   ],
   "tramos": [
