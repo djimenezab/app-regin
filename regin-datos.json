@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-08-24T07:27:33.929Z",
+  "exportado": "2026-08-24T09:29:19.162Z",
   "incidencias": [
     {
       "id": "INC-260819-002",
@@ -212,8 +212,8 @@
       "carretera": "CM-313",
       "pk": "126",
       "zona": "Sur",
-      "cerrada": false,
-      "horaCierre": null,
+      "cerrada": true,
+      "horaCierre": "11:29",
       "obsCierre": null,
       "pasada": false,
       "tsCreacion": 1787547789690
