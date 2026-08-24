@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-08-24T07:21:44.335Z",
+  "exportado": "2026-08-24T07:27:33.929Z",
   "incidencias": [
     {
       "id": "INC-260819-002",
@@ -232,6 +232,21 @@
       "obsCierre": "Retirado",
       "pasada": false,
       "tsCreacion": 1787549708515
+    },
+    {
+      "id": "INC-260824-003",
+      "fecha": "24/08/2026",
+      "hora": "09:26",
+      "quien": "112",
+      "mensaje": "Accidente Ambulancia y turismo a 4 de Bogarra dirección Ab cruce casas de H",
+      "carretera": "CM-3216",
+      "pk": "",
+      "zona": "Sur",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1787556450927
     }
   ],
   "tramos": [
