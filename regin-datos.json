@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-08-24T12:48:32.743Z",
+  "exportado": "2026-08-24T14:39:17.217Z",
   "incidencias": [
     {
       "id": "INC-260819-002",
@@ -257,9 +257,9 @@
       "carretera": "CM-3133",
       "pk": "6",
       "zona": "Sur",
-      "cerrada": false,
-      "horaCierre": null,
-      "obsCierre": null,
+      "cerrada": true,
+      "horaCierre": "16:39",
+      "obsCierre": "Ya no hay leña.",
       "pasada": false,
       "tsCreacion": 1787575709739
     }
