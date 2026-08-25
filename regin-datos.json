@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-08-25T00:50:52.053Z",
+  "exportado": "2026-08-25T00:51:23.373Z",
   "incidencias": [
     {
       "id": "INC-260819-002",
@@ -272,9 +272,9 @@
       "carretera": "CM-3114",
       "pk": "12",
       "zona": "Norte",
-      "cerrada": false,
-      "horaCierre": null,
-      "obsCierre": null,
+      "cerrada": true,
+      "horaCierre": "02:50",
+      "obsCierre": "Se ven varios obstáculos pero los turismos ya no están.",
       "pasada": false,
       "tsCreacion": 1787612559873
     },
