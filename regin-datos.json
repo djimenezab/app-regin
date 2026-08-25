@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-08-25T00:51:23.373Z",
+  "exportado": "2026-08-25T05:24:05.843Z",
   "incidencias": [
     {
       "id": "INC-260819-002",
@@ -287,9 +287,9 @@
       "carretera": "CM-3225",
       "pk": "60",
       "zona": "Sur",
-      "cerrada": false,
-      "horaCierre": null,
-      "obsCierre": null,
+      "cerrada": true,
+      "horaCierre": "07:23",
+      "obsCierre": "Se retiran restos y limpia",
       "pasada": false,
       "tsCreacion": 1787619049051
     }
