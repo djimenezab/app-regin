@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-08-24T23:02:42.876Z",
+  "exportado": "2026-08-25T00:50:52.053Z",
   "incidencias": [
     {
       "id": "INC-260819-002",
@@ -277,6 +277,21 @@
       "obsCierre": null,
       "pasada": false,
       "tsCreacion": 1787612559873
+    },
+    {
+      "id": "INC-260825-002",
+      "fecha": "25/08/2026",
+      "hora": "02:48",
+      "quien": "112",
+      "mensaje": "Accidente salida de vía con restos en calzada",
+      "carretera": "CM-3225",
+      "pk": "60",
+      "zona": "Sur",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1787619049051
     }
   ],
   "tramos": [
