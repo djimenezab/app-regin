@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-08-25T05:24:05.843Z",
+  "exportado": "2026-08-25T06:19:12.371Z",
   "incidencias": [
     {
       "id": "INC-260819-002",
@@ -292,6 +292,21 @@
       "obsCierre": "Se retiran restos y limpia",
       "pasada": false,
       "tsCreacion": 1787619049051
+    },
+    {
+      "id": "INC-260825-003",
+      "fecha": "25/08/2026",
+      "hora": "08:18",
+      "quien": "Guardia Civil",
+      "mensaje": "Parte de carga camion, en calzada oliva",
+      "carretera": "CM-316",
+      "pk": "44",
+      "zona": "Norte",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1787638749369
     }
   ],
   "tramos": [
