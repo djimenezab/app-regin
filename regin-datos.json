@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-08-28T07:03:24.258Z",
+  "exportado": "2026-08-28T07:17:01.832Z",
   "incidencias": [
     {
       "id": "INC-260819-002",
@@ -260,7 +260,7 @@
       "cerrada": true,
       "horaCierre": "16:39",
       "obsCierre": "Ya no hay leña.",
-      "pasada": false,
+      "pasada": true,
       "tsCreacion": 1787575709739
     },
     {
