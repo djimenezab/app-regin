@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-08-25T06:19:12.371Z",
+  "exportado": "2026-08-28T07:03:24.258Z",
   "incidencias": [
     {
       "id": "INC-260819-002",
@@ -275,7 +275,7 @@
       "cerrada": true,
       "horaCierre": "02:50",
       "obsCierre": "Se ven varios obstáculos pero los turismos ya no están.",
-      "pasada": false,
+      "pasada": true,
       "tsCreacion": 1787612559873
     },
     {
