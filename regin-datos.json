@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-09-04T15:51:33.530Z",
+  "exportado": "2026-09-04T15:54:18.884Z",
   "incidencias": [
     {
       "id": "INC-260819-002",
@@ -321,7 +321,14 @@
       "horaCierre": null,
       "obsCierre": null,
       "pasada": false,
-      "tsCreacion": 1788537090527
+      "tsCreacion": 1788537090527,
+      "notas": [
+        {
+          "id": "1788537255882",
+          "ts": "4/9 17:54",
+          "txt": "3211 8 animal muerto"
+        }
+      ]
     }
   ],
   "tramos": [
