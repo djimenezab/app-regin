@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-08-28T07:26:18.455Z",
+  "exportado": "2026-09-04T15:51:33.530Z",
   "incidencias": [
     {
       "id": "INC-260819-002",
@@ -307,6 +307,21 @@
       "obsCierre": null,
       "pasada": false,
       "tsCreacion": 1787638749369
+    },
+    {
+      "id": "INC-260904-001",
+      "fecha": "04/09/2026",
+      "hora": "17:50",
+      "quien": "112",
+      "mensaje": "Banda de rodadura",
+      "carretera": "CM-412",
+      "pk": "343",
+      "zona": "Norte",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1788537090527
     }
   ],
   "tramos": [
