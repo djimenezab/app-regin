@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-09-04T15:54:18.884Z",
+  "exportado": "2026-09-06T13:34:04.942Z",
   "incidencias": [
     {
       "id": "INC-260819-002",
@@ -307,28 +307,6 @@
       "obsCierre": null,
       "pasada": false,
       "tsCreacion": 1787638749369
-    },
-    {
-      "id": "INC-260904-001",
-      "fecha": "04/09/2026",
-      "hora": "17:50",
-      "quien": "112",
-      "mensaje": "Banda de rodadura",
-      "carretera": "CM-412",
-      "pk": "343",
-      "zona": "Norte",
-      "cerrada": false,
-      "horaCierre": null,
-      "obsCierre": null,
-      "pasada": false,
-      "tsCreacion": 1788537090527,
-      "notas": [
-        {
-          "id": "1788537255882",
-          "ts": "4/9 17:54",
-          "txt": "3211 8 animal muerto"
-        }
-      ]
     }
   ],
   "tramos": [
