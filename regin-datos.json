@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-09-14T15:49:46.099Z",
+  "exportado": "2026-09-14T19:33:05.641Z",
   "incidencias": [
     {
       "id": "INC-260819-002",
@@ -314,6 +314,21 @@
           "txt": "Se retiran neumáticos de camión antes, y el jabali"
         }
       ]
+    },
+    {
+      "id": "INC-260914-002",
+      "fecha": "14/09/2026",
+      "hora": "21:31",
+      "quien": "112",
+      "mensaje": "Colisión por alcance turismo",
+      "carretera": "CM-220",
+      "pk": "21",
+      "zona": "Norte",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1789414382639
     }
   ],
   "tramos": [
