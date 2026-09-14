@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-09-14T19:33:05.641Z",
+  "exportado": "2026-09-14T23:36:45.613Z",
   "incidencias": [
     {
       "id": "INC-260819-002",
@@ -324,9 +324,9 @@
       "carretera": "CM-220",
       "pk": "21",
       "zona": "Norte",
-      "cerrada": false,
-      "horaCierre": null,
-      "obsCierre": null,
+      "cerrada": true,
+      "horaCierre": "01:36",
+      "obsCierre": "Se cierra a la 1:00",
       "pasada": false,
       "tsCreacion": 1789414382639
     }
