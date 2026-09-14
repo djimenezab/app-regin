@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-09-14T15:46:33.756Z",
+  "exportado": "2026-09-14T15:46:47.646Z",
   "incidencias": [
     {
       "id": "INC-260819-002",
@@ -317,8 +317,8 @@
       "carretera": "CM-3121",
       "pk": "5",
       "zona": "Norte",
-      "cerrada": false,
-      "horaCierre": null,
+      "cerrada": true,
+      "horaCierre": "17:46",
       "obsCierre": null,
       "pasada": false,
       "tsCreacion": 1789391902371,
