@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-09-14T13:19:49.413Z",
+  "exportado": "2026-09-14T13:19:57.863Z",
   "incidencias": [
     {
       "id": "INC-260819-002",
@@ -775,8 +775,8 @@
   ],
   "coordinadores": {
     "norte": {
-      "nombre": "",
-      "tel": ""
+      "nombre": "Julián Martínez",
+      "tel": "634412247"
     },
     "sur": {
       "nombre": "Damian García",
@@ -837,7 +837,7 @@
     }
   ],
   "turno": {
-    "norte": "",
+    "norte": "1789391986411",
     "sur": "1781779395115"
   },
   "cambiosTurno": [],
