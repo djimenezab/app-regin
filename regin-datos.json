@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-09-06T13:34:04.942Z",
+  "exportado": "2026-09-14T13:18:25.373Z",
   "incidencias": [
     {
       "id": "INC-260819-002",
@@ -307,6 +307,21 @@
       "obsCierre": null,
       "pasada": false,
       "tsCreacion": 1787638749369
+    },
+    {
+      "id": "INC-260914-001",
+      "fecha": "14/09/2026",
+      "hora": "15:17",
+      "quien": "112",
+      "mensaje": "Jabali en carril derecho.",
+      "carretera": "CM-3121",
+      "pk": "5",
+      "zona": "Norte",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1789391902371
     }
   ],
   "tramos": [
