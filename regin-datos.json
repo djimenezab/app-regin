@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-09-14T13:19:57.863Z",
+  "exportado": "2026-09-14T15:46:33.756Z",
   "incidencias": [
     {
       "id": "INC-260819-002",
@@ -321,7 +321,14 @@
       "horaCierre": null,
       "obsCierre": null,
       "pasada": false,
-      "tsCreacion": 1789391902371
+      "tsCreacion": 1789391902371,
+      "notas": [
+        {
+          "id": "1789400790752",
+          "ts": "14/9 17:46",
+          "txt": "Se retiran neumáticos de camión antes, y el jabali"
+        }
+      ]
     }
   ],
   "tramos": [
