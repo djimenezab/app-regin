@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-09-18T20:11:50.680Z",
+  "exportado": "2026-09-18T21:45:51.130Z",
   "incidencias": [
     {
       "id": "INC-260819-002",
@@ -339,9 +339,9 @@
       "carretera": "CM-3226",
       "pk": "10",
       "zona": "Norte",
-      "cerrada": false,
-      "horaCierre": null,
-      "obsCierre": null,
+      "cerrada": true,
+      "horaCierre": "23:45",
+      "obsCierre": "Se retiran restos en el PK2 y se llega hasta el 12",
       "pasada": false,
       "tsCreacion": 1789762307678
     }
