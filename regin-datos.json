@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-09-15T08:45:52.965Z",
+  "exportado": "2026-09-18T20:11:50.680Z",
   "incidencias": [
     {
       "id": "INC-260819-002",
@@ -329,6 +329,21 @@
       "obsCierre": "Se cierra a la 1:00",
       "pasada": true,
       "tsCreacion": 1789414382639
+    },
+    {
+      "id": "INC-260918-001",
+      "fecha": "18/09/2026",
+      "hora": "22:11",
+      "quien": "112",
+      "mensaje": "Restos de neumáticos",
+      "carretera": "CM-3226",
+      "pk": "10",
+      "zona": "Norte",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1789762307678
     }
   ],
   "tramos": [
