@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-09-19T22:10:10.691Z",
+  "exportado": "2026-09-19T22:11:56.119Z",
   "incidencias": [
     {
       "id": "INC-260819-002",
@@ -398,9 +398,9 @@
       "carretera": "CM-3201",
       "pk": "25",
       "zona": "Norte",
-      "cerrada": false,
-      "horaCierre": null,
-      "obsCierre": null,
+      "cerrada": true,
+      "horaCierre": "00:11",
+      "obsCierre": "Abortamos por cambio de incidencia, es sin combustible",
       "pasada": false,
       "tsCreacion": 1789853949609,
       "notas": [
