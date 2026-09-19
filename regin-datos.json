@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-09-19T10:29:29.399Z",
+  "exportado": "2026-09-19T10:37:36.642Z",
   "incidencias": [
     {
       "id": "INC-260819-002",
@@ -380,7 +380,14 @@
       "horaCierre": null,
       "obsCierre": null,
       "pasada": false,
-      "tsCreacion": 1789813753735
+      "tsCreacion": 1789813753735,
+      "notas": [
+        {
+          "id": "1789814253630",
+          "ts": "19/9 12:37",
+          "txt": "Antes del desvío a Peñarrubia pk 77"
+        }
+      ]
     }
   ],
   "tramos": [
