@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-09-18T21:45:51.130Z",
+  "exportado": "2026-09-19T06:55:12.012Z",
   "incidencias": [
     {
       "id": "INC-260819-002",
@@ -344,6 +344,21 @@
       "obsCierre": "Se retiran restos en el PK2 y se llega hasta el 12",
       "pasada": false,
       "tsCreacion": 1789762307678
+    },
+    {
+      "id": "INC-260919-001",
+      "fecha": "19/09/2026",
+      "hora": "08:54",
+      "quien": "Guardia Civil",
+      "mensaje": "Jabali en calzada",
+      "carretera": "CM-313",
+      "pk": "56+500",
+      "zona": "Norte",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1789800909004
     }
   ],
   "tramos": [
