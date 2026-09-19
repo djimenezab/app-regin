@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-09-19T21:39:12.612Z",
+  "exportado": "2026-09-19T22:10:10.691Z",
   "incidencias": [
     {
       "id": "INC-260819-002",
@@ -402,7 +402,14 @@
       "horaCierre": null,
       "obsCierre": null,
       "pasada": false,
-      "tsCreacion": 1789853949609
+      "tsCreacion": 1789853949609,
+      "notas": [
+        {
+          "id": "1789855807680",
+          "ts": "20/9 00:10",
+          "txt": "Llama 112 confirmando que no es accidente, es vehículo sin combustible."
+        }
+      ]
     }
   ],
   "tramos": [
