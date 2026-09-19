@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-09-19T08:51:38.256Z",
+  "exportado": "2026-09-19T10:29:16.742Z",
   "incidencias": [
     {
       "id": "INC-260819-002",
@@ -366,6 +366,21 @@
           "txt": "Llama 112 con niebla en el pk 58"
         }
       ]
+    },
+    {
+      "id": "INC-260919-002",
+      "fecha": "19/09/2026",
+      "hora": "12:28",
+      "quien": "112",
+      "mensaje": "Zorro muerto",
+      "carretera": "CM-3203",
+      "pk": "Peñarubia desde Elche",
+      "zona": "Norte",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1789813753735
     }
   ],
   "tramos": [
