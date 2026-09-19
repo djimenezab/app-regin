@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-09-19T10:37:36.642Z",
+  "exportado": "2026-09-19T12:51:33.192Z",
   "incidencias": [
     {
       "id": "INC-260819-002",
@@ -376,9 +376,9 @@
       "carretera": "CM-3203",
       "pk": "Peñarubia desde Elche",
       "zona": "Norte",
-      "cerrada": false,
-      "horaCierre": null,
-      "obsCierre": null,
+      "cerrada": true,
+      "horaCierre": "14:51",
+      "obsCierre": "Era en la CM-3206",
       "pasada": false,
       "tsCreacion": 1789813753735,
       "notas": [
