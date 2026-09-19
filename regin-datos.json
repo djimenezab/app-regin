@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-09-19T12:51:33.192Z",
+  "exportado": "2026-09-19T21:39:12.612Z",
   "incidencias": [
     {
       "id": "INC-260819-002",
@@ -388,6 +388,21 @@
           "txt": "Antes del desvío a Peñarrubia pk 77"
         }
       ]
+    },
+    {
+      "id": "INC-260919-003",
+      "fecha": "19/09/2026",
+      "hora": "23:38",
+      "quien": "112",
+      "mensaje": "Salida de via",
+      "carretera": "CM-3201",
+      "pk": "25",
+      "zona": "Norte",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1789853949609
     }
   ],
   "tramos": [
