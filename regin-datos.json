@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-09-19T06:55:12.012Z",
+  "exportado": "2026-09-19T07:16:24.206Z",
   "incidencias": [
     {
       "id": "INC-260819-002",
@@ -358,7 +358,14 @@
       "horaCierre": null,
       "obsCierre": null,
       "pasada": false,
-      "tsCreacion": 1789800909004
+      "tsCreacion": 1789800909004,
+      "notas": [
+        {
+          "id": "1789802181194",
+          "ts": "19/9 09:16",
+          "txt": "Llama 112 con niebla en el pk 58"
+        }
+      ]
     }
   ],
   "tramos": [
