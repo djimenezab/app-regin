@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-09-21T07:38:38.118Z",
+  "exportado": "2026-09-21T07:38:50.002Z",
   "incidencias": [
     {
       "id": "INC-260819-002",
@@ -410,21 +410,6 @@
           "txt": "Llama 112 confirmando que no es accidente, es vehículo sin combustible."
         }
       ]
-    },
-    {
-      "id": "INC-260921-001",
-      "fecha": "21/09/2026",
-      "hora": "09:25",
-      "quien": "112",
-      "mensaje": "Colisión 2 turismos",
-      "carretera": "CM-313",
-      "pk": "55",
-      "zona": "Norte",
-      "cerrada": true,
-      "horaCierre": "09:38",
-      "obsCierre": "Es en la Nacional",
-      "pasada": false,
-      "tsCreacion": 1789975543944
     }
   ],
   "tramos": [
