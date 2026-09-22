@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-09-22T06:50:30.703Z",
+  "exportado": "2026-09-22T06:54:48.653Z",
   "incidencias": [
     {
       "id": "INC-260819-002",
@@ -401,7 +401,7 @@
       "cerrada": true,
       "horaCierre": "00:11",
       "obsCierre": "Abortamos por cambio de incidencia, es sin combustible",
-      "pasada": false,
+      "pasada": true,
       "tsCreacion": 1789853949609,
       "notas": [
         {
