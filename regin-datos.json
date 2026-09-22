@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-09-21T07:38:50.002Z",
+  "exportado": "2026-09-22T06:20:12.096Z",
   "incidencias": [
     {
       "id": "INC-260819-002",
@@ -342,7 +342,7 @@
       "cerrada": true,
       "horaCierre": "23:45",
       "obsCierre": "Se retiran restos en el PK2 y se llega hasta el 12",
-      "pasada": false,
+      "pasada": true,
       "tsCreacion": 1789762307678
     },
     {
