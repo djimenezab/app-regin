@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-09-22T06:31:10.791Z",
+  "exportado": "2026-09-22T06:50:30.703Z",
   "incidencias": [
     {
       "id": "INC-260819-002",
@@ -379,7 +379,7 @@
       "cerrada": true,
       "horaCierre": "14:51",
       "obsCierre": "Era en la CM-3206",
-      "pasada": false,
+      "pasada": true,
       "tsCreacion": 1789813753735,
       "notas": [
         {
