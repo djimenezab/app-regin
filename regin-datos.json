@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-09-25T11:36:50.897Z",
+  "exportado": "2026-09-25T11:36:57.162Z",
   "incidencias": [
     {
       "id": "INC-260819-002",
@@ -410,21 +410,6 @@
           "txt": "Llama 112 confirmando que no es accidente, es vehículo sin combustible."
         }
       ]
-    },
-    {
-      "id": "INC-260925-001",
-      "fecha": "25/09/2026",
-      "hora": "09:17",
-      "quien": "112",
-      "mensaje": "Accidente turismo furgo",
-      "carretera": "CM-3201",
-      "pk": "24",
-      "zona": "Norte",
-      "cerrada": false,
-      "horaCierre": null,
-      "obsCierre": null,
-      "pasada": false,
-      "tsCreacion": 1790320699154
     }
   ],
   "tramos": [
