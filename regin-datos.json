@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-09-28T19:40:47.750Z",
+  "exportado": "2026-09-28T19:48:33.244Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -15,7 +15,14 @@
       "horaCierre": null,
       "obsCierre": null,
       "pasada": false,
-      "tsCreacion": 1790624444748
+      "tsCreacion": 1790624444748,
+      "notas": [
+        {
+          "id": "1790624910242",
+          "ts": "28/9 21:48",
+          "txt": "GC dice que el 219"
+        }
+      ]
     }
   ],
   "tramos": [
