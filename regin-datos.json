@@ -1,7 +1,23 @@
 {
   "version": "1.9",
-  "exportado": "2026-09-28T16:53:16.562Z",
-  "incidencias": [],
+  "exportado": "2026-09-28T19:40:47.750Z",
+  "incidencias": [
+    {
+      "id": "INC-260928-001",
+      "fecha": "28/09/2026",
+      "hora": "21:37",
+      "quien": "112",
+      "mensaje": "10 km Elche hacia Hellin",
+      "carretera": "CM-412",
+      "pk": "245",
+      "zona": "Sur",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1790624444748
+    }
+  ],
   "tramos": [
     {
       "carretera": "CM-332",
