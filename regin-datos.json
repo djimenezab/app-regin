@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-09-29T09:29:12.660Z",
+  "exportado": "2026-09-29T19:32:10.096Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -43,6 +43,21 @@
       "obsCierre": "Solucionado por bomberos",
       "pasada": false,
       "tsCreacion": 1790665761328
+    },
+    {
+      "id": "INC-260929-002",
+      "fecha": "29/09/2026",
+      "hora": "21:31",
+      "quien": "112",
+      "mensaje": "Furgoneta averiada",
+      "carretera": "CM-3212",
+      "pk": "3",
+      "zona": "Norte",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1790710327093
     }
   ],
   "tramos": [
