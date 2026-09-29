@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-09-29T07:08:24.254Z",
+  "exportado": "2026-09-29T07:09:24.343Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -28,6 +28,21 @@
           "txt": "Según GC es el PK 252"
         }
       ]
+    },
+    {
+      "id": "INC-260929-001",
+      "fecha": "29/09/2026",
+      "hora": "09:09",
+      "quien": "112",
+      "mensaje": "Vertido de uva",
+      "carretera": "CM-3201",
+      "pk": "23",
+      "zona": "Norte",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1790665761328
     }
   ],
   "tramos": [
