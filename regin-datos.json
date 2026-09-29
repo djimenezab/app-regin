@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-09-29T07:10:29.433Z",
+  "exportado": "2026-09-29T07:10:39.881Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -500,8 +500,8 @@
       "tel": "634412247"
     },
     "sur": {
-      "nombre": "Damian García",
-      "tel": "600480999"
+      "nombre": "Manuel García",
+      "tel": "637767131"
     }
   },
   "agenda": [
@@ -565,7 +565,7 @@
   ],
   "turno": {
     "norte": "1789391986411",
-    "sur": "1781779395115"
+    "sur": "1790665826419"
   },
   "cambiosTurno": [],
   "documentos": [
