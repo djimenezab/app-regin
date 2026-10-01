@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-01T10:52:06.452Z",
+  "exportado": "2026-10-01T20:32:04.534Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -43,6 +43,21 @@
       "obsCierre": "Solucionado por bomberos",
       "pasada": true,
       "tsCreacion": 1790665761328
+    },
+    {
+      "id": "INC-261001-002",
+      "fecha": "01/10/2026",
+      "hora": "22:31",
+      "quien": "112",
+      "mensaje": "Balsa de agua",
+      "carretera": "CM-220",
+      "pk": "25",
+      "zona": "Norte",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1790886721529
     }
   ],
   "tramos": [
