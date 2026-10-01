@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-09-30T06:34:23.782Z",
+  "exportado": "2026-10-01T08:23:50.624Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -43,6 +43,21 @@
       "obsCierre": "Solucionado por bomberos",
       "pasada": false,
       "tsCreacion": 1790665761328
+    },
+    {
+      "id": "INC-261001-001",
+      "fecha": "01/10/2026",
+      "hora": "10:23",
+      "quien": "112",
+      "mensaje": "Furgoneta averiada peligrosa en curva",
+      "carretera": "CM-412",
+      "pk": "222",
+      "zona": "Sur",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1790843027617
     }
   ],
   "tramos": [
