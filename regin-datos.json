@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-01T20:32:04.534Z",
+  "exportado": "2026-10-01T21:00:22.194Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -58,6 +58,21 @@
       "obsCierre": null,
       "pasada": false,
       "tsCreacion": 1790886721529
+    },
+    {
+      "id": "INC-261001-003",
+      "fecha": "01/10/2026",
+      "hora": "22:59",
+      "quien": "112",
+      "mensaje": "Balsa de agua, se puede pasar con precaución",
+      "carretera": "CM-412",
+      "pk": "320+000",
+      "zona": "Norte",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1790888419187
     }
   ],
   "tramos": [
