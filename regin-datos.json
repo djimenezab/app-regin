@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-01T21:00:22.194Z",
+  "exportado": "2026-10-01T22:09:42.037Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -73,6 +73,21 @@
       "obsCierre": null,
       "pasada": false,
       "tsCreacion": 1790888419187
+    },
+    {
+      "id": "INC-261002-001",
+      "fecha": "02/10/2026",
+      "hora": "00:08",
+      "quien": "112",
+      "mensaje": "Caudal 62 litros metro cuadrado Río mundo",
+      "carretera": "",
+      "pk": "",
+      "zona": null,
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1790892579033
     }
   ],
   "tramos": [
