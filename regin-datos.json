@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-02T10:00:16.572Z",
+  "exportado": "2026-10-02T11:55:31.586Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -143,18 +143,11 @@
       "carretera": "CM-3203",
       "pk": "52",
       "zona": "Sur",
-      "cerrada": false,
-      "horaCierre": null,
-      "obsCierre": null,
+      "cerrada": true,
+      "horaCierre": "13:55",
+      "obsCierre": "Pasan y no se encuentra nada",
       "pasada": false,
-      "tsCreacion": 1790933086986,
-      "notas": [
-        {
-          "id": "1790935213570",
-          "ts": "2/10 12:00",
-          "txt": "Va Juan Villar"
-        }
-      ]
+      "tsCreacion": 1790933086986
     }
   ],
   "tramos": [
