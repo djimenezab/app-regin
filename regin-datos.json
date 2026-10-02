@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-02T19:21:18.863Z",
+  "exportado": "2026-10-02T19:27:32.348Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -238,6 +238,21 @@
       "obsCierre": null,
       "pasada": false,
       "tsCreacion": 1790968875859
+    },
+    {
+      "id": "INC-261002-012",
+      "fecha": "02/10/2026",
+      "hora": "21:26",
+      "quien": "112",
+      "mensaje": "Balsa de agua",
+      "carretera": "CM-3222",
+      "pk": "",
+      "zona": "Norte",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1790969249344
     }
   ],
   "tramos": [
