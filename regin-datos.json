@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-02T13:57:29.795Z",
+  "exportado": "2026-10-02T14:03:53.756Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -178,6 +178,21 @@
       "obsCierre": null,
       "pasada": false,
       "tsCreacion": 1790949446794
+    },
+    {
+      "id": "INC-261002-008",
+      "fecha": "02/10/2026",
+      "hora": "16:03",
+      "quien": "112",
+      "mensaje": "Uva derramada en calzada",
+      "carretera": "CM-3211",
+      "pk": "36",
+      "zona": "Norte",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1790949830751
     }
   ],
   "tramos": [
