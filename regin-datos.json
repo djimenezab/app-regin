@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-02T16:34:52.766Z",
+  "exportado": "2026-10-02T19:21:18.863Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -223,6 +223,21 @@
       "obsCierre": null,
       "pasada": false,
       "tsCreacion": 1790958889764
+    },
+    {
+      "id": "INC-261002-011",
+      "fecha": "02/10/2026",
+      "hora": "21:19",
+      "quien": "112",
+      "mensaje": "Desde el cruce de Alatoz a unos 3 kilómetros siguiendo a Alpera, ciervo",
+      "carretera": "CM-3201",
+      "pk": "",
+      "zona": "Norte",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1790968875859
     }
   ],
   "tramos": [
