@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-02T08:17:30.849Z",
+  "exportado": "2026-10-02T09:24:49.988Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -133,6 +133,21 @@
       "obsCierre": "No se acude por ser vehículo averiado.",
       "pasada": false,
       "tsCreacion": 1790922396576
+    },
+    {
+      "id": "INC-261002-005",
+      "fecha": "02/10/2026",
+      "hora": "11:24",
+      "quien": "112",
+      "mensaje": "Zorro muerto",
+      "carretera": "CM-3203",
+      "pk": "52",
+      "zona": "Sur",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1790933086986
     }
   ],
   "tramos": [
