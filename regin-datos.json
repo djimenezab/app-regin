@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-02T01:01:57.645Z",
+  "exportado": "2026-10-02T05:33:05.735Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -88,6 +88,21 @@
       "obsCierre": null,
       "pasada": false,
       "tsCreacion": 1790892579033
+    },
+    {
+      "id": "INC-261002-002",
+      "fecha": "02/10/2026",
+      "hora": "07:32",
+      "quien": "112",
+      "mensaje": "Tejon",
+      "carretera": "CM-3211",
+      "pk": "35",
+      "zona": "Norte",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1790919182729
     }
   ],
   "tramos": [
