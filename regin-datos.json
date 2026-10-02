@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-02T11:55:38.234Z",
+  "exportado": "2026-10-02T13:11:45.024Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -148,6 +148,21 @@
       "obsCierre": "Pasan y no se encuentra nada",
       "pasada": false,
       "tsCreacion": 1790933086986
+    },
+    {
+      "id": "INC-261002-006",
+      "fecha": "02/10/2026",
+      "hora": "15:10",
+      "quien": "112",
+      "mensaje": "Vehículos retenidos por agua",
+      "carretera": "CM-220",
+      "pk": "25",
+      "zona": "Norte",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1790946702014
     }
   ],
   "tramos": [
