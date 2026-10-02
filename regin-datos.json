@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-02T16:22:20.282Z",
+  "exportado": "2026-10-02T16:34:52.766Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -208,6 +208,21 @@
       "obsCierre": null,
       "pasada": false,
       "tsCreacion": 1790958078272
+    },
+    {
+      "id": "INC-261002-010",
+      "fecha": "02/10/2026",
+      "hora": "18:34",
+      "quien": "Guardia Civil",
+      "mensaje": "Arrastre",
+      "carretera": "CM-316",
+      "pk": "66",
+      "zona": "Norte",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1790958889764
     }
   ],
   "tramos": [
