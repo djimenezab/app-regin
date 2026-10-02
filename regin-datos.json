@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-02T16:21:21.275Z",
+  "exportado": "2026-10-02T16:22:20.282Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -173,9 +173,9 @@
       "carretera": "CM-313",
       "pk": "24",
       "zona": "Norte",
-      "cerrada": false,
-      "horaCierre": null,
-      "obsCierre": null,
+      "cerrada": true,
+      "horaCierre": "18:22",
+      "obsCierre": "Se encuentra una eslinga",
       "pasada": false,
       "tsCreacion": 1790949446794
     },
