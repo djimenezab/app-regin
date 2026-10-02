@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-02T19:52:46.871Z",
+  "exportado": "2026-10-02T23:18:10.112Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -233,9 +233,9 @@
       "carretera": "CM-3201",
       "pk": "",
       "zona": "Norte",
-      "cerrada": false,
-      "horaCierre": null,
-      "obsCierre": null,
+      "cerrada": true,
+      "horaCierre": "01:17",
+      "obsCierre": "No está",
       "pasada": false,
       "tsCreacion": 1790968875859
     },
