@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-02T09:59:55.693Z",
+  "exportado": "2026-10-02T10:00:16.572Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -147,7 +147,14 @@
       "horaCierre": null,
       "obsCierre": null,
       "pasada": false,
-      "tsCreacion": 1790933086986
+      "tsCreacion": 1790933086986,
+      "notas": [
+        {
+          "id": "1790935213570",
+          "ts": "2/10 12:00",
+          "txt": "Va Juan Villar"
+        }
+      ]
     }
   ],
   "tramos": [
