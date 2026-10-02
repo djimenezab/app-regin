@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-01T22:09:42.037Z",
+  "exportado": "2026-10-02T01:01:57.645Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -53,8 +53,8 @@
       "carretera": "CM-220",
       "pk": "25",
       "zona": "Norte",
-      "cerrada": false,
-      "horaCierre": null,
+      "cerrada": true,
+      "horaCierre": "03:01",
       "obsCierre": null,
       "pasada": false,
       "tsCreacion": 1790886721529
@@ -68,8 +68,8 @@
       "carretera": "CM-412",
       "pk": "320+000",
       "zona": "Norte",
-      "cerrada": false,
-      "horaCierre": null,
+      "cerrada": true,
+      "horaCierre": "03:01",
       "obsCierre": null,
       "pasada": false,
       "tsCreacion": 1790888419187
@@ -83,8 +83,8 @@
       "carretera": "",
       "pk": "",
       "zona": null,
-      "cerrada": false,
-      "horaCierre": null,
+      "cerrada": true,
+      "horaCierre": "03:01",
       "obsCierre": null,
       "pasada": false,
       "tsCreacion": 1790892579033
