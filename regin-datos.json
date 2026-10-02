@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-02T13:11:45.024Z",
+  "exportado": "2026-10-02T13:57:29.795Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -163,6 +163,21 @@
       "obsCierre": null,
       "pasada": false,
       "tsCreacion": 1790946702014
+    },
+    {
+      "id": "INC-261002-007",
+      "fecha": "02/10/2026",
+      "hora": "15:57",
+      "quien": "112",
+      "mensaje": "Trozo de goma en calzada",
+      "carretera": "CM-313",
+      "pk": "24",
+      "zona": "Norte",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1790949446794
     }
   ],
   "tramos": [
