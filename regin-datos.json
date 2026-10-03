@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-03T08:54:13.523Z",
+  "exportado": "2026-10-03T09:32:02.004Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -268,6 +268,21 @@
       "obsCierre": null,
       "pasada": false,
       "tsCreacion": 1791017650517
+    },
+    {
+      "id": "INC-261003-002",
+      "fecha": "03/10/2026",
+      "hora": "11:31",
+      "quien": "112",
+      "mensaje": "Ciervo atropellado pasando El Salobral hacía Peñas",
+      "carretera": "CM-3203",
+      "pk": "",
+      "zona": "Norte",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1791019919000
     }
   ],
   "tramos": [
