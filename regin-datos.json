@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-03T00:12:03.767Z",
+  "exportado": "2026-10-03T08:54:13.523Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -253,6 +253,21 @@
       "obsCierre": null,
       "pasada": false,
       "tsCreacion": 1790969249344
+    },
+    {
+      "id": "INC-261003-001",
+      "fecha": "03/10/2026",
+      "hora": "10:53",
+      "quien": "Guardia Civil",
+      "mensaje": "Vertido aceite",
+      "carretera": "CM-316",
+      "pk": "76",
+      "zona": "Norte",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1791017650517
     }
   ],
   "tramos": [
