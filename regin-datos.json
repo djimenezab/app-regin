@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-03T19:56:41.504Z",
+  "exportado": "2026-10-03T21:59:09.577Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -330,9 +330,9 @@
       "carretera": "CM-313",
       "pk": "",
       "zona": "Norte",
-      "cerrada": false,
-      "horaCierre": null,
-      "obsCierre": null,
+      "cerrada": true,
+      "horaCierre": "23:58",
+      "obsCierre": "Limpieza y retirada de animal",
       "pasada": false,
       "tsCreacion": 1791057398499
     }
