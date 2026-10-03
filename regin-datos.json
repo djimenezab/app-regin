@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-03T13:57:31.208Z",
+  "exportado": "2026-10-03T13:58:21.570Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -298,6 +298,21 @@
       "obsCierre": null,
       "pasada": false,
       "tsCreacion": 1791035848206
+    },
+    {
+      "id": "INC-261003-004",
+      "fecha": "03/10/2026",
+      "hora": "15:57",
+      "quien": "112",
+      "mensaje": "Rot. salida de Osa hacia Ruidera, salida de vía",
+      "carretera": "CM-3168",
+      "pk": "",
+      "zona": "Sur",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1791035898569
     }
   ],
   "tramos": [
