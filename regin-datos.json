@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-03T00:11:53.187Z",
+  "exportado": "2026-10-03T00:12:03.767Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -248,8 +248,8 @@
       "carretera": "CM-3222",
       "pk": "",
       "zona": "Norte",
-      "cerrada": false,
-      "horaCierre": null,
+      "cerrada": true,
+      "horaCierre": "02:11",
       "obsCierre": null,
       "pasada": false,
       "tsCreacion": 1790969249344
