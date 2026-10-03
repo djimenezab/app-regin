@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-03T16:22:54.335Z",
+  "exportado": "2026-10-03T16:23:04.924Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -293,9 +293,9 @@
       "carretera": "CM-3213",
       "pk": "",
       "zona": "Sur",
-      "cerrada": false,
-      "horaCierre": null,
-      "obsCierre": null,
+      "cerrada": true,
+      "horaCierre": "18:22",
+      "obsCierre": "Se limpian restos de cristales",
       "pasada": false,
       "tsCreacion": 1791035848206,
       "notas": [
