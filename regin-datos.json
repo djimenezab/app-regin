@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-03T16:23:04.924Z",
+  "exportado": "2026-10-03T19:56:41.504Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -320,6 +320,21 @@
       "obsCierre": "No se encuentra nada",
       "pasada": false,
       "tsCreacion": 1791035898569
+    },
+    {
+      "id": "INC-261003-005",
+      "fecha": "03/10/2026",
+      "hora": "21:55",
+      "quien": "112",
+      "mensaje": "Restos jabali accidentado a mitad entre pozohondo y Peñas san pedro",
+      "carretera": "CM-313",
+      "pk": "",
+      "zona": "Norte",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1791057398499
     }
   ],
   "tramos": [
