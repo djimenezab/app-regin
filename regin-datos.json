@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-04T16:58:03.843Z",
+  "exportado": "2026-10-04T17:29:40.194Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -371,7 +371,14 @@
       "horaCierre": null,
       "obsCierre": null,
       "pasada": false,
-      "tsCreacion": 1791133080841
+      "tsCreacion": 1791133080841,
+      "notas": [
+        {
+          "id": "1791134977186",
+          "ts": "4/10 19:29",
+          "txt": "G.C.T. Km 25"
+        }
+      ]
     }
   ],
   "tramos": [
