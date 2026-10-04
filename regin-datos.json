@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-04T21:28:18.041Z",
+  "exportado": "2026-10-04T22:07:17.329Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -384,6 +384,21 @@
           "txt": "Se termina en el PK 29+900 se limpian todos y nos retiramos."
         }
       ]
+    },
+    {
+      "id": "INC-261005-001",
+      "fecha": "05/10/2026",
+      "hora": "00:06",
+      "quien": "112",
+      "mensaje": "Pasado Villares, unos 3 km hacia Ferez, jabalíes en calzada",
+      "carretera": "CM-3217",
+      "pk": "",
+      "zona": "Sur",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1791151634324
     }
   ],
   "tramos": [
