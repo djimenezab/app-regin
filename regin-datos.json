@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-04T12:53:41.195Z",
+  "exportado": "2026-10-04T16:58:03.843Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -357,6 +357,21 @@
           "txt": "71 restos aceite en la calzada"
         }
       ]
+    },
+    {
+      "id": "INC-261004-002",
+      "fecha": "04/10/2026",
+      "hora": "18:57",
+      "quien": "112",
+      "mensaje": "Entre Letur y Yeste",
+      "carretera": "CM-3225",
+      "pk": "",
+      "zona": "Sur",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1791133080841
     }
   ],
   "tramos": [
