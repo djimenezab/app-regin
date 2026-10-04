@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-04T17:29:40.194Z",
+  "exportado": "2026-10-04T21:27:46.161Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -377,6 +377,11 @@
           "id": "1791134977186",
           "ts": "4/10 19:29",
           "txt": "G.C.T. Km 25"
+        },
+        {
+          "id": "1791149263151",
+          "ts": "4/10 23:27",
+          "txt": "Se termina en el PK 29+900 se limpian todos y nos retiramos."
         }
       ]
     }
