@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-04T22:54:38.976Z",
+  "exportado": "2026-10-04T22:54:58.164Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -394,9 +394,9 @@
       "carretera": "CM-3217",
       "pk": "",
       "zona": "Sur",
-      "cerrada": false,
-      "horaCierre": null,
-      "obsCierre": null,
+      "cerrada": true,
+      "horaCierre": "00:54",
+      "obsCierre": "Se queda el vehículo. Resto todo limpio .",
       "pasada": false,
       "tsCreacion": 1791151634324,
       "notas": [
