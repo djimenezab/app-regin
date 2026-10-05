@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-05T14:50:49.551Z",
+  "exportado": "2026-10-05T17:45:33.231Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -368,9 +368,9 @@
       "carretera": "CM-412",
       "pk": "204",
       "zona": "Sur",
-      "cerrada": false,
-      "horaCierre": null,
-      "obsCierre": null,
+      "cerrada": true,
+      "horaCierre": "19:45",
+      "obsCierre": "Se queda retirado 204+700",
       "pasada": false,
       "tsCreacion": 1791211846549
     }
