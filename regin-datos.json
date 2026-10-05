@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-05T12:17:48.810Z",
+  "exportado": "2026-10-05T14:50:49.551Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -358,6 +358,21 @@
           "txt": "GCT Hay también restos de aceite."
         }
       ]
+    },
+    {
+      "id": "INC-261005-004",
+      "fecha": "05/10/2026",
+      "hora": "16:50",
+      "quien": "Guardia Civil",
+      "mensaje": "Ramas invadiendo un carril.",
+      "carretera": "CM-412",
+      "pk": "204",
+      "zona": "Sur",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1791211846549
     }
   ],
   "tramos": [
