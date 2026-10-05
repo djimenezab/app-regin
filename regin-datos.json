@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-05T17:45:33.231Z",
+  "exportado": "2026-10-05T17:47:25.741Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -373,6 +373,21 @@
       "obsCierre": "Se queda retirado 204+700",
       "pasada": false,
       "tsCreacion": 1791211846549
+    },
+    {
+      "id": "INC-261005-005",
+      "fecha": "05/10/2026",
+      "hora": "19:46",
+      "quien": "112",
+      "mensaje": "Rama sentido Riopar",
+      "carretera": "CM-412",
+      "pk": "229",
+      "zona": "Sur",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1791222442738
     }
   ],
   "tramos": [
