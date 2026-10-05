@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-05T18:40:38.752Z",
+  "exportado": "2026-10-05T20:22:33.507Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -403,6 +403,21 @@
       "obsCierre": null,
       "pasada": false,
       "tsCreacion": 1791225523221
+    },
+    {
+      "id": "INC-261005-007",
+      "fecha": "05/10/2026",
+      "hora": "22:21",
+      "quien": "112",
+      "mensaje": "Accidente jabali daños vehículo",
+      "carretera": "CM-332",
+      "pk": "20",
+      "zona": "Norte",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1791231750500
     }
   ],
   "tramos": [
