@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-05T08:50:59.717Z",
+  "exportado": "2026-10-05T09:12:27.390Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -371,9 +371,9 @@
       "carretera": "CM-412",
       "pk": "219",
       "zona": "Sur",
-      "cerrada": false,
-      "horaCierre": null,
-      "obsCierre": null,
+      "cerrada": true,
+      "horaCierre": "11:05",
+      "obsCierre": "Se retiran restos de ambos turismos implicados.",
       "pasada": false,
       "tsCreacion": 1791183152156
     },
