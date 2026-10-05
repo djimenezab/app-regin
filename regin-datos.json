@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-05T18:40:28.487Z",
+  "exportado": "2026-10-05T18:40:38.752Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -856,12 +856,12 @@
   ],
   "coordinadores": {
     "norte": {
-      "nombre": "Julián Martínez",
-      "tel": "634412247"
+      "nombre": "Francisco J. Céspedes",
+      "tel": "675834748"
     },
     "sur": {
-      "nombre": "Manuel García",
-      "tel": "637767131"
+      "nombre": "Miguel A. Mtnez. Córcoles",
+      "tel": "648587771"
     }
   },
   "agenda": [
@@ -924,8 +924,8 @@
     }
   ],
   "turno": {
-    "norte": "1789391986411",
-    "sur": "1790665826419"
+    "norte": "1783320263298",
+    "sur": "1783320305442"
   },
   "cambiosTurno": [],
   "documentos": [
