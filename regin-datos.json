@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-05T06:44:13.510Z",
+  "exportado": "2026-10-05T06:52:35.169Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -406,6 +406,21 @@
           "txt": "6+670"
         }
       ]
+    },
+    {
+      "id": "INC-261005-002",
+      "fecha": "05/10/2026",
+      "hora": "08:52",
+      "quien": "112",
+      "mensaje": "Accidente salida de via en cruce con AB-508",
+      "carretera": "CM-412",
+      "pk": "219",
+      "zona": "Sur",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1791183152156
     }
   ],
   "tramos": [
