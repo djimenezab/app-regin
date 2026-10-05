@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-05T09:25:15.437Z",
+  "exportado": "2026-10-05T09:36:49.764Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -351,6 +351,11 @@
           "id": "1791191836344",
           "ts": "5/10 11:17",
           "txt": "G.C.T. Ir a tomar datos de los daños."
+        },
+        {
+          "id": "1791193006751",
+          "ts": "5/10 11:36",
+          "txt": "GCT Hay también restos de aceite."
         }
       ]
     }
