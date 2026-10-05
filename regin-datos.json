@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-05T09:15:53.423Z",
+  "exportado": "2026-10-05T09:17:19.352Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -390,7 +390,14 @@
       "horaCierre": null,
       "obsCierre": null,
       "pasada": false,
-      "tsCreacion": 1791190256518
+      "tsCreacion": 1791190256518,
+      "notas": [
+        {
+          "id": "1791191836344",
+          "ts": "5/10 11:17",
+          "txt": "G.C.T. Ir a tomar datos de los daños."
+        }
+      ]
     }
   ],
   "tramos": [
