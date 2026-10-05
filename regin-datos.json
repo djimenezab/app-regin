@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-05T09:17:19.352Z",
+  "exportado": "2026-10-05T09:24:53.445Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -148,21 +148,6 @@
       "obsCierre": "Cierra Damian",
       "pasada": false,
       "tsCreacion": 1790949830751
-    },
-    {
-      "id": "INC-261002-009",
-      "fecha": "02/10/2026",
-      "hora": "18:17",
-      "quien": "112",
-      "mensaje": "Piedras en calzada",
-      "carretera": "CM-316",
-      "pk": "47",
-      "zona": "Norte",
-      "cerrada": true,
-      "horaCierre": "02:11",
-      "obsCierre": null,
-      "pasada": false,
-      "tsCreacion": 1790958078272
     },
     {
       "id": "INC-261002-010",
