@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-05T09:36:49.764Z",
+  "exportado": "2026-10-05T09:48:16.864Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -131,7 +131,7 @@
       "cerrada": true,
       "horaCierre": "18:22",
       "obsCierre": "Se encuentra una eslinga",
-      "pasada": false,
+      "pasada": true,
       "tsCreacion": 1790949446794
     },
     {
@@ -146,7 +146,7 @@
       "cerrada": true,
       "horaCierre": "21:52",
       "obsCierre": "Cierra Damian",
-      "pasada": false,
+      "pasada": true,
       "tsCreacion": 1790949830751
     },
     {
