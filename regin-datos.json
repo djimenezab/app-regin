@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-05T06:57:20.332Z",
+  "exportado": "2026-10-05T06:57:39.540Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -88,21 +88,6 @@
       "obsCierre": null,
       "pasada": true,
       "tsCreacion": 1790892579033
-    },
-    {
-      "id": "INC-261002-003",
-      "fecha": "02/10/2026",
-      "hora": "07:33",
-      "quien": "112",
-      "mensaje": "Atropello animal",
-      "carretera": "CM-3204",
-      "pk": "5",
-      "zona": "Sur",
-      "cerrada": true,
-      "horaCierre": "10:16",
-      "obsCierre": "No se ve nada.",
-      "pasada": false,
-      "tsCreacion": 1790919209024
     },
     {
       "id": "INC-261002-005",
