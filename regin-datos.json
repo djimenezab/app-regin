@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-05T06:57:08.472Z",
+  "exportado": "2026-10-05T06:57:20.332Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -103,21 +103,6 @@
       "obsCierre": "No se ve nada.",
       "pasada": false,
       "tsCreacion": 1790919209024
-    },
-    {
-      "id": "INC-261002-004",
-      "fecha": "02/10/2026",
-      "hora": "08:26",
-      "quien": "112",
-      "mensaje": "Vehículo averiado",
-      "carretera": "CM-3201",
-      "pk": "92",
-      "zona": "Norte",
-      "cerrada": true,
-      "horaCierre": "10:17",
-      "obsCierre": "No se acude por ser vehículo averiado.",
-      "pasada": false,
-      "tsCreacion": 1790922396576
     },
     {
       "id": "INC-261002-005",
