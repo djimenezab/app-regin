@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-06T06:46:02.157Z",
+  "exportado": "2026-10-06T06:53:50.195Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -307,7 +307,7 @@
       "cerrada": true,
       "horaCierre": "00:54",
       "obsCierre": "Se queda el vehículo. Resto todo limpio .",
-      "pasada": false,
+      "pasada": true,
       "tsCreacion": 1791151634324,
       "notas": [
         {
