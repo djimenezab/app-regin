@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-06T09:47:47.645Z",
+  "exportado": "2026-10-06T09:55:39.824Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -344,7 +344,7 @@
       "cerrada": true,
       "horaCierre": "12:29",
       "obsCierre": "Se termina y se cogen datos del accidente.",
-      "pasada": false,
+      "pasada": true,
       "tsCreacion": 1791190256518,
       "notas": [
         {
