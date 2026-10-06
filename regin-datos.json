@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-06T06:01:48.658Z",
+  "exportado": "2026-10-06T06:09:50.684Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -206,7 +206,7 @@
       "cerrada": true,
       "horaCierre": "18:22",
       "obsCierre": "Se limpian restos de cristales",
-      "pasada": false,
+      "pasada": true,
       "tsCreacion": 1791035848206,
       "notas": [
         {
@@ -228,7 +228,7 @@
       "cerrada": true,
       "horaCierre": "18:22",
       "obsCierre": "No se encuentra nada",
-      "pasada": false,
+      "pasada": true,
       "tsCreacion": 1791035898569
     },
     {
