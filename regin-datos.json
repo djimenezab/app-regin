@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-06T06:29:00.740Z",
+  "exportado": "2026-10-06T06:46:02.157Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -280,7 +280,7 @@
       "cerrada": true,
       "horaCierre": "23:27",
       "obsCierre": "Llamo a 112 y GC para informar de que no hay más y nos retiramos",
-      "pasada": false,
+      "pasada": true,
       "tsCreacion": 1791133080841,
       "notas": [
         {
