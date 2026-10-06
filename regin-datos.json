@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-06T10:04:49.930Z",
+  "exportado": "2026-10-06T10:12:53.784Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -386,7 +386,7 @@
       "cerrada": true,
       "horaCierre": "20:39",
       "obsCierre": "Pino retirado",
-      "pasada": false,
+      "pasada": true,
       "tsCreacion": 1791222442738
     },
     {
