@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-06T10:29:40.215Z",
+  "exportado": "2026-10-07T05:25:45.809Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -418,6 +418,21 @@
       "obsCierre": "No se encuentra nada.",
       "pasada": true,
       "tsCreacion": 1791231750500
+    },
+    {
+      "id": "INC-261007-001",
+      "fecha": "07/10/2026",
+      "hora": "07:24",
+      "quien": "112",
+      "mensaje": "Ciervo en la carretera Matias, pk 65-69",
+      "carretera": "CM-3201",
+      "pk": "65",
+      "zona": "Norte",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1791350742806
     }
   ],
   "tramos": [
