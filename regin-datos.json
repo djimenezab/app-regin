@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-07T08:00:59.409Z",
+  "exportado": "2026-10-08T12:51:39.340Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -418,36 +418,6 @@
       "obsCierre": "No se encuentra nada.",
       "pasada": true,
       "tsCreacion": 1791231750500
-    },
-    {
-      "id": "INC-261007-001",
-      "fecha": "07/10/2026",
-      "hora": "07:24",
-      "quien": "112",
-      "mensaje": "Ciervo en la carretera Matias, pk 65-69",
-      "carretera": "CM-3201",
-      "pk": "65",
-      "zona": "Norte",
-      "cerrada": false,
-      "horaCierre": null,
-      "obsCierre": null,
-      "pasada": false,
-      "tsCreacion": 1791350742806
-    },
-    {
-      "id": "INC-261007-002",
-      "fecha": "07/10/2026",
-      "hora": "09:59",
-      "quien": "112",
-      "mensaje": "Dirección siles atropello animal",
-      "carretera": "CM-3204",
-      "pk": "",
-      "zona": "Sur",
-      "cerrada": false,
-      "horaCierre": null,
-      "obsCierre": null,
-      "pasada": false,
-      "tsCreacion": 1791360056407
     }
   ],
   "tramos": [
