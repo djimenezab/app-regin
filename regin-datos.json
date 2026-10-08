@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-08T16:06:06.827Z",
+  "exportado": "2026-10-08T17:38:22.897Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -432,7 +432,14 @@
       "horaCierre": null,
       "obsCierre": null,
       "pasada": false,
-      "tsCreacion": 1791475563824
+      "tsCreacion": 1791475563824,
+      "notas": [
+        {
+          "id": "1791481099895",
+          "ts": "8/10 19:38",
+          "txt": "Esta vivo 55+500 pero no se puede mover M.I."
+        }
+      ]
     }
   ],
   "tramos": [
