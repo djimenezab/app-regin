@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-08T12:51:39.340Z",
+  "exportado": "2026-10-08T16:06:06.827Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -418,6 +418,21 @@
       "obsCierre": "No se encuentra nada.",
       "pasada": true,
       "tsCreacion": 1791231750500
+    },
+    {
+      "id": "INC-261008-001",
+      "fecha": "08/10/2026",
+      "hora": "18:05",
+      "quien": "112",
+      "mensaje": "Ciervo atropellado en arcén.",
+      "carretera": "CM-313",
+      "pk": "55",
+      "zona": "Norte",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1791475563824
     }
   ],
   "tramos": [
