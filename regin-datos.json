@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-08T17:38:22.897Z",
+  "exportado": "2026-10-08T17:44:36.408Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -428,9 +428,9 @@
       "carretera": "CM-313",
       "pk": "55",
       "zona": "Norte",
-      "cerrada": false,
-      "horaCierre": null,
-      "obsCierre": null,
+      "cerrada": true,
+      "horaCierre": "19:44",
+      "obsCierre": "No van a ir porque no es un animal protegido.",
       "pasada": false,
       "tsCreacion": 1791475563824,
       "notas": [
