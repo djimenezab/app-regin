@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-08T17:44:36.408Z",
+  "exportado": "2026-10-10T13:44:03.400Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -440,6 +440,21 @@
           "txt": "Esta vivo 55+500 pero no se puede mover M.I."
         }
       ]
+    },
+    {
+      "id": "INC-261010-001",
+      "fecha": "10/10/2026",
+      "hora": "15:43",
+      "quien": "112",
+      "mensaje": "Llegando a villaturriya desde Nerpio",
+      "carretera": "CM-3229",
+      "pk": "",
+      "zona": "Sur",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1791639840398
     }
   ],
   "tramos": [
