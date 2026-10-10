@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-10T19:32:01.479Z",
+  "exportado": "2026-10-10T20:27:05.824Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -465,9 +465,9 @@
       "carretera": "CM-412",
       "pk": "262",
       "zona": "Sur",
-      "cerrada": false,
-      "horaCierre": null,
-      "obsCierre": null,
+      "cerrada": true,
+      "horaCierre": "22:26",
+      "obsCierre": "Jabali retirado.",
       "pasada": false,
       "tsCreacion": 1791657528675
     },
