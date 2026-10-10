@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-10T18:38:51.683Z",
+  "exportado": "2026-10-10T19:32:01.479Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -470,6 +470,21 @@
       "obsCierre": null,
       "pasada": false,
       "tsCreacion": 1791657528675
+    },
+    {
+      "id": "INC-261010-003",
+      "fecha": "10/10/2026",
+      "hora": "21:30",
+      "quien": "112",
+      "mensaje": "Turismo ciervo Carcelen, animal en la calzada.",
+      "carretera": "CM-332",
+      "pk": "55",
+      "zona": "Norte",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1791660718471
     }
   ],
   "tramos": [
