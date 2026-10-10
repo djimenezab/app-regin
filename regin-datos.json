@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-10T13:50:12.893Z",
+  "exportado": "2026-10-10T17:03:50.990Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -450,9 +450,9 @@
       "carretera": "CM-3229",
       "pk": "",
       "zona": "Sur",
-      "cerrada": false,
-      "horaCierre": null,
-      "obsCierre": null,
+      "cerrada": true,
+      "horaCierre": "19:03",
+      "obsCierre": "La piedra ya no está, y se barre gravilla",
       "pasada": false,
       "tsCreacion": 1791639840398
     }
