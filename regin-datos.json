@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-10T17:03:50.990Z",
+  "exportado": "2026-10-10T17:04:15.771Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -431,7 +431,7 @@
       "cerrada": true,
       "horaCierre": "19:44",
       "obsCierre": "No van a ir porque no es un animal protegido.",
-      "pasada": false,
+      "pasada": true,
       "tsCreacion": 1791475563824,
       "notas": [
         {
