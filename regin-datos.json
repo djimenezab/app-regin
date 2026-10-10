@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-10T17:04:15.771Z",
+  "exportado": "2026-10-10T18:38:51.683Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -455,6 +455,21 @@
       "obsCierre": "La piedra ya no está, y se barre gravilla",
       "pasada": false,
       "tsCreacion": 1791639840398
+    },
+    {
+      "id": "INC-261010-002",
+      "fecha": "10/10/2026",
+      "hora": "20:38",
+      "quien": "112",
+      "mensaje": "Jabali en la calzada",
+      "carretera": "CM-412",
+      "pk": "262",
+      "zona": "Sur",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1791657528675
     }
   ],
   "tramos": [
