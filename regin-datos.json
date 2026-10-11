@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-11T06:47:32.196Z",
+  "exportado": "2026-10-11T18:21:16.144Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -500,6 +500,21 @@
       "obsCierre": "Se limpian restos del vehículo accidentado que ha pasado por encima de la rotonda.",
       "pasada": false,
       "tsCreacion": 1791693381823
+    },
+    {
+      "id": "INC-261011-002",
+      "fecha": "11/10/2026",
+      "hora": "20:20",
+      "quien": "112",
+      "mensaje": "Zorro atropellado en calzada",
+      "carretera": "CM-3135",
+      "pk": "6",
+      "zona": "Norte",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1791742873141
     }
   ],
   "tramos": [
