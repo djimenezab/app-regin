@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-10T21:25:49.133Z",
+  "exportado": "2026-10-11T04:36:24.825Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -485,6 +485,21 @@
       "obsCierre": "Se retira animal.",
       "pasada": false,
       "tsCreacion": 1791660718471
+    },
+    {
+      "id": "INC-261011-001",
+      "fecha": "11/10/2026",
+      "hora": "06:35",
+      "quien": "112",
+      "mensaje": "Accidente animal rot iso",
+      "carretera": "CM-412",
+      "pk": "263",
+      "zona": "Sur",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1791693381823
     }
   ],
   "tramos": [
