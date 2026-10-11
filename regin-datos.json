@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-11T04:36:24.825Z",
+  "exportado": "2026-10-11T06:47:32.196Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -495,9 +495,9 @@
       "carretera": "CM-412",
       "pk": "263",
       "zona": "Sur",
-      "cerrada": false,
-      "horaCierre": null,
-      "obsCierre": null,
+      "cerrada": true,
+      "horaCierre": "08:47",
+      "obsCierre": "Se limpian restos del vehículo accidentado que ha pasado por encima de la rotonda.",
       "pasada": false,
       "tsCreacion": 1791693381823
     }
