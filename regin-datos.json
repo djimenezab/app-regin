@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-11T18:21:16.144Z",
+  "exportado": "2026-10-11T19:45:45.881Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -514,7 +514,14 @@
       "horaCierre": null,
       "obsCierre": null,
       "pasada": false,
-      "tsCreacion": 1791742873141
+      "tsCreacion": 1791742873141,
+      "notas": [
+        {
+          "id": "1791747942876",
+          "ts": "11/10 21:45",
+          "txt": "4+800"
+        }
+      ]
     }
   ],
   "tramos": [
