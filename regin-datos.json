@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-12T15:34:30.668Z",
+  "exportado": "2026-10-12T18:49:03.069Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -537,6 +537,21 @@
       "obsCierre": "Se limpian restos no hay daños graves.",
       "pasada": false,
       "tsCreacion": 1791813834913
+    },
+    {
+      "id": "INC-261012-002",
+      "fecha": "12/10/2026",
+      "hora": "20:48",
+      "quien": "112",
+      "mensaje": "Restos de paragolpes",
+      "carretera": "CM-3121",
+      "pk": "24",
+      "zona": "Norte",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1791830940059
     }
   ],
   "tramos": [
