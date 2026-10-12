@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-11T19:46:17.067Z",
+  "exportado": "2026-10-12T14:03:57.916Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -522,6 +522,21 @@
           "txt": "4+800"
         }
       ]
+    },
+    {
+      "id": "INC-261012-001",
+      "fecha": "12/10/2026",
+      "hora": "16:02",
+      "quien": "112",
+      "mensaje": "Accidente turismo con tractor restos en la calzada",
+      "carretera": "CM-332",
+      "pk": "3",
+      "zona": "Norte",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1791813834913
     }
   ],
   "tramos": [
