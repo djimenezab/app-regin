@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-12T22:54:32.260Z",
+  "exportado": "2026-10-13T06:49:57.832Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -453,7 +453,7 @@
       "cerrada": true,
       "horaCierre": "19:03",
       "obsCierre": "La piedra ya no está, y se barre gravilla",
-      "pasada": false,
+      "pasada": true,
       "tsCreacion": 1791639840398
     },
     {
