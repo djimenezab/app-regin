@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-13T06:49:57.832Z",
+  "exportado": "2026-10-13T07:01:10.715Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -468,7 +468,7 @@
       "cerrada": true,
       "horaCierre": "22:26",
       "obsCierre": "Jabali retirado.",
-      "pasada": false,
+      "pasada": true,
       "tsCreacion": 1791657528675
     },
     {
