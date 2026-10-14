@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-14T09:09:48.408Z",
+  "exportado": "2026-10-14T09:09:53.297Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -535,7 +535,7 @@
       "cerrada": true,
       "horaCierre": "17:34",
       "obsCierre": "Se limpian restos no hay daños graves.",
-      "pasada": false,
+      "pasada": true,
       "tsCreacion": 1791813834913
     },
     {
