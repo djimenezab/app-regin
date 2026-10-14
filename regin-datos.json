@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-14T09:04:21.971Z",
+  "exportado": "2026-10-14T09:09:48.408Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -552,28 +552,6 @@
       "obsCierre": "No se encuentra nada.",
       "pasada": false,
       "tsCreacion": 1791830940059
-    },
-    {
-      "id": "INC-261012-003",
-      "fecha": "12/10/2026",
-      "hora": "22:35",
-      "quien": "112",
-      "mensaje": "14 desde Elche viviendo desde Hellin veh. Averiado",
-      "carretera": "CM-412",
-      "pk": "",
-      "zona": "Sur",
-      "cerrada": true,
-      "horaCierre": "00:54",
-      "obsCierre": "Se llama a gc",
-      "pasada": false,
-      "tsCreacion": 1791837405891,
-      "notas": [
-        {
-          "id": "1791837559444",
-          "ts": "12/10 22:39",
-          "txt": "244"
-        }
-      ]
     }
   ],
   "tramos": [
