@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-26T07:17:44.275Z",
+  "exportado": "2026-10-26T08:17:53.029Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -562,9 +562,9 @@
       "carretera": "CM-3215",
       "pk": "2",
       "zona": "Norte",
-      "cerrada": false,
-      "horaCierre": null,
-      "obsCierre": null,
+      "cerrada": true,
+      "horaCierre": "09:17",
+      "obsCierre": "Solucionado por Acisclo",
       "pasada": false,
       "tsCreacion": 1792999061273
     }
