@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-14T09:12:58.631Z",
+  "exportado": "2026-10-26T07:17:44.275Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -552,6 +552,21 @@
       "obsCierre": "No se encuentra nada.",
       "pasada": true,
       "tsCreacion": 1791830940059
+    },
+    {
+      "id": "INC-261026-001",
+      "fecha": "26/10/2026",
+      "hora": "08:17",
+      "quien": "112",
+      "mensaje": "Atropello jabali",
+      "carretera": "CM-3215",
+      "pk": "2",
+      "zona": "Norte",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1792999061273
     }
   ],
   "tramos": [
