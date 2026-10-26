@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-26T08:17:53.029Z",
+  "exportado": "2026-10-26T18:32:19.151Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -567,6 +567,21 @@
       "obsCierre": "Solucionado por Acisclo",
       "pasada": false,
       "tsCreacion": 1792999061273
+    },
+    {
+      "id": "INC-261026-002",
+      "fecha": "26/10/2026",
+      "hora": "19:31",
+      "quien": "Guardia Civil",
+      "mensaje": "Animal, rotonda paraíso y rotonda cuevas 260",
+      "carretera": "CM-412",
+      "pk": "260",
+      "zona": "Sur",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1793039536148
     }
   ],
   "tramos": [
