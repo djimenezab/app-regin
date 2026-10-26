@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-26T20:44:01.029Z",
+  "exportado": "2026-10-26T20:51:49.614Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -596,7 +596,14 @@
       "horaCierre": null,
       "obsCierre": null,
       "pasada": false,
-      "tsCreacion": 1793042614627
+      "tsCreacion": 1793042614627,
+      "notas": [
+        {
+          "id": "1793047906612",
+          "ts": "26/10 21:51",
+          "txt": "De momento no vamos por estar vivo"
+        }
+      ]
     },
     {
       "id": "INC-261026-004",
