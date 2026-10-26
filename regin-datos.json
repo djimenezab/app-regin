@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-26T20:52:20.776Z",
+  "exportado": "2026-10-26T21:59:36.394Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -614,9 +614,9 @@
       "carretera": "CM-316",
       "pk": "50",
       "zona": "Norte",
-      "cerrada": false,
-      "horaCierre": null,
-      "obsCierre": null,
+      "cerrada": true,
+      "horaCierre": "22:59",
+      "obsCierre": "Estaba en el 50+200",
       "pasada": false,
       "tsCreacion": 1793043808302,
       "notas": [
