@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-26T20:43:37.900Z",
+  "exportado": "2026-10-26T20:44:01.029Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -633,7 +633,14 @@
       "horaCierre": null,
       "obsCierre": null,
       "pasada": false,
-      "tsCreacion": 1793047375556
+      "tsCreacion": 1793047375556,
+      "notas": [
+        {
+          "id": "1793047438028",
+          "ts": "26/10 21:43",
+          "txt": "Para retirar en jornada laboral"
+        }
+      ]
     }
   ],
   "tramos": [
