@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-26T18:32:19.151Z",
+  "exportado": "2026-10-26T19:23:37.633Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -582,6 +582,21 @@
       "obsCierre": null,
       "pasada": false,
       "tsCreacion": 1793039536148
+    },
+    {
+      "id": "INC-261026-003",
+      "fecha": "26/10/2026",
+      "hora": "20:22",
+      "quien": "112",
+      "mensaje": "Higueruela - Pozo Lorente un cervatillo sentado en la calzada",
+      "carretera": "CM-3209",
+      "pk": "10",
+      "zona": "Norte",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1793042614627
     }
   ],
   "tramos": [
