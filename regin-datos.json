@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-26T19:23:37.633Z",
+  "exportado": "2026-10-26T19:43:31.304Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -597,6 +597,21 @@
       "obsCierre": null,
       "pasada": false,
       "tsCreacion": 1793042614627
+    },
+    {
+      "id": "INC-261026-004",
+      "fecha": "26/10/2026",
+      "hora": "20:42",
+      "quien": "112",
+      "mensaje": "Accidente jabali",
+      "carretera": "CM-316",
+      "pk": "50",
+      "zona": "Norte",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1793043808302
     }
   ],
   "tramos": [
