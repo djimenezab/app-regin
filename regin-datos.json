@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-26T20:51:49.614Z",
+  "exportado": "2026-10-26T20:52:01.026Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -592,9 +592,9 @@
       "carretera": "CM-3209",
       "pk": "10",
       "zona": "Norte",
-      "cerrada": false,
-      "horaCierre": null,
-      "obsCierre": null,
+      "cerrada": true,
+      "horaCierre": "21:51",
+      "obsCierre": "No vamos por estar vivo",
       "pasada": false,
       "tsCreacion": 1793042614627,
       "notas": [
