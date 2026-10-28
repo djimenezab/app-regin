@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-27T13:31:27.012Z",
+  "exportado": "2026-10-28T06:32:29.128Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -641,6 +641,21 @@
       "obsCierre": "Se limpia todo",
       "pasada": true,
       "tsCreacion": 1793081299752
+    },
+    {
+      "id": "INC-261028-001",
+      "fecha": "28/10/2026",
+      "hora": "07:31",
+      "quien": "112",
+      "mensaje": "Búho muerto",
+      "carretera": "CM-3226",
+      "pk": "5",
+      "zona": "Norte",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1793169146126
     }
   ],
   "tramos": [
