@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-28T20:01:28.106Z",
+  "exportado": "2026-10-28T20:26:07.137Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -681,9 +681,9 @@
       "carretera": "CM-313",
       "pk": "123",
       "zona": "Sur",
-      "cerrada": false,
-      "horaCierre": null,
-      "obsCierre": null,
+      "cerrada": true,
+      "horaCierre": "21:24",
+      "obsCierre": "Me comunica guardia civil que ya no es necesario ir",
       "pasada": false,
       "tsCreacion": 1793217685102
     }
