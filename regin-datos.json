@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-28T20:26:07.137Z",
+  "exportado": "2026-10-28T21:25:31.293Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -686,6 +686,21 @@
       "obsCierre": "Me comunica guardia civil que ya no es necesario ir",
       "pasada": false,
       "tsCreacion": 1793217685102
+    },
+    {
+      "id": "INC-261028-004",
+      "fecha": "28/10/2026",
+      "hora": "22:24",
+      "quien": "Guardia Civil",
+      "mensaje": "Salida de vía, restos de piedras en la calzada",
+      "carretera": "CM-332",
+      "pk": "25+500",
+      "zona": "Norte",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1793222728287
     }
   ],
   "tramos": [
