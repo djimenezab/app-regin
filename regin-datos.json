@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-28T08:51:26.110Z",
+  "exportado": "2026-10-28T20:01:28.106Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -671,6 +671,21 @@
       "obsCierre": null,
       "pasada": false,
       "tsCreacion": 1793177471725
+    },
+    {
+      "id": "INC-261028-003",
+      "fecha": "28/10/2026",
+      "hora": "20:59",
+      "quien": "Guardia Civil",
+      "mensaje": "Nava de abajo, carretera cortada tractor con cuba",
+      "carretera": "CM-313",
+      "pk": "123",
+      "zona": "Sur",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1793217685102
     }
   ],
   "tramos": [
