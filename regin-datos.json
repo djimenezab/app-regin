@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-28T21:25:31.293Z",
+  "exportado": "2026-10-28T22:59:16.197Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -696,9 +696,9 @@
       "carretera": "CM-332",
       "pk": "25+500",
       "zona": "Norte",
-      "cerrada": false,
-      "horaCierre": null,
-      "obsCierre": null,
+      "cerrada": true,
+      "horaCierre": "23:59",
+      "obsCierre": "Se queda todo limpio.",
       "pasada": false,
       "tsCreacion": 1793222728287
     }
