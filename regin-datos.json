@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-28T08:51:14.727Z",
+  "exportado": "2026-10-28T08:51:21.256Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -651,8 +651,8 @@
       "carretera": "CM-3226",
       "pk": "5",
       "zona": "Norte",
-      "cerrada": false,
-      "horaCierre": null,
+      "cerrada": true,
+      "horaCierre": "09:51",
       "obsCierre": null,
       "pasada": false,
       "tsCreacion": 1793169146126
