@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-29T07:22:58.098Z",
+  "exportado": "2026-10-29T07:29:13.929Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -602,28 +602,6 @@
           "id": "1793047414897",
           "ts": "26/10 21:43",
           "txt": "50+200"
-        }
-      ]
-    },
-    {
-      "id": "INC-261026-005",
-      "fecha": "26/10/2026",
-      "hora": "21:42",
-      "quien": "Guardia Civil",
-      "mensaje": "Ciervo cuneta",
-      "carretera": "CM-332",
-      "pk": "41",
-      "zona": "Norte",
-      "cerrada": true,
-      "horaCierre": "21:52",
-      "obsCierre": "Se retirará en jornada laboral",
-      "pasada": false,
-      "tsCreacion": 1793047375556,
-      "notas": [
-        {
-          "id": "1793047438028",
-          "ts": "26/10 21:43",
-          "txt": "Para retirar en jornada laboral"
         }
       ]
     },
