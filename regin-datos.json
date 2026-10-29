@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-29T07:04:39.124Z",
+  "exportado": "2026-10-29T07:22:54.345Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -711,9 +711,9 @@
       "carretera": "CM-3226",
       "pk": "1",
       "zona": "Norte",
-      "cerrada": false,
-      "horaCierre": null,
-      "obsCierre": null,
+      "cerrada": true,
+      "horaCierre": "08:22",
+      "obsCierre": "Se retiran los vehiculos y queda limpio",
       "pasada": false,
       "tsCreacion": 1793249681550
     },
