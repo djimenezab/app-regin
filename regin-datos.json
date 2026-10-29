@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-28T22:59:16.197Z",
+  "exportado": "2026-10-29T04:54:44.552Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -701,6 +701,21 @@
       "obsCierre": "Se queda todo limpio.",
       "pasada": false,
       "tsCreacion": 1793222728287
+    },
+    {
+      "id": "INC-261029-001",
+      "fecha": "29/10/2026",
+      "hora": "05:53",
+      "quien": "112",
+      "mensaje": "Accidente 2 turismo",
+      "carretera": "CM-3226",
+      "pk": "1",
+      "zona": "Norte",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1793249681550
     }
   ],
   "tramos": [
