@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-29T07:52:32.476Z",
+  "exportado": "2026-10-29T18:45:48.042Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -679,6 +679,21 @@
       "obsCierre": "Ya se ha retirado.",
       "pasada": false,
       "tsCreacion": 1793252567470
+    },
+    {
+      "id": "INC-261029-003",
+      "fecha": "29/10/2026",
+      "hora": "19:44",
+      "quien": "112",
+      "mensaje": "Ciervo atropellado.",
+      "carretera": "CM-332",
+      "pk": "51",
+      "zona": "Norte",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1793299545040
     }
   ],
   "tramos": [
