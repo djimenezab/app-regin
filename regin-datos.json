@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-29T07:22:54.345Z",
+  "exportado": "2026-10-29T07:22:58.098Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -714,7 +714,7 @@
       "cerrada": true,
       "horaCierre": "08:22",
       "obsCierre": "Se retiran los vehiculos y queda limpio",
-      "pasada": false,
+      "pasada": true,
       "tsCreacion": 1793249681550
     },
     {
