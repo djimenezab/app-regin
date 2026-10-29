@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-29T07:29:39.935Z",
+  "exportado": "2026-10-29T07:52:32.476Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -674,9 +674,9 @@
       "carretera": "CM-3119",
       "pk": "16",
       "zona": "Norte",
-      "cerrada": false,
-      "horaCierre": null,
-      "obsCierre": null,
+      "cerrada": true,
+      "horaCierre": "08:52",
+      "obsCierre": "Ya se ha retirado.",
       "pasada": false,
       "tsCreacion": 1793252567470
     }
