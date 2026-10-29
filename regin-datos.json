@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-29T05:42:50.477Z",
+  "exportado": "2026-10-29T06:52:28.299Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -684,7 +684,7 @@
       "cerrada": true,
       "horaCierre": "21:24",
       "obsCierre": "Me comunica guardia civil que ya no es necesario ir",
-      "pasada": false,
+      "pasada": true,
       "tsCreacion": 1793217685102
     },
     {
