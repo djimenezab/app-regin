@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-29T07:29:23.543Z",
+  "exportado": "2026-10-29T07:29:39.935Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -619,21 +619,6 @@
       "obsCierre": null,
       "pasada": true,
       "tsCreacion": 1793169146126
-    },
-    {
-      "id": "INC-261028-002",
-      "fecha": "28/10/2026",
-      "hora": "09:50",
-      "quien": "112",
-      "mensaje": "Animal muerto en calzada",
-      "carretera": "CM-332",
-      "pk": "22",
-      "zona": "Norte",
-      "cerrada": false,
-      "horaCierre": null,
-      "obsCierre": null,
-      "pasada": false,
-      "tsCreacion": 1793177471725
     },
     {
       "id": "INC-261028-003",
