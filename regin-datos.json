@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-30T13:18:46.995Z",
+  "exportado": "2026-10-30T18:29:35.206Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -694,6 +694,21 @@
       "obsCierre": "Retirado animal y vehículo",
       "pasada": true,
       "tsCreacion": 1793299545040
+    },
+    {
+      "id": "INC-261030-001",
+      "fecha": "30/10/2026",
+      "hora": "19:27",
+      "quien": "112",
+      "mensaje": "Una lona en la calzada.",
+      "carretera": "CM-332",
+      "pk": "2",
+      "zona": "Norte",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1793384972202
     }
   ],
   "tramos": [
