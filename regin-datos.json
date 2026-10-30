@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-30T18:29:35.206Z",
+  "exportado": "2026-10-30T19:41:14.080Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -704,9 +704,9 @@
       "carretera": "CM-332",
       "pk": "2",
       "zona": "Norte",
-      "cerrada": false,
-      "horaCierre": null,
-      "obsCierre": null,
+      "cerrada": true,
+      "horaCierre": "20:41",
+      "obsCierre": "No hay nada",
       "pasada": false,
       "tsCreacion": 1793384972202
     }
