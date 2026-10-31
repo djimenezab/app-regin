@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-30T19:41:14.080Z",
+  "exportado": "2026-10-31T08:07:24.031Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -709,6 +709,21 @@
       "obsCierre": "No hay nada",
       "pasada": false,
       "tsCreacion": 1793384972202
+    },
+    {
+      "id": "INC-261031-001",
+      "fecha": "31/10/2026",
+      "hora": "09:06",
+      "quien": "Guardia Civil",
+      "mensaje": "Animal en calzada",
+      "carretera": "CM-412",
+      "pk": "172",
+      "zona": "Sur",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1793434041028
     }
   ],
   "tramos": [
