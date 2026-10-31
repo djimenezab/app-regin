@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-31T10:16:29.666Z",
+  "exportado": "2026-10-31T12:15:34.723Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -724,6 +724,21 @@
       "obsCierre": "Es un zorro muerto",
       "pasada": false,
       "tsCreacion": 1793434041028
+    },
+    {
+      "id": "INC-261031-002",
+      "fecha": "31/10/2026",
+      "hora": "13:15",
+      "quien": "112",
+      "mensaje": "Jabali en calzada",
+      "carretera": "CM-3123",
+      "pk": "19",
+      "zona": "Norte",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1793448931712
     }
   ],
   "tramos": [
