@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-31T08:07:24.031Z",
+  "exportado": "2026-10-31T10:16:29.666Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -719,9 +719,9 @@
       "carretera": "CM-412",
       "pk": "172",
       "zona": "Sur",
-      "cerrada": false,
-      "horaCierre": null,
-      "obsCierre": null,
+      "cerrada": true,
+      "horaCierre": "11:16",
+      "obsCierre": "Es un zorro muerto",
       "pasada": false,
       "tsCreacion": 1793434041028
     }
