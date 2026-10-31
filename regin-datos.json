@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-31T14:39:23.596Z",
+  "exportado": "2026-10-31T20:34:30.052Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -739,6 +739,21 @@
       "obsCierre": "Se entierra animal",
       "pasada": false,
       "tsCreacion": 1793448931712
+    },
+    {
+      "id": "INC-261031-003",
+      "fecha": "31/10/2026",
+      "hora": "21:33",
+      "quien": "112",
+      "mensaje": "Hellin a Socovos a la altura del coto trasvase\nJabali.",
+      "carretera": "CM-412",
+      "pk": "",
+      "zona": "Sur",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1793478867050
     }
   ],
   "tramos": [
