@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-11-01T06:38:37.709Z",
+  "exportado": "2026-11-01T08:27:41.205Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -769,6 +769,21 @@
       "obsCierre": null,
       "pasada": false,
       "tsCreacion": 1793515114707
+    },
+    {
+      "id": "INC-261101-003",
+      "fecha": "01/11/2026",
+      "hora": "09:27",
+      "quien": "112",
+      "mensaje": "Aguila en el arcén",
+      "carretera": "CM-3121",
+      "pk": "29",
+      "zona": "Norte",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1793521658199
     }
   ],
   "tramos": [
