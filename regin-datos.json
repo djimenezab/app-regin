@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-10-31T22:24:18.897Z",
+  "exportado": "2026-11-01T00:24:20.884Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -739,6 +739,21 @@
       "obsCierre": "Se entierra animal",
       "pasada": false,
       "tsCreacion": 1793448931712
+    },
+    {
+      "id": "INC-261101-001",
+      "fecha": "01/11/2026",
+      "hora": "01:23",
+      "quien": "112",
+      "mensaje": "Jabali",
+      "carretera": "CM-313",
+      "pk": "91",
+      "zona": "Sur",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1793492657877
     }
   ],
   "tramos": [
