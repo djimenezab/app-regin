@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-11-01T00:24:20.884Z",
+  "exportado": "2026-11-01T02:02:48.622Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -749,9 +749,9 @@
       "carretera": "CM-313",
       "pk": "91",
       "zona": "Sur",
-      "cerrada": false,
-      "horaCierre": null,
-      "obsCierre": null,
+      "cerrada": true,
+      "horaCierre": "03:02",
+      "obsCierre": "Se retira jabali y restos",
       "pasada": false,
       "tsCreacion": 1793492657877
     }
