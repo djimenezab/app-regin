@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-11-01T02:02:48.622Z",
+  "exportado": "2026-11-01T06:38:37.709Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -754,6 +754,21 @@
       "obsCierre": "Se retira jabali y restos",
       "pasada": false,
       "tsCreacion": 1793492657877
+    },
+    {
+      "id": "INC-261101-002",
+      "fecha": "01/11/2026",
+      "hora": "07:37",
+      "quien": "112",
+      "mensaje": "Perro muerto",
+      "carretera": "CM-313",
+      "pk": "85",
+      "zona": "Sur",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1793515114707
     }
   ],
   "tramos": [
