@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-11-01T08:55:46.028Z",
+  "exportado": "2026-11-01T10:07:59.819Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -783,7 +783,14 @@
       "horaCierre": null,
       "obsCierre": null,
       "pasada": false,
-      "tsCreacion": 1793521658199
+      "tsCreacion": 1793521658199,
+      "notas": [
+        {
+          "id": "1793527676809",
+          "ts": "1/11 11:07",
+          "txt": "28+100 MD búho real"
+        }
+      ]
     }
   ],
   "tramos": [
