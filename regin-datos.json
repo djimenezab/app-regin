@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-11-02T20:14:08.876Z",
+  "exportado": "2026-11-02T20:41:10.742Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -821,6 +821,21 @@
       "obsCierre": null,
       "pasada": false,
       "tsCreacion": 1793650445874
+    },
+    {
+      "id": "INC-261102-003",
+      "fecha": "02/11/2026",
+      "hora": "21:40",
+      "quien": "Guardia Civil",
+      "mensaje": "Coche averiado",
+      "carretera": "CM-412",
+      "pk": "250+000",
+      "zona": "Sur",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1793652067734
     }
   ],
   "tramos": [
