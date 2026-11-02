@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-11-01T20:37:32.729Z",
+  "exportado": "2026-11-02T20:13:29.772Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -791,6 +791,21 @@
           "txt": "28+100 MD búho real"
         }
       ]
+    },
+    {
+      "id": "INC-261102-001",
+      "fecha": "02/11/2026",
+      "hora": "21:13",
+      "quien": "Guardia Civil",
+      "mensaje": "Cabra",
+      "carretera": "CM-3201",
+      "pk": "77+500",
+      "zona": "Norte",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1793650406768
     }
   ],
   "tramos": [
