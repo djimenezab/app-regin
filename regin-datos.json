@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-11-03T07:47:11.110Z",
+  "exportado": "2026-11-03T08:02:56.271Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -737,7 +737,7 @@
       "cerrada": true,
       "horaCierre": "03:02",
       "obsCierre": "Se retira jabali y restos",
-      "pasada": false,
+      "pasada": true,
       "tsCreacion": 1793492657877
     },
     {
