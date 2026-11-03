@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-11-03T07:13:09.594Z",
+  "exportado": "2026-11-03T07:22:01.714Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -707,7 +707,7 @@
       "cerrada": true,
       "horaCierre": "11:16",
       "obsCierre": "Es un zorro muerto",
-      "pasada": false,
+      "pasada": true,
       "tsCreacion": 1793434041028
     },
     {
