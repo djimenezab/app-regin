@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-11-03T07:05:16.166Z",
+  "exportado": "2026-11-03T07:09:58.706Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -664,21 +664,6 @@
       "obsCierre": "Se retiran los vehiculos y queda limpio",
       "pasada": true,
       "tsCreacion": 1793249681550
-    },
-    {
-      "id": "INC-261029-002",
-      "fecha": "29/10/2026",
-      "hora": "06:42",
-      "quien": "112",
-      "mensaje": "Restos animal jabali",
-      "carretera": "CM-3119",
-      "pk": "16",
-      "zona": "Norte",
-      "cerrada": true,
-      "horaCierre": "08:52",
-      "obsCierre": "Ya se ha retirado.",
-      "pasada": false,
-      "tsCreacion": 1793252567470
     },
     {
       "id": "INC-261029-003",
