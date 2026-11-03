@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-11-03T07:22:01.714Z",
+  "exportado": "2026-11-03T07:29:12.126Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -722,7 +722,7 @@
       "cerrada": true,
       "horaCierre": "15:39",
       "obsCierre": "Se entierra animal",
-      "pasada": false,
+      "pasada": true,
       "tsCreacion": 1793448931712
     },
     {
