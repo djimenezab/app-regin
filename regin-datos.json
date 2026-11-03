@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-11-03T08:07:23.390Z",
+  "exportado": "2026-11-03T08:40:16.268Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -804,7 +804,7 @@
       "cerrada": true,
       "horaCierre": "08:04",
       "obsCierre": "No se encuentra.",
-      "pasada": false,
+      "pasada": true,
       "tsCreacion": 1793650445874
     },
     {
@@ -819,7 +819,7 @@
       "cerrada": true,
       "horaCierre": "23:10",
       "obsCierre": "No se encuentra el coche",
-      "pasada": false,
+      "pasada": true,
       "tsCreacion": 1793652067734
     }
   ],
