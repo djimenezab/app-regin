@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-11-03T07:29:12.126Z",
+  "exportado": "2026-11-03T07:38:21.717Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -767,7 +767,7 @@
       "cerrada": true,
       "horaCierre": "11:09",
       "obsCierre": "Aviso a 112 del búho",
-      "pasada": false,
+      "pasada": true,
       "tsCreacion": 1793521658199,
       "notas": [
         {
