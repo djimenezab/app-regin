@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-11-03T08:02:56.271Z",
+  "exportado": "2026-11-03T08:07:23.390Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -752,7 +752,7 @@
       "cerrada": true,
       "horaCierre": "09:55",
       "obsCierre": "Se retira fuera de la calzada.",
-      "pasada": false,
+      "pasada": true,
       "tsCreacion": 1793515114707
     },
     {
