@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-11-03T08:40:16.268Z",
+  "exportado": "2026-11-16T21:09:58.751Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -821,6 +821,21 @@
       "obsCierre": "No se encuentra el coche",
       "pasada": true,
       "tsCreacion": 1793652067734
+    },
+    {
+      "id": "INC-261116-001",
+      "fecha": "16/11/2026",
+      "hora": "22:09",
+      "quien": "112",
+      "mensaje": "Dice la guardia civil que hay Placa PVC grande",
+      "carretera": "CM-3121",
+      "pk": "7",
+      "zona": "Norte",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1794863395746
     }
   ],
   "tramos": [
