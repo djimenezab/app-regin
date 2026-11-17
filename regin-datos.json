@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-11-17T20:35:37.367Z",
+  "exportado": "2026-11-17T20:36:45.789Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -851,6 +851,21 @@
       "obsCierre": "Retirado por Acisclo",
       "pasada": false,
       "tsCreacion": 1794902177535
+    },
+    {
+      "id": "INC-261117-003",
+      "fecha": "17/11/2026",
+      "hora": "21:35",
+      "quien": "112",
+      "mensaje": "Posible accidente por aviso iPhone",
+      "carretera": "CM-3251",
+      "pk": "6",
+      "zona": "Norte",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1794947802792
     }
   ],
   "tramos": [
