@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-11-17T07:56:20.537Z",
+  "exportado": "2026-11-17T09:04:29.216Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -851,6 +851,21 @@
       "obsCierre": null,
       "pasada": false,
       "tsCreacion": 1794902177535
+    },
+    {
+      "id": "INC-261117-002",
+      "fecha": "17/11/2026",
+      "hora": "10:04",
+      "quien": "112",
+      "mensaje": "Tractor",
+      "carretera": "CM-3203",
+      "pk": "41",
+      "zona": "Sur",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1794906266208
     }
   ],
   "tramos": [
