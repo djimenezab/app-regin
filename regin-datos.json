@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-11-18T07:44:25.991Z",
+  "exportado": "2026-11-18T11:50:35.968Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -851,6 +851,21 @@
       "obsCierre": "Retirado por Acisclo",
       "pasada": false,
       "tsCreacion": 1794902177535
+    },
+    {
+      "id": "INC-261118-001",
+      "fecha": "18/11/2026",
+      "hora": "12:49",
+      "quien": "112",
+      "mensaje": "Pino",
+      "carretera": "CM-3263",
+      "pk": "5",
+      "zona": "Sur",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1795002632965
     }
   ],
   "tramos": [
