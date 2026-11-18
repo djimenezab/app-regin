@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-11-18T07:37:31.160Z",
+  "exportado": "2026-11-18T07:44:25.991Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -834,7 +834,7 @@
       "cerrada": true,
       "horaCierre": "23:59",
       "obsCierre": "Se retira placa de camión lateral",
-      "pasada": false,
+      "pasada": true,
       "tsCreacion": 1794863395746
     },
     {
