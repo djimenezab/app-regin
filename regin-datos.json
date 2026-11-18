@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-11-18T19:28:48.673Z",
+  "exportado": "2026-11-18T22:19:49.914Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -891,9 +891,9 @@
       "carretera": "CM-313",
       "pk": "30",
       "zona": "Norte",
-      "cerrada": false,
-      "horaCierre": null,
-      "obsCierre": null,
+      "cerrada": true,
+      "horaCierre": "23:19",
+      "obsCierre": "Se cierra a las 23:00 se retiran plásticos",
       "pasada": false,
       "tsCreacion": 1795030109162
     }
