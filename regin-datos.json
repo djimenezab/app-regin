@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-11-18T19:28:32.165Z",
+  "exportado": "2026-11-18T19:28:48.673Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -876,9 +876,9 @@
       "carretera": "CM-3251",
       "pk": "7",
       "zona": "Norte",
-      "cerrada": false,
-      "horaCierre": null,
-      "obsCierre": null,
+      "cerrada": true,
+      "horaCierre": "20:28",
+      "obsCierre": "Cierro sin ir porque está vivo",
       "pasada": false,
       "tsCreacion": 1795026493583
     },
