@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-11-18T18:28:16.587Z",
+  "exportado": "2026-11-18T19:28:32.165Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -881,6 +881,21 @@
       "obsCierre": null,
       "pasada": false,
       "tsCreacion": 1795026493583
+    },
+    {
+      "id": "INC-261118-003",
+      "fecha": "18/11/2026",
+      "hora": "20:25",
+      "quien": "112",
+      "mensaje": "Salida vía turismo.",
+      "carretera": "CM-313",
+      "pk": "30",
+      "zona": "Norte",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1795030109162
     }
   ],
   "tramos": [
