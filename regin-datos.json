@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-11-18T13:54:34.140Z",
+  "exportado": "2026-11-18T18:28:16.587Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -866,6 +866,21 @@
       "obsCierre": "Se ha retirado el pino.",
       "pasada": false,
       "tsCreacion": 1795002632965
+    },
+    {
+      "id": "INC-261118-002",
+      "fecha": "18/11/2026",
+      "hora": "19:25",
+      "quien": "112",
+      "mensaje": "Finca maría Inés",
+      "carretera": "CM-3251",
+      "pk": "7",
+      "zona": "Norte",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1795026493583
     }
   ],
   "tramos": [
