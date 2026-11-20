@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-11-19T06:40:35.142Z",
+  "exportado": "2026-11-20T06:52:43.872Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -911,6 +911,21 @@
       "obsCierre": null,
       "pasada": false,
       "tsCreacion": 1795070432133
+    },
+    {
+      "id": "INC-261120-001",
+      "fecha": "20/11/2026",
+      "hora": "07:52",
+      "quien": "112",
+      "mensaje": "Cartones por la calzada",
+      "carretera": "CM-3226",
+      "pk": "9",
+      "zona": "Norte",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1795157560869
     }
   ],
   "tramos": [
