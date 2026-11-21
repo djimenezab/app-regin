@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-11-21T21:14:34.131Z",
+  "exportado": "2026-11-21T22:30:13.956Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -966,9 +966,9 @@
       "carretera": "CM-332",
       "pk": "55",
       "zona": "Norte",
-      "cerrada": false,
-      "horaCierre": null,
-      "obsCierre": null,
+      "cerrada": true,
+      "horaCierre": "23:29",
+      "obsCierre": "Cerramos por aviso guardia civil.",
       "pasada": false,
       "tsCreacion": 1795295671125
     }
