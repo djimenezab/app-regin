@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-11-20T21:52:06.176Z",
+  "exportado": "2026-11-21T06:03:44.657Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -941,6 +941,21 @@
       "obsCierre": "Se llega al 49 y no se ve nada .",
       "pasada": false,
       "tsCreacion": 1795205231365
+    },
+    {
+      "id": "INC-261121-001",
+      "fecha": "21/11/2026",
+      "hora": "07:02",
+      "quien": "112",
+      "mensaje": "Jabali 4 km pasado Hellin hacia pozohondo",
+      "carretera": "CM-313",
+      "pk": "",
+      "zona": "Norte",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1795241021654
     }
   ],
   "tramos": [
