@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-11-22T19:27:54.824Z",
+  "exportado": "2026-11-22T19:34:53.197Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -1001,6 +1001,21 @@
       "obsCierre": null,
       "pasada": false,
       "tsCreacion": 1795375671821
+    },
+    {
+      "id": "INC-261122-003",
+      "fecha": "22/11/2026",
+      "hora": "20:34",
+      "quien": "112",
+      "mensaje": "Jabali vehículo parado por golpe.",
+      "carretera": "CM-412",
+      "pk": "260",
+      "zona": "Sur",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1795376090195
     }
   ],
   "tramos": [
