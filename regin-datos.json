@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-11-21T22:30:13.956Z",
+  "exportado": "2026-11-22T06:06:14.512Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -971,6 +971,21 @@
       "obsCierre": "Cerramos por aviso guardia civil.",
       "pasada": false,
       "tsCreacion": 1795295671125
+    },
+    {
+      "id": "INC-261122-001",
+      "fecha": "22/11/2026",
+      "hora": "07:04",
+      "quien": "Guardia Civil",
+      "mensaje": "Accidente, limpiar restos.",
+      "carretera": "CM-3213",
+      "pk": "10",
+      "zona": "Sur",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1795327571506
     }
   ],
   "tramos": [
