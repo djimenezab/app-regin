@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-11-23T11:08:55.348Z",
+  "exportado": "2026-11-23T11:15:04.306Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -909,7 +909,7 @@
       "cerrada": true,
       "horaCierre": "23:29",
       "obsCierre": "Cerramos por aviso guardia civil.",
-      "pasada": false,
+      "pasada": true,
       "tsCreacion": 1795295671125
     },
     {
