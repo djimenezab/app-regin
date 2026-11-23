@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-11-22T21:49:32.391Z",
+  "exportado": "2026-11-23T07:10:19.549Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -836,21 +836,6 @@
       "obsCierre": "Se retira placa de camión lateral",
       "pasada": true,
       "tsCreacion": 1794863395746
-    },
-    {
-      "id": "INC-261117-001",
-      "fecha": "17/11/2026",
-      "hora": "08:55",
-      "quien": "112",
-      "mensaje": "Zorro en la calzada",
-      "carretera": "CM-3206",
-      "pk": "21",
-      "zona": "Sur",
-      "cerrada": true,
-      "horaCierre": "12:17",
-      "obsCierre": "Retirado por Acisclo",
-      "pasada": false,
-      "tsCreacion": 1794902177535
     },
     {
       "id": "INC-261118-001",
