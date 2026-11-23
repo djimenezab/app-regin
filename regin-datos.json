@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-11-23T07:24:59.443Z",
+  "exportado": "2026-11-23T07:25:20.073Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -866,21 +866,6 @@
       "obsCierre": "Se cierra a las 23:00 se retiran plásticos",
       "pasada": true,
       "tsCreacion": 1795030109162
-    },
-    {
-      "id": "INC-261120-001",
-      "fecha": "20/11/2026",
-      "hora": "07:52",
-      "quien": "112",
-      "mensaje": "Cartones por la calzada",
-      "carretera": "CM-3226",
-      "pk": "9",
-      "zona": "Norte",
-      "cerrada": true,
-      "horaCierre": "09:17",
-      "obsCierre": "Retirados",
-      "pasada": false,
-      "tsCreacion": 1795157560869
     },
     {
       "id": "INC-261120-002",
