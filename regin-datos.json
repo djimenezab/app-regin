@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-11-23T07:11:37.301Z",
+  "exportado": "2026-11-23T07:12:31.867Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -866,21 +866,6 @@
       "obsCierre": "Se cierra a las 23:00 se retiran plásticos",
       "pasada": true,
       "tsCreacion": 1795030109162
-    },
-    {
-      "id": "INC-261119-001",
-      "fecha": "19/11/2026",
-      "hora": "07:39",
-      "quien": "Guardia Civil",
-      "mensaje": "Árbol caído",
-      "carretera": "CM-3263",
-      "pk": "",
-      "zona": "Sur",
-      "cerrada": true,
-      "horaCierre": "07:52",
-      "obsCierre": "No había árbol",
-      "pasada": false,
-      "tsCreacion": 1795070432133
     },
     {
       "id": "INC-261120-001",
