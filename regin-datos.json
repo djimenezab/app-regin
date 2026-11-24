@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-11-23T11:57:01.172Z",
+  "exportado": "2026-11-24T03:36:48.441Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -956,6 +956,21 @@
       "obsCierre": "Se retiran restos",
       "pasada": true,
       "tsCreacion": 1795376090195
+    },
+    {
+      "id": "INC-261124-001",
+      "fecha": "24/11/2026",
+      "hora": "04:36",
+      "quien": "Guardia Civil",
+      "mensaje": "Ciervo en la calzada",
+      "carretera": "CM-412",
+      "pk": "171",
+      "zona": "Sur",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1795491405438
     }
   ],
   "tramos": [
