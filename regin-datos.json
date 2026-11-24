@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-11-24T06:18:01.119Z",
+  "exportado": "2026-11-24T19:26:39.061Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -971,6 +971,21 @@
       "obsCierre": "Ya se ha retirado",
       "pasada": false,
       "tsCreacion": 1795491405438
+    },
+    {
+      "id": "INC-261124-002",
+      "fecha": "24/11/2026",
+      "hora": "20:25",
+      "quien": "112",
+      "mensaje": "Atropello 2 jabalíes",
+      "carretera": "CM-3225",
+      "pk": "3",
+      "zona": "Sur",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1795548396052
     }
   ],
   "tramos": [
