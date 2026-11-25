@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-11-25T07:59:45.658Z",
+  "exportado": "2026-11-25T18:01:18.785Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -986,6 +986,21 @@
       "obsCierre": "No se encuentra nada",
       "pasada": true,
       "tsCreacion": 1795548396052
+    },
+    {
+      "id": "INC-261125-001",
+      "fecha": "25/11/2026",
+      "hora": "19:00",
+      "quien": "112",
+      "mensaje": "Jabali atropellado",
+      "carretera": "CM-412",
+      "pk": "268",
+      "zona": "Sur",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1795629675784
     }
   ],
   "tramos": [
