@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-11-25T18:01:18.785Z",
+  "exportado": "2026-11-25T18:12:07.484Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -1000,7 +1000,14 @@
       "horaCierre": null,
       "obsCierre": null,
       "pasada": false,
-      "tsCreacion": 1795629675784
+      "tsCreacion": 1795629675784,
+      "notas": [
+        {
+          "id": "1795630324481",
+          "ts": "25/11 19:12",
+          "txt": "270 confirman jabali y restos"
+        }
+      ]
     }
   ],
   "tramos": [
