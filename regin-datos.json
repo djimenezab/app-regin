@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-11-26T16:47:20.324Z",
+  "exportado": "2026-11-26T19:14:19.348Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -1023,6 +1023,21 @@
       "obsCierre": null,
       "pasada": false,
       "tsCreacion": 1795711637320
+    },
+    {
+      "id": "INC-261126-002",
+      "fecha": "26/11/2026",
+      "hora": "20:13",
+      "quien": "112",
+      "mensaje": "Salida de vía de un vehículo",
+      "carretera": "CM-3211",
+      "pk": "11",
+      "zona": "Norte",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1795720456345
     }
   ],
   "tramos": [
