@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-11-26T08:04:36.654Z",
+  "exportado": "2026-11-26T16:47:20.324Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -1008,6 +1008,21 @@
           "txt": "270 confirman jabali y restos"
         }
       ]
+    },
+    {
+      "id": "INC-261126-001",
+      "fecha": "26/11/2026",
+      "hora": "17:46",
+      "quien": "112",
+      "mensaje": "Cabra viva",
+      "carretera": "CM-412",
+      "pk": "188",
+      "zona": "Sur",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1795711637320
     }
   ],
   "tramos": [
