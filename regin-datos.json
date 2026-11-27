@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-11-26T20:50:06.188Z",
+  "exportado": "2026-11-27T00:06:12.755Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -1030,6 +1030,21 @@
           "txt": "Jabali aceite"
         }
       ]
+    },
+    {
+      "id": "INC-261127-001",
+      "fecha": "27/11/2026",
+      "hora": "01:05",
+      "quien": "Guardia Civil",
+      "mensaje": "Animal en calzada",
+      "carretera": "CM-3220",
+      "pk": "15",
+      "zona": "Norte",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1795737969749
     }
   ],
   "tramos": [
