@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-11-27T20:43:26.049Z",
+  "exportado": "2026-11-27T20:47:48.956Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -1105,6 +1105,21 @@
       "obsCierre": null,
       "pasada": false,
       "tsCreacion": 1795812203044
+    },
+    {
+      "id": "INC-261127-006",
+      "fecha": "27/11/2026",
+      "hora": "21:46",
+      "quien": "Guardia Civil",
+      "mensaje": "Animal en arcén sentido creciente",
+      "carretera": "CM-220",
+      "pk": "19",
+      "zona": "Norte",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1795812465950
     }
   ],
   "tramos": [
