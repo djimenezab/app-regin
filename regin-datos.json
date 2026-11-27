@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-11-27T19:32:50.199Z",
+  "exportado": "2026-11-27T19:51:06.407Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -1070,9 +1070,9 @@
       "carretera": "CM-3212",
       "pk": "8",
       "zona": "Norte",
-      "cerrada": false,
-      "horaCierre": null,
-      "obsCierre": null,
+      "cerrada": true,
+      "horaCierre": "20:50",
+      "obsCierre": "Se retiran restos de grava y plásticos",
       "pasada": false,
       "tsCreacion": 1795800257575
     },
