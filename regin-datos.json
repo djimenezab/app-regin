@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-11-27T19:51:06.407Z",
+  "exportado": "2026-11-27T19:52:20.906Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -1021,7 +1021,7 @@
       "cerrada": true,
       "horaCierre": "21:49",
       "obsCierre": "Se limpia aceite  retira el vehículo",
-      "pasada": false,
+      "pasada": true,
       "tsCreacion": 1795720456345,
       "notas": [
         {
