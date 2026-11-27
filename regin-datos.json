@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-11-27T19:52:20.906Z",
+  "exportado": "2026-11-27T19:52:29.606Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -1043,7 +1043,7 @@
       "cerrada": true,
       "horaCierre": "01:06",
       "obsCierre": "3 jabalíes pequeños, se abrió a las 22:45",
-      "pasada": false,
+      "pasada": true,
       "tsCreacion": 1795737969749
     },
     {
