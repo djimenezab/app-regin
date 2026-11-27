@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-11-27T17:38:04.639Z",
+  "exportado": "2026-11-27T19:32:50.199Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -1075,6 +1075,21 @@
       "obsCierre": null,
       "pasada": false,
       "tsCreacion": 1795800257575
+    },
+    {
+      "id": "INC-261127-004",
+      "fecha": "27/11/2026",
+      "hora": "20:31",
+      "quien": "112",
+      "mensaje": "Piedras en la calzada, Molinicos",
+      "carretera": "CM-412",
+      "pk": "211",
+      "zona": "Sur",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1795807967195
     }
   ],
   "tramos": [
