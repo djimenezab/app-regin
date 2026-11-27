@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-11-27T17:24:20.577Z",
+  "exportado": "2026-11-27T17:38:04.639Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -1055,9 +1055,9 @@
       "carretera": "CM-313",
       "pk": "105",
       "zona": "Sur",
-      "cerrada": false,
-      "horaCierre": null,
-      "obsCierre": null,
+      "cerrada": true,
+      "horaCierre": "18:36",
+      "obsCierre": "Se retira animal",
       "pasada": false,
       "tsCreacion": 1795795296816
     },
