@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-11-27T21:20:43.272Z",
+  "exportado": "2026-11-27T22:13:13.806Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -1100,9 +1100,9 @@
       "carretera": "CM-3215",
       "pk": "11",
       "zona": "Norte",
-      "cerrada": false,
-      "horaCierre": null,
-      "obsCierre": null,
+      "cerrada": true,
+      "horaCierre": "23:12",
+      "obsCierre": "Se retira animal y restos",
       "pasada": false,
       "tsCreacion": 1795812203044
     },
