@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-11-27T19:52:29.606Z",
+  "exportado": "2026-11-27T20:43:26.049Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -1090,6 +1090,21 @@
       "obsCierre": null,
       "pasada": false,
       "tsCreacion": 1795807967195
+    },
+    {
+      "id": "INC-261127-005",
+      "fecha": "27/11/2026",
+      "hora": "21:42",
+      "quien": "112",
+      "mensaje": "Jabali, en calzada",
+      "carretera": "CM-3215",
+      "pk": "11",
+      "zona": "Norte",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1795812203044
     }
   ],
   "tramos": [
