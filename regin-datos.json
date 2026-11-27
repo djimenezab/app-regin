@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-11-27T16:02:00.179Z",
+  "exportado": "2026-11-27T17:24:20.577Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -1060,6 +1060,21 @@
       "obsCierre": null,
       "pasada": false,
       "tsCreacion": 1795795296816
+    },
+    {
+      "id": "INC-261127-003",
+      "fecha": "27/11/2026",
+      "hora": "18:22",
+      "quien": "112",
+      "mensaje": "Accidente",
+      "carretera": "CM-3212",
+      "pk": "8",
+      "zona": "Norte",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1795800257575
     }
   ],
   "tramos": [
