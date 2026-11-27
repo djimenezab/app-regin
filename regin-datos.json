@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-11-27T13:13:41.665Z",
+  "exportado": "2026-11-27T16:01:39.818Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -1021,7 +1021,7 @@
       "cerrada": true,
       "horaCierre": "21:49",
       "obsCierre": "Se limpia aceite  retira el vehículo",
-      "pasada": true,
+      "pasada": false,
       "tsCreacion": 1795720456345,
       "notas": [
         {
@@ -1043,8 +1043,23 @@
       "cerrada": true,
       "horaCierre": "01:06",
       "obsCierre": "3 jabalíes pequeños, se abrió a las 22:45",
-      "pasada": true,
+      "pasada": false,
       "tsCreacion": 1795737969749
+    },
+    {
+      "id": "INC-261127-002",
+      "fecha": "27/11/2026",
+      "hora": "17:00",
+      "quien": "112",
+      "mensaje": "Zorro muerto",
+      "carretera": "CM-313",
+      "pk": "105",
+      "zona": "Sur",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1795795296816
     }
   ],
   "tramos": [
