@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-11-28T19:31:18.662Z",
+  "exportado": "2026-11-28T19:36:20.017Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -1134,7 +1134,14 @@
       "horaCierre": null,
       "obsCierre": null,
       "pasada": false,
-      "tsCreacion": 1795888081057
+      "tsCreacion": 1795888081057,
+      "notas": [
+        {
+          "id": "1795894577006",
+          "ts": "28/11 20:36",
+          "txt": "50+550 2 golpes barreras"
+        }
+      ]
     },
     {
       "id": "INC-261128-002",
