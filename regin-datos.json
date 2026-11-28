@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-11-27T23:30:09.845Z",
+  "exportado": "2026-11-28T17:48:04.061Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -1120,6 +1120,21 @@
       "obsCierre": "No se encuentra animal",
       "pasada": false,
       "tsCreacion": 1795812465950
+    },
+    {
+      "id": "INC-261128-001",
+      "fecha": "28/11/2026",
+      "hora": "18:47",
+      "quien": "112",
+      "mensaje": "Accidente salida de vía",
+      "carretera": "CM-316",
+      "pk": "48",
+      "zona": "Norte",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1795888081057
     }
   ],
   "tramos": [
