@@ -1,6 +1,6 @@
 {
   "version": "1.9",
-  "exportado": "2026-11-28T17:48:04.061Z",
+  "exportado": "2026-11-28T19:31:18.662Z",
   "incidencias": [
     {
       "id": "INC-260928-001",
@@ -1135,6 +1135,21 @@
       "obsCierre": null,
       "pasada": false,
       "tsCreacion": 1795888081057
+    },
+    {
+      "id": "INC-261128-002",
+      "fecha": "28/11/2026",
+      "hora": "19:53",
+      "quien": "112",
+      "mensaje": "Veh averiado",
+      "carretera": "CM-3133",
+      "pk": "6",
+      "zona": "Sur",
+      "cerrada": false,
+      "horaCierre": null,
+      "obsCierre": null,
+      "pasada": false,
+      "tsCreacion": 1795894275660
     }
   ],
   "tramos": [
